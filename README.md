@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @SamaraFellaDina
+- 👋 Hi, I’m [@SamaraFellaDina](https://github.com/SamaraFellaDina)
 - 👀 I’m interested in Graphic Design and animation
 - 🌱 I’m currently learning Frontend development
 - 📫 You can find me on [Instagram](https://www.instagram.com/samarafelladina/), [Linkedin](https://www.linkedin.com/in/sammy-bensink-3a0477239/) and my own [portfolio](www.samarafelladina.com) :)
