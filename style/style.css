@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+
+.animation {
+  background:#000;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+  
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation h1 {
+  font-family:"Inter";
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 5em; 
+  font-weight: normal;
+  letter-spacing: normal;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.samara {
+    animation: letterdance 3s ease infinite alternate;
+    animation-delay: 1s;
+
+}
+
+.fella {
+    animation: letterdance 3s ease infinite alternate;
+    animation-delay: 2s;
+}
+
+.dina {
+    animation: letterdance 3s ease infinite alternate;
+    animation-delay: 3s;
+}
+
+@keyframes letterdance {
+    from {
+        font-weight: normal;
+        letter-spacing: normal;
+        font-style: normal;
+        font-stretch: narrower;
+        color: #fff;
+    }
+
+    to {
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-style: oblique 14deg;
+        font-stretch: extra-expanded;
+        color: #fffb00;
+    }
+}
+
+/* 
+wght – Weight, to control lightness and boldness
+wdth – Width, to control overall letter width
+opsz – Optical Size, to control adjustments to design for better readability at various sizes
+ital – Italic, generally to switch between separate upright/italic designs
+slnt – Slant, generally to control upright-to-slanted designs with intermediate values available
+ */
+
+ h2 {
+    font-family: "georgia", serif;
+    color: #fff;
+ }
+
+ @media (min-width: 930px )  {
+    .animation h1 {
+        flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px )  {
+
+  }
+  
+  @media (min-width: 1440px ) {
+    .animation h1 {
+        font-size: 8em;
+    }
+  }
