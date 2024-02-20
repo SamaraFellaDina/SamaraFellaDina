@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Inter";
-    src: url("./assets/fonts/inter-variable.ttf") format("truetype");
+    src: url("/assets/fonts/inter-variable.ttf") format("truetype");
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .animation h1 {
-  font-family:"Inter", sans-serif;
+  font-family:"Inter";
   color:#fff;
   text-transform: uppercase;
   font-size: 5em; 
@@ -43,7 +43,6 @@ body {
 .samara {
     animation: letterdance 3s ease infinite alternate;
     animation-delay: 1s;
-
 }
 
 .fella {
