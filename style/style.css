@@ -21,7 +21,7 @@ body {
 }
 
 .animation h1 {
-  font-family:"Inter";
+  font-family:"Inter", sans-serif;
   color:#fff;
   text-transform: uppercase;
   font-size: 5em; 
