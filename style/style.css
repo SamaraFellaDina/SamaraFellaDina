@@ -30,6 +30,14 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 930px )  {
+    flex-direction: row;
+  }
+  
+  @media (min-width: 1440px ) {
+    font-size: 8em;
+  }
 }
 
 .samara {
@@ -78,19 +86,3 @@ slnt – Slant, generally to control upright-to-slanted designs with intermediat
     font-family: "georgia", serif;
     color: #fff;
  }
-
- @media (min-width: 930px )  {
-    .animation h1 {
-        flex-direction: row;
-    }
-  }
-  
-  @media (min-width: 1024px )  {
-
-  }
-  
-  @media (min-width: 1440px ) {
-    .animation h1 {
-        font-size: 8em;
-    }
-  }
