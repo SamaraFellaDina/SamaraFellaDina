@@ -42,7 +42,7 @@ body {
 }
 
 .animation h1 span {
-  padding: .1em
+  padding: .05em
 }
 .samara {
     animation: letterdance 3s ease infinite alternate;
@@ -83,7 +83,7 @@ body {
         font-stretch: extra-expanded;
         color: #fffb00;
         rotate: 1deg;
-        padding: .2em
+        padding: .1em
     }
 }
 
