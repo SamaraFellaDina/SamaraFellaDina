@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
 
+
   @media (min-width: 930px )  {
     flex-direction: row;
   }
@@ -40,19 +41,28 @@ body {
   }
 }
 
+.animation h1 span {
+  padding: .1em
+}
 .samara {
     animation: letterdance 3s ease infinite alternate;
     animation-delay: 1s;
+    rotate: -1deg;
+
 }
 
 .fella {
-    animation: letterdance 3s ease infinite alternate;
+    animation: letterdance 2s ease infinite alternate;
     animation-delay: 2s;
+    rotate: -3deg;
+
 }
 
 .dina {
     animation: letterdance 3s ease infinite alternate;
     animation-delay: 3s;
+    rotate: -2deg;
+
 }
 
 @keyframes letterdance {
@@ -62,6 +72,8 @@ body {
         font-style: normal;
         font-stretch: narrower;
         color: #fff;
+        rotate: normal;
+        padding: normal;
     }
 
     to {
@@ -70,6 +82,8 @@ body {
         font-style: oblique 14deg;
         font-stretch: extra-expanded;
         color: #fffb00;
+        rotate: 1deg;
+        padding: .2em
     }
 }
 
