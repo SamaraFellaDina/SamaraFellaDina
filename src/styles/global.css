@@ -12,3 +12,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+p {
+  font-size: 1.2rem;
+}
