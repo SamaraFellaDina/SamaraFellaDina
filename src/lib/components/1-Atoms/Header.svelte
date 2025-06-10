@@ -1,7 +1,10 @@
+<script>
+  let clicked = false;
+</script>
 
-<header class='clicked'>
+<header class:clicked={clicked}>
   <nav>
-    <h2>menu</h2>
+    <button on:click={() => clicked = !clicked}>menu</button>
     <ul>
       <li><a href="/">Home.</a></li>
       <li><a href="/about">About.</a></li>
@@ -42,19 +45,18 @@ ul {
     align-items: center;
     justify-content: center;
 
+    background-color: black;
     mix-blend-mode: difference;
-    background-color: white;
     border-radius: 1000em;
     width: var(--header-size);
     height: var(--header-size);
-    
 }
 
 li {
   visibility: hidden;
 } 
 
-h2 {
+button {
   margin:0;
   background-color: var(--link-color);
 }
