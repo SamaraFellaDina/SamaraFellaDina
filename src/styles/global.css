@@ -7,7 +7,7 @@
   --link-color: hsl(125, 100%, 50%);
   --link-color-active: hsl(125, 58%, 59%);
   --hover-transition: 250ms ease-in-out;
-  
+  --transition: 400ms ease-in-out;
 }
 
 * {
