@@ -9,8 +9,20 @@
     let { children } = $props();
 </script>
 
-<Header />
+<div>
+  <Header />
+  <main>{@render children?.()}</main>
 
-<main>{@render children?.()}</main>
+</div>
 
+<style>
 
+div {
+  display:block;
+  
+  @media (min-width: 768px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
