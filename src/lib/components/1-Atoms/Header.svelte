@@ -13,14 +13,19 @@
 
 <style>
   header {
-  position: relative;
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: flex-end;
   }
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+  nav {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 ul {
@@ -33,11 +38,17 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  background-color: black;
+
+  mix-blend-mode: difference;
+  background-color: white;
   border-radius: 1000em;
   width: var(--header-size);
   height: var(--header-size);
+  
+}
+
+li {
+  visibility: hidden;
 }
 
 </style>

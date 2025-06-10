@@ -3,6 +3,13 @@
   src: url(fonts/Inter-VariableFont_opsz,wght.ttf) format("ttf"),
 }
 
+:root {
+  --link-color: hsl(125, 100%, 50%);
+  --link-color-active: hsl(125, 58%, 59%);
+  --hover-transition: 250ms ease-in-out;
+  
+}
+
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -12,6 +19,20 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--link-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--hover-transition);
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: var(--link-color-active);
+  }
 }
 
 p {
