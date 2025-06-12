@@ -20,13 +20,48 @@
 
 <style>
   header {
-    width: 20vw;
+    width: 20dvw;
     display: flex;
+    position: relative;
+    
+    @media (max-width: 500px) {
+      display:none;
+    }
   }
 
   nav {
+    --header-border:solid .2rem #000;
+    background-color: rgb(236, 236, 236);
+
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: flex-end;
+    width:100%;
+    height: 100dvh;
+    border-right: var(--header-border);
   }
+
+  ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: grid;
+    width:100%
+}
+
+li {
+  border-top:var(--header-border);
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  background-color: unset;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
 </style>

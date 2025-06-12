@@ -18,9 +18,9 @@
 <style>
 
 div {
-  display:block;
-  
-  @media (min-width: 768px) {
+  display: block;
+
+  @media (min-width: 500px) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   }
