@@ -9,7 +9,7 @@
     let { children } = $props();
 </script>
 
-<div>
+<div class="frame">
   <Header />
   <main>{@render children?.()}</main>
 
@@ -17,8 +17,9 @@
 
 <style>
 
-div {
+.frame {
   display: block;
+  position: relative;
 
   @media (min-width: 500px) {
   display: grid;
