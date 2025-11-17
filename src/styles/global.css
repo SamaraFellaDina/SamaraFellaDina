@@ -4,8 +4,12 @@
 }
 
 :root {
+  /* color */
   --link-color: hsl(125, 100%, 50%);
   --link-color-active: hsl(125, 58%, 59%);
+  --site-background: hsl(62, 100%, 50%);
+
+  /* transition */
   --hover-transition: 250ms ease-in-out;
   --transition: 400ms ease-in-out;
 }
@@ -15,12 +19,14 @@
   font-family: "Inter", sans-serif;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   min-height: 100dvh;
-  width: 100dvw
+  width: 100dvw;
+  background-color: var(--site-background);
 }
 
 a {

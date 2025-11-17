@@ -1,7 +1,7 @@
 <script>
-import { BackgroundAnimation } from "$lib/index.js";
+import { HomepageTitle } from "$lib/index.js";
 
 </script>
 
 
-<BackgroundAnimation />
+<HomepageTitle />
