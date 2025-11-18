@@ -43,6 +43,7 @@ a {
   &:hover {
     transform: scale(1.05);
     background-color: var(--link-color-active);
+    color: var(--text-color-light);
   }
 }
 
