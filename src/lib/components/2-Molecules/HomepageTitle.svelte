@@ -46,7 +46,11 @@
 
 
 <style>
-
+.frame {
+  position: relative;  /* 🔑 crucial so Header can float around title */
+  width: 100%;
+  height: 100vh;       /* so floating is relative to the viewport */
+}
   section {
     z-index: 1;
     display: grid;
