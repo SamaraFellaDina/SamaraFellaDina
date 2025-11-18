@@ -9,7 +9,7 @@
 <nav
   class="{variant}"
   style="position: absolute; top: 50%; left: 50%; transform: translate({x}px, {y}px);"
->
+  >
   <ul>
     <li><a href="/">contact</a></li>
     <li><a href="/">my work</a></li>
@@ -24,6 +24,6 @@
   z-index: 2;
 }
 .title {
-  color: red;
+  z-index: 3;
 }
 </style>
