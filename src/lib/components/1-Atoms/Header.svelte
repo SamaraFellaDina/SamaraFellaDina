@@ -8,12 +8,14 @@
 
 <nav
   class="{variant}"
-  style="position: absolute; top: 50%; left: 50%; transform: translate({x}px, {y}px);"
-  >
+  style="{variant === 'title'
+    ? 'position: absolute; top: 50%; left: 50%; transform: translate(' + x + 'px, ' + y + 'px);'
+    : ''}"
+>
   <ul>
-    <li><a href="/">contact</a></li>
-    <li><a href="/">my work</a></li>
-    <li><a href="/">about me</a></li>
+    <li><a href="/contact">contact</a></li>
+    <li><a href="/portfolio">my work</a></li>
+    <li><a href="/about-me">about me</a></li>
   </ul>
 </nav>
 
