@@ -6,8 +6,10 @@
 :root {
   /* color */
   --link-color: hsl(125, 100%, 50%);
-  --link-color-active: hsl(125, 58%, 59%);
+  --link-color-active: hsl(231, 100%, 50%);
   --site-background: hsl(62, 100%, 50%);
+  --text-color-light: hsl(0, 9%, 93%);
+  --text-color-dark: hsl(0, 0%, 10%);
 
   /* transition */
   --hover-transition: 250ms ease-in-out;
@@ -27,6 +29,7 @@ html {
   min-height: 100dvh;
   width: 100dvw;
   background-color: var(--site-background);
+  color: var(--text-color-dark);
 }
 
 a {
