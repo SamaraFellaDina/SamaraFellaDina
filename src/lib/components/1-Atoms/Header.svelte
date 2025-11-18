@@ -25,5 +25,6 @@
 }
 .title {
   z-index: 3;
+  font-size: 2rem;
 }
 </style>
