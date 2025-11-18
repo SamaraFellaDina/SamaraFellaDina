@@ -1,8 +1,7 @@
 <script>
   export let variant = "default";
 
-  // random offsets around center
-  let x = Math.random() * 200 - 100; // -100 to +100px
+  let x = Math.random() * 200 - 100; 
   let y = Math.random() * 200 - 100;
 </script>
 
