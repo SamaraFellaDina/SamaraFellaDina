@@ -30,6 +30,7 @@ html {
   width: 100dvw;
   background-color: var(--site-background);
   color: var(--text-color-dark);
+  display: block;
 }
 
 a {

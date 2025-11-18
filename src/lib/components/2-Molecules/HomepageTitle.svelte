@@ -7,7 +7,7 @@
   import { onMount } from "svelte";
 
     // import plugin from gsap
-  gsap.registerPlugin(SplitText);
+  gsap.registerPlugin(SplitText); 
 
   onMount(() => {
     // This will split the text into lines

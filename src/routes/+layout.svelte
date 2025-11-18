@@ -10,7 +10,7 @@
 </script>
 
 <div class="frame">
-  <Header />
+  <Header variant='default'/>
   <main>{@render children?.()}</main>
 
 </div>
@@ -20,10 +20,5 @@
 .frame {
   display: block;
   position: relative;
-
-  @media (min-width: 500px) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  }
 }
 </style>
