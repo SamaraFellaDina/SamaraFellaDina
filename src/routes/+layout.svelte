@@ -9,7 +9,7 @@
     let { children } = $props();
 </script>
 
-<div class="frame">
+<div>
   <Header variant='default'/>
   <main>{@render children?.()}</main>
 
@@ -17,8 +17,5 @@
 
 <style>
 
-.frame {
-  display: block;
-  position: relative;
-}
+
 </style>

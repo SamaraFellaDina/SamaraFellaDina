@@ -13,8 +13,7 @@
     : ''}"
 >
   <a class='logo' href='/'>SamaraFellaDina.</a>
-    <HeaderNavigation />
-  
+    <HeaderNavigation variant={variant}/>
 </header>
 
 <style>
@@ -28,7 +27,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 20px;
 
 
   & .logo {
@@ -40,8 +38,6 @@
   }
 }
 
-.title {
-  z-index: 3;
-  font-size: 2rem;
-}
 </style>
+
+
