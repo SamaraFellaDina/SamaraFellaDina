@@ -47,9 +47,9 @@
 
 <style>
 .frame {
-  position: relative;  /* 🔑 crucial so Header can float around title */
+  position: relative;  
   width: 100%;
-  height: 100vh;       /* so floating is relative to the viewport */
+  height: 100vh;       
 }
   section {
     z-index: 1;
