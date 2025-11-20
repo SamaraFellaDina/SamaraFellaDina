@@ -1,8 +1,15 @@
   <script>
     export let variant;
+
+    let x = Math.random() * 200 - 100; 
+    let y = Math.random() * 200 - 100;
   </script>
   
-  <nav class="{variant}">
+  <nav class="{variant}"
+    style="{variant === 'title'
+    ? 'position: absolute; top: 50%; left: 50%; transform: translate(' + x + 'px, ' + y + 'px);'
+    : ''}"
+    >
     <ul>
       <li><a href="/contact">contact</a></li>
       <li><a href="/portfolio">my work</a></li>
