@@ -1,5 +1,5 @@
 <script>
-  import { BackgroundAnimation, Header } from "$lib/index.js";
+  import { BackgroundAnimation, HeaderNavigation } from "$lib/index.js";
   // folling video: https://www.youtube.com/watch?v=L1afzNAhI40
   // import gsap
   import { gsap } from "gsap";
@@ -33,7 +33,7 @@
 </script>
 
 <BackgroundAnimation>
-  <Header variant='title'/>
+  <HeaderNavigation variant='title'/>
   <section>
     <h1 class="logo">
       <span>Samara</span>
