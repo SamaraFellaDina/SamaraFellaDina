@@ -13,7 +13,6 @@ export const load = async ({ params }) => {
           tags
           date
           location
-          archive
           thumbnail {
             height
             width
