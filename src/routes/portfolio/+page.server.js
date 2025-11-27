@@ -1,4 +1,3 @@
-
 import { gql } from 'graphql-request';
 import { hygraph } from '$lib/hygraph.js';
 
