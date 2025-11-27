@@ -1,7 +1,7 @@
 <script>
-
+  import { page } from '$app/stores';
 </script>
-<h1>
-  Portfolio Page
-</h1>
+<a href="/portfolio">
+  go back
+</a>
 
