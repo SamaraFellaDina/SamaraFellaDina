@@ -15,7 +15,20 @@
   {/each}
 </ul>
 <section>
-  <h2>About</h2>
+  <h2>About this project</h2>
   <p>{caseData.casecontent}</p>
+
+  <h2>References</h2>
+  <ul>
+    {#each caseData.references as reference}
+      <li>
+        <a href="{reference.link}">
+          {reference.titleOfHyperlink}
+        </a>
+      </li>
+    {/each}
+  </ul>
 </section>
+
+
 

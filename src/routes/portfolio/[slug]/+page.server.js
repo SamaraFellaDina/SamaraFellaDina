@@ -13,6 +13,11 @@ export const load = async ({ params }) => {
           tags
           date
           location
+          references {
+            id
+            link
+            titleOfHyperlink
+          }
           thumbnail {
             height
             width
