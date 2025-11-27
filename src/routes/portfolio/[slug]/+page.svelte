@@ -18,16 +18,20 @@
   <h2>About this project</h2>
   <p>{caseData.casecontent}</p>
 
-  <h2>References</h2>
-  <ul>
-    {#each caseData.references as reference}
-      <li>
-        <a href="{reference.link}">
-          {reference.titleOfHyperlink}
-        </a>
-      </li>
-    {/each}
-  </ul>
+  {#if caseData.references.length}
+    <h2>References</h2>
+    <ul>
+
+      {#each caseData.references as reference}
+        <li>
+          <a href="{reference.link}">
+            {reference.titleOfHyperlink}
+          </a>
+        </li>
+      {/each}
+
+    </ul>
+  {/if}
 </section>
 
 
