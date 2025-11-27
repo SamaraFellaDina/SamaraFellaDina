@@ -9,6 +9,7 @@ export const load = async () => {
 				listOfCases {
 					id
 					caseTitle
+					slug
 					casecontent
 					tags
 					date
