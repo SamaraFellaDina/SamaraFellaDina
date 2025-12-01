@@ -1,12 +1,21 @@
 <script>
   export let heroTitle ='input hero title here!';
   export let thumbmail;
+  export let thumbmailHeight = 700;
+  export let thumbmailWidth = 700;
+
 </script>
 
 <div>
 {#if thumbmail}
 <div class="shadow">
-  <img alt="thumbmail" src="{thumbmail}"/>
+  <img 
+  alt="thumbmail" 
+  src="{thumbmail}"
+  height="{thumbmailHeight}"
+  width="{thumbmailWidth}"
+  />
+
 </div>
 {/if}
 <h1>{heroTitle}</h1>
