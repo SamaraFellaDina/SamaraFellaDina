@@ -28,10 +28,11 @@ html {
   overflow-x: hidden;
   min-height: 100dvh;
   width: 100dvw;
-  background-color: var(--site-background);
-  color: var(--text-color-dark);
+  background-color: var(--text-color-dark);
+  color: var(--text-color-light);
   display: block;
 }
+
 
 a {
   text-decoration: none;
