@@ -8,7 +8,7 @@
   .wrapper {
     display: flex;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 4rem;
   }
 
   .wrapper-content {
