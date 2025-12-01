@@ -3,12 +3,8 @@
   export let data
 </script>
 
-
-
 <Wrapper>
-  
   <Hero heroTitle='Portfolio'/>
   <CaseList cases={data.cases} />
-
 </Wrapper>
 
