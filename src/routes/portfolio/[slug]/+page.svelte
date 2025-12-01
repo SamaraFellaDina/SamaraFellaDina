@@ -4,6 +4,10 @@
 
   const caseData = data.cases[0];
 </script>
+
+<div class="wrapper">
+  <div class="wrapper-content">
+
 <a href="/portfolio">
   go back
 </a>
@@ -34,6 +38,24 @@
     </ul>
   {/if}
 </section>
+
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+  }
+
+  .wrapper-content {
+    max-width: 900px;
+    width: 100%;
+  }
+</style>
+
+
 
 
 
