@@ -10,7 +10,12 @@
   <a href="/portfolio">
     go back
   </a>
-  <Hero heroTitle={caseData.caseTitle} thumbmail={caseData.thumbnail?.url}/>
+  <Hero 
+  heroTitle={caseData.caseTitle} 
+  thumbmail={caseData.thumbnail?.url}
+  thumbmailHeight={caseData.thumbnail?.height}
+  thumbmailWidth={caseData.thumbnail?.width}
+  />
   <ul>
     {#each caseData.tags as tag}
       <li>{tag}</li>
