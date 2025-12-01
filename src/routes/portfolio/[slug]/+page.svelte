@@ -1,5 +1,5 @@
 <script>
-  import { MarkDownContent, Wrapper } from '$lib/index.js';
+  import { MarkDownContent, Wrapper, Hero } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
@@ -10,8 +10,7 @@
   <a href="/portfolio">
     go back
   </a>
-
-  <h1>{caseData.caseTitle}</h1>
+  <Hero heroTitle={caseData.caseTitle} thumbmail={caseData.thumbnail?.url}/>
   <ul>
     {#each caseData.tags as tag}
       <li>{tag}</li>
