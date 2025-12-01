@@ -7,7 +7,7 @@
 
 
 {#if thumbmail}
-  <img alt="thumbmail" href="{thumbmail}"/>
+  <img alt="thumbmail" src="{thumbmail}"/>
 {/if}
 
 <h1>{heroTitle}</h1>
