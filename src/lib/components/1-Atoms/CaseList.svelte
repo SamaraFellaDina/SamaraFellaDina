@@ -16,6 +16,9 @@
         width="{caseItem.thumbnail?.width}"
         height="{caseItem.thumbnail?.height}"
         />
+        <section>
+          <h2>{caseItem.caseTitle}</h2>
+        </section>
       </a>
     </li>
   {/each}
