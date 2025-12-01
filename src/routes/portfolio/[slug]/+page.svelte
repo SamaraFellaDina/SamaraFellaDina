@@ -12,9 +12,9 @@
   </a>
   <Hero 
   heroTitle={caseData.caseTitle} 
-  thumbmail={caseData.thumbnail?.url}
-  thumbmailHeight={caseData.thumbnail?.height}
-  thumbmailWidth={caseData.thumbnail?.width}
+  thumbnail={caseData.thumbnail?.url}
+  thumbnailHeight={caseData.thumbnail?.height}
+  thumbnailWidth={caseData.thumbnail?.width}
   />
   <ul>
     {#each caseData.tags as tag}

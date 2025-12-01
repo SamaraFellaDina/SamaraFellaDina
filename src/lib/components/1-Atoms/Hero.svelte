@@ -1,19 +1,19 @@
 <script>
   export let heroTitle ='input hero title here!';
-  export let thumbmail;
-  export let thumbmailHeight = 700;
-  export let thumbmailWidth = 700;
+  export let thumbnail;
+  export let thumbnailHeight = 700;
+  export let thumbnailWidth = 700;
 
 </script>
 
 <div>
-{#if thumbmail}
+{#if thumbnail}
 <div class="shadow">
   <img 
-  alt="thumbmail" 
-  src="{thumbmail}"
-  height="{thumbmailHeight}"
-  width="{thumbmailWidth}"
+  alt="thumbnail" 
+  src="{thumbnail}"
+  height="{thumbnailHeight}"
+  width="{thumbnailWidth}"
   />
 
 </div>
