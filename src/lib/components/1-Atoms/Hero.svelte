@@ -6,7 +6,7 @@
 
 </script>
 
-<div>
+<div class="hero">
 {#if thumbnail}
 <div class="shadow">
   <img 
@@ -22,12 +22,10 @@
 </div>
 
 <style>
-  div {
-    height: 50dvh;
+  .hero {
     display: flex;
     flex-direction:column;
     justify-content:flex-end;
-
 
     & h1 {
     color: var(--link-color);
