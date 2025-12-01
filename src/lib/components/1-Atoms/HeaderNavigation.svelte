@@ -12,7 +12,7 @@
     >
     <ul>
       <li><a href="/contact">contact</a></li>
-      <li><a href="/portfolio">my work</a></li>
+      <li><a href="/portfolio">portfolio</a></li>
       <li><a href="/about-me">about me</a></li>
     </ul>
   </nav>
