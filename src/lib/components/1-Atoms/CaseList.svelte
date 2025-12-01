@@ -10,10 +10,6 @@
   {console.log(caseItem)}
     <li>
       <a href="/portfolio/{caseItem.slug}">
-        <h2>{caseItem.caseTitle}</h2>
-        <p>{caseItem.date}</p>
-        <p>{caseItem.location}</p>
-
         <img 
         src="{caseItem.thumbnail?.url || fallbackImage}"
         alt="thumbnail"
@@ -30,11 +26,38 @@
     list-style:none;
     margin-block:0;
     padding-inline:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  a {
+    display: block;  
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 
+  a::before {
+    content:"";
+    position:absolute;
+    background-color: var(--link-color-active) ;
+    z-index:-1;
+  }
+
+  a::after{
+    content:"";
+    position:absolute;
+    background-color: var(--text-color-dark) ;
+    opacity:60%;
+    z-index:1;
+  }
+
+  a:hover::after {
+    width:100%
+  }
   img {
     width: 100%;
-    height: 15rem;
+    height: 100%;
     object-fit: cover;
   }
 
