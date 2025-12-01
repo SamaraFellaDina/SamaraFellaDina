@@ -1,9 +1,12 @@
 <script>
-  import { MarkDownContent } from '$lib/index.js';
+  import { MarkDownContent, Wrapper } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
 </script>
+
+<Wrapper>
+
 <a href="/portfolio">
   go back
 </a>
@@ -35,5 +38,4 @@
   {/if}
 </section>
 
-
-
+</Wrapper>
