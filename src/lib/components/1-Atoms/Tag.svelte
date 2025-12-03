@@ -16,9 +16,9 @@
     margin-block:0;
     padding-inline:0;
     color:var(--link-color);
-
     display:flex;
-    gap:.8rem;
+    flex-wrap:wrap;
+    gap:.5rem;
   }
   
   li {
