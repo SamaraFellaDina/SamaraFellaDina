@@ -18,7 +18,7 @@
 
 </div>
 {/if}
-<h1>{heroTitle}</h1>}
+<h1>{heroTitle}</h1>
 </div>
 
 <style>
