@@ -1,8 +1,10 @@
 <script>
+  import { Tag } from '$lib/index.js'
   export let heroTitle ='input hero title here!';
   export let thumbnail;
   export let thumbnailHeight = 700;
   export let thumbnailWidth = 700;
+  export let tags;
 
 </script>
 
@@ -19,6 +21,10 @@
 </div>
 {/if}
 <h1>{heroTitle}</h1>
+  {#if Tag}
+  <Tag tags={tags}/>
+  {/if}
+
 </div>
 
 <style>
@@ -27,6 +33,7 @@
     flex-direction:column;
     justify-content:flex-end;
     margin: 2rem 0;
+    gap:1rem;
 
     & h1 {
     color: var(--link-color);

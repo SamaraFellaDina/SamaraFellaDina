@@ -15,8 +15,8 @@
   thumbnail={caseData.thumbnail?.url}
   thumbnailHeight={caseData.thumbnail?.height}
   thumbnailWidth={caseData.thumbnail?.width}
+  tags={caseData.tags}
   />
-  <Tag tags={caseData.tags}/>
 
   <section>
     <h2>About this project</h2>
