@@ -2,7 +2,6 @@
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
   const fallbackImage = "https://preview.redd.it/random-question-but-does-anyone-have-versions-of-this-cat-v0-ya8qikz9kn0f1.png?auto=webp&s=c2fdba9a3904ab3bec9e7367e380f66343c2929a"
-
 </script>
 
 <ul>
@@ -16,9 +15,7 @@
         width="{caseItem.thumbnail?.width}"
         height="{caseItem.thumbnail?.height}"
         />
-        <section>
-          <h2>{caseItem.caseTitle}</h2>
-        </section>
+        <h2>{caseItem.caseTitle}</h2>
       </a>
     </li>
   {/each}
@@ -38,6 +35,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    text-align: center;
   }
 
   a::before {
@@ -49,19 +47,33 @@
 
   a::after{
     content:"";
-    position:absolute;
+    position: absolute;
     background-color: var(--text-color-dark) ;
-    opacity:60%;
+    opacity:80%;
+    width:100;
+    height:100;
     z-index:1;
   }
 
   a:hover::after {
     width:100%
+    
   }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
   }
-
+  a h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    margin: 0;
+    color: white;
+    pointer-events: none;
+    opacity:0;
+  }
 </style>
