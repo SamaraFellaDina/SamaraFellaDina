@@ -74,6 +74,5 @@
     margin: 0;
     color: white;
     pointer-events: none;
-    opacity:0;
   }
 </style>
