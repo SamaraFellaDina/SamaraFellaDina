@@ -16,12 +16,8 @@
   thumbnailHeight={caseData.thumbnail?.height}
   thumbnailWidth={caseData.thumbnail?.width}
   />
-  <ul>
-    {#each caseData.tags as tag}
-      <Tag>{tag}</Tag>
-      
-    {/each}
-  </ul>
+  <Tag tags={caseData.tags}/>
+
   <section>
     <h2>About this project</h2>
 
