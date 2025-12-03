@@ -22,14 +22,16 @@
 </ul>
 
 <style>
-  ul {
-    list-style:none;
-    margin-block:0;
-    padding-inline:0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
+ul {
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+  
   a {
     display: block;  
     width: 100%;
