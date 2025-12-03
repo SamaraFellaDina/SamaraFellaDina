@@ -1,5 +1,5 @@
 <script>
-  import { MarkDownContent, Wrapper, Hero } from '$lib/index.js';
+  import { MarkDownContent, Wrapper, Hero, Tag } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
@@ -18,7 +18,8 @@
   />
   <ul>
     {#each caseData.tags as tag}
-      <li>{tag}</li>
+      <Tag>{tag}</Tag>
+      
     {/each}
   </ul>
   <section>
