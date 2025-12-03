@@ -18,7 +18,7 @@
 
 </div>
 {/if}
-<h1>{heroTitle}</h1>
+<h1>{heroTitle}</h1>}
 </div>
 
 <style>
@@ -26,6 +26,7 @@
     display: flex;
     flex-direction:column;
     justify-content:flex-end;
+    margin: 2rem 0;
 
     & h1 {
     color: var(--link-color);
@@ -35,6 +36,7 @@
     font-size: 5rem;
     font-weight: 900;
     margin-block:0;
+    line-height: 4.5rem;
     }
   }
 
