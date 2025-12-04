@@ -19,24 +19,10 @@
   />
 
   <section>
-    <h2>About this project</h2>
-
-    <MarkDownContent content={caseData.casecontent} />
-
-    {#if caseData.references.length}
-      <h2>References</h2>
-      <ul>
-
-        {#each caseData.references as reference}
-          <li>
-            <a href="{reference.link}">
-              {reference.titleOfHyperlink}
-            </a>
-          </li>
-        {/each}
-
-      </ul>
-    {/if}
+    <MarkDownContent 
+    content={caseData.casecontent} 
+    references={caseData.references}
+    />
   </section>
 
 </Wrapper>
