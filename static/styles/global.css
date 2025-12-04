@@ -33,6 +33,12 @@ html {
   display: block;
 }
 
+p,
+a,
+li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
 
 a {
   text-decoration: none;
@@ -74,8 +80,4 @@ a {
     color: var(--text-color-light);
     transition-delay: 100ms;
   }
-}
-
-p {
-  font-size: 1.2rem;
 }
