@@ -23,7 +23,7 @@
   
   li {
     border: .2em solid var(--link-color);
-    border-radius:1rem;
+    border-radius:var(--border-radius);    
     padding: .5rem .8rem;
   }
 </style>

@@ -17,6 +17,7 @@
 
   /* utils */
   --margin-block: 2rem;
+  --border-radius:1rem;
 }
 
 * {

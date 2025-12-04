@@ -33,6 +33,7 @@
       width:100%;
       height:auto;
       margin-block:var(--margin-block);
+      border-radius:var(--border-radius);
     }
   }
 </style>
