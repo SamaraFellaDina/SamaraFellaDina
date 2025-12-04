@@ -29,11 +29,10 @@
 
 
   :global(.markdown) {
-
-    & p,
-    li
-    a {
-    color:red;
+    & img {
+      width:100%;
+      height:auto;
+      margin-block:var(--margin-block);
     }
   }
 </style>
