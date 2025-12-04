@@ -2,7 +2,7 @@
   import { marked } from 'marked';
   export let content;
   export let references
-  console.log(references)
+  (references)
 
 </script>
 
