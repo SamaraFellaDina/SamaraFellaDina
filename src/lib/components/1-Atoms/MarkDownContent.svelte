@@ -10,7 +10,7 @@
   {@html marked(content)}
 
 
-  {#if references}
+  {#if references.length}
     <h2>References</h2>
     <ul>
       {#each references as reference}
