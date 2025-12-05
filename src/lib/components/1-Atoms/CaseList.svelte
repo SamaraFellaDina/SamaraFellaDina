@@ -46,6 +46,12 @@ ul li a {
   transition:var(--transition)
   }
 
+ul li a:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+
+
   ul li a img {
 
     width: inherit;
