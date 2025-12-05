@@ -66,11 +66,11 @@ p {
 
 
 a {
-  color: var(--link-color);
-  text-decoration:none;
-  font-style:italic;
-  transition: 150ms 0ms ease-in;
-
+  text-decoration: none;
+  color :var(--text-color-dark);
+  font-weight: 600;
+  position: relative;
+  
   &:visited {
     color: var(--link-color-visited);
   }

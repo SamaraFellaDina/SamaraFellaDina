@@ -18,6 +18,53 @@
   </nav>
 
   <style>
+a {
+  z-index: 1;
+    &:visited {
+      color :var(--text-color-dark);
+  }
+
+  &:hover{
+      color :var(--text-color-dark);
+    text-decoration:none;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--link-color); 
+    z-index: -2; 
+  }
+
+  &::after {
+    content: "";
+    color:var(--text-color-light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--link-color-active); 
+    transition: var(--hover-transition);
+    z-index: -1; 
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: var(--text-color-light);
+    transition-delay: 100ms;
+  }
+}
+
+
+
 
 
 .default ul,
@@ -58,46 +105,6 @@
   }
 }
 
-a {
-  text-decoration: none;
-  color:var(--text-color-dark);
-  font-weight: 600;
 
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--link-color); 
-    z-index: -2; 
-  }
-
-  &::after {
-    content: "";
-    color:var(--text-color-light);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: var(--link-color-active); 
-    transition: var(--hover-transition);
-    z-index: -1; 
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
-
-  &:hover {
-    color: var(--text-color-light);
-    transition-delay: 100ms;
-  }
-}
 
   </style>
