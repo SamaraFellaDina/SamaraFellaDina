@@ -53,9 +53,8 @@ ul li a {
 
   ul li a h2 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 0;
     z-index:1;
     margin: 0;
     color:white;
