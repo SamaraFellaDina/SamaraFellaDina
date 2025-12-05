@@ -8,13 +8,13 @@
   {#each listOfCases as caseItem}
     <li>
       <a href="/portfolio/{caseItem.slug}">
+        <h2>{caseItem.caseTitle}</h2>
         <img 
         src="{caseItem.thumbnail?.url || fallbackImage}"
         alt="thumbnail"
         width="{caseItem.thumbnail?.width}"
         height="{caseItem.thumbnail?.height}"
         />
-        <h2>{caseItem.caseTitle}</h2>
       </a>
     </li>
   {/each}
@@ -27,54 +27,38 @@ ul {
   padding-inline: 0;
   display:flex;
   gap: 2rem;
+  position: relative;
 }
 
-li {
+ul li {
   width: 100%;
-  height: fit-content;
+  height: 100%;
+
+
 }
-  a {
-    display: flex;  
+ul li a {
+  display: flex;  
+  text-align: center;
+  width:100%;
+  height:100%;
+  }
+
+  ul li a img {
     position: relative;
-    text-align: center;
-    background-color:none;  
-  }
-
-  a::before {
-    content:"";
-    position:absolute;
-    background-color: var(--link-color-active) ;
-    z-index:-1;
-  }
-
-  a::after{
-    content:"";
-    position: absolute;
-
-    opacity:80%;
-    width:100;
-    height:100;
-    z-index:1;
-  }
-
-  a:hover::after {
-    width:100%
-    
-  }
-  img {
-    width: 100%;
-    height: auto;
+    width: inherit;
+    height: inherit;
     object-fit: cover;
     border-radius:var(--border-radius);
   }
-  a h2 {
+
+  ul li a h2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index:1;
     margin: 0;
-    color: white;
-    pointer-events: none;
+    color:white;
   }
-</style>
+
+</style> 
