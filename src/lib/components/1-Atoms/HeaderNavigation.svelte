@@ -39,7 +39,7 @@ nav ul li a {
   background-color: var(--link-color);
   display: flex;
   width:fit-content;
- 
+
 
   &:hover {
     background-color: var(--link-color-active); 
@@ -56,14 +56,18 @@ nav ul li a {
   }
 
   & ul li a {
+    --padding-inline:1rem;
     height: 100%;
     align-items: center; 
-    padding: 0 1rem;
-
+    padding-inline: var(--padding-inline)
   }
+
+  & ul li:last-child a {
+    padding-inline-end:calc(var(--padding-inline)*2)
 }
-.title {
 }
+
+
   </style>
 
 
