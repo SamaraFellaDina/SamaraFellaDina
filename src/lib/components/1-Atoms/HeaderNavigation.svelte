@@ -17,7 +17,57 @@
     </ul>
   </nav>
 
+
   <style>
+  nav {
+    z-index:2;
+  }
+
+  nav ul {
+  list-style: none;
+  z-index: 2;
+  margin-block:0;
+  padding-inline:0;
+}
+
+nav ul li {
+  height:100%;
+}
+
+nav ul li a {
+  color :var(--text-color-dark);
+  background-color: var(--link-color); 
+
+  &:hover {
+    background-color: var(--link-color-active); 
+    color: hsl(56.26deg 100% 50%);
+  }
+}
+
+.default{
+  height:100%;
+
+  & ul {
+    display:flex;
+    height:100%;
+  }
+
+  & ul li a {
+    display: flex;
+    height: 100%;
+    align-items: center; 
+    padding: 0 1rem;
+
+  }
+}
+.title {
+
+}
+  </style>
+
+
+
+  <!-- <style>
 a {
   z-index: 1;
     &:visited {
@@ -107,4 +157,4 @@ a {
 
 
 
-  </style>
+  </style> -->

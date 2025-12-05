@@ -70,14 +70,13 @@ a {
   color :var(--text-color-dark);
   font-weight: 600;
   position: relative;
-  
+
   &:visited {
     color: var(--link-color-visited);
   }
 
   &:hover{
     color: var(--link-color-hover);
-    text-decoration:underline;
 
   }
 }
