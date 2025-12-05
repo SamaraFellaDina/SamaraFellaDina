@@ -6,6 +6,9 @@
 :root {
   /* color */
   --link-color: hsl(125, 100%, 50%);
+  --link-color-visited:hsl(83, 89%, 65%);
+  --link-color-hover:hsl(314, 100%, 53%);
+
   --link-color-active: hsl(231, 100%, 50%);
   --site-background: hsl(62, 100%, 50%);
   --text-color-light: hsl(0, 9%, 93%);
@@ -18,6 +21,11 @@
   /* utils */
   --margin-block: 1.5rem;
   --border-radius:1rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 * {
