@@ -57,7 +57,7 @@
     box-shadow: inset 0 0 15px 20px var(--text-color-dark);
   }
     img {
-    height:40dvh;
+    height:fit-content;
     width:100%;
     object-fit:cover;
   }
