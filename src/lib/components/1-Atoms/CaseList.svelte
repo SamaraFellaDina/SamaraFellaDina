@@ -6,7 +6,6 @@
 
 <ul>
   {#each listOfCases as caseItem}
-  {(caseItem)}
     <li>
       <a href="/portfolio/{caseItem.slug}">
         <img 
