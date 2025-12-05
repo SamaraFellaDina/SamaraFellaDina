@@ -33,7 +33,7 @@
     & img {
       width:100%;
       height:auto;
-      margin-block:var(--margin-block);
+      margin-block:calc(var(--margin-block)*3);
       border-radius:var(--border-radius);
     }
   }
