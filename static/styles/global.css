@@ -16,7 +16,7 @@
 
   /* transition */
   --hover-transition: 250ms ease-in-out;
-  --transition: 400ms ease-in-out;
+  --transition: 200ms ease-in-out;
 
   /* utils */
   --margin-block: 1.5rem;
