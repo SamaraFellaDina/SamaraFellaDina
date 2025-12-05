@@ -44,6 +44,7 @@ html {
   color: var(--text-color-light);
   display: block;
 }
+
   h1,
   h2,
   h3,
@@ -53,11 +54,15 @@ html {
     margin-block-start: 3rem;
   }
 
+ul {
+  padding-inline-start: 2rem;
+}
+
 p,
 a,
 li {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
 }
 
 p {
