@@ -15,7 +15,6 @@
         height="{caseItem.thumbnail?.height}"
         />
         <h2>{caseItem.caseTitle}</h2>
-
       </a>
     </li>
   {/each}
@@ -48,12 +47,10 @@ ul li a {
 
 ul li a:hover {
   transform: scale(1.1) rotate(3deg);
+  text-decoration:none;
 }
 
-
-
   ul li a img {
-
     width: inherit;
     height: inherit;
     object-fit: cover;
