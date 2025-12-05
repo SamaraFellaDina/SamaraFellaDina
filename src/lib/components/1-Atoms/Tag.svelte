@@ -18,7 +18,7 @@
     color:var(--link-color);
     display:flex;
     flex-wrap:wrap;
-    gap:.5rem;
+    gap:1rem;
   }
   
   li {
