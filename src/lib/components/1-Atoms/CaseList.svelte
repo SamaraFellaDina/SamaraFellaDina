@@ -8,13 +8,14 @@
   {#each listOfCases as caseItem}
     <li>
       <a href="/portfolio/{caseItem.slug}">
-        <h2>{caseItem.caseTitle}</h2>
         <img 
         src="{caseItem.thumbnail?.url || fallbackImage}"
         alt="thumbnail"
         width="{caseItem.thumbnail?.width}"
         height="{caseItem.thumbnail?.height}"
         />
+        <h2>{caseItem.caseTitle}</h2>
+
       </a>
     </li>
   {/each}
@@ -38,23 +39,22 @@ ul li {
 }
 ul li a {
   display: flex;  
+  flex-direction:column;
   text-align: center;
   width:100%;
   height:100%;
+  transition:var(--transition)
   }
 
   ul li a img {
-    position: relative;
+
     width: inherit;
     height: inherit;
     object-fit: cover;
-    border-radius:var(--border-radius);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 
   ul li a h2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     z-index:1;
     margin: 0;
     color:white;
