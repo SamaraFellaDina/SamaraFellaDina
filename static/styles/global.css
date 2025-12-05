@@ -76,7 +76,7 @@ a {
   }
 
   &:hover{
-    color: var(--link-color-hover);
-
+    color: var(--site-background);
+    text-decoration:underline;
   }
 }
