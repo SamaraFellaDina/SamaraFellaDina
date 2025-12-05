@@ -67,7 +67,7 @@ p {
 
 a {
   text-decoration: none;
-  color :var(--text-color-dark);
+  color :var(--link-color);
   font-weight: 600;
   position: relative;
 
