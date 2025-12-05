@@ -62,9 +62,13 @@ nav ul li a {
     padding-inline: var(--padding-inline)
   }
 
-  & ul li:last-child a {
-    padding-inline-end:calc(var(--padding-inline)*2)
+    & ul li:last-child a {
+      padding-inline-end:calc(var(--padding-inline)*2)
+  }
 }
+
+.title a{
+  font-size:1.5rem;
 }
 
 
