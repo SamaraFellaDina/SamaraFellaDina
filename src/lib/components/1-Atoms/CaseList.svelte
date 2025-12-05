@@ -58,6 +58,12 @@ ul li a {
     z-index:1;
     margin: 0;
     color:white;
+    padding: 1rem;
+    background: black;
+    width: 100%;
+    text-align: left;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    font-size:1.3rem;
   }
 
 </style> 
