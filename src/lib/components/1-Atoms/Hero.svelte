@@ -49,16 +49,20 @@
 
   .shadow {
     position: relative;
+    box-shadow: 0 0 50px 50px var(--text-color-dark);
+
   }
   .shadow::after {
     content: "";
     position: absolute;
     inset: 0;
-    box-shadow: inset 0 0 15px 20px var(--text-color-dark);
+    box-shadow: inset 0 0 20px 20px var(--text-color-dark);
+
   }
     img {
     height:fit-content;
     width:100%;
     object-fit:cover;
+    border-radius:var(--border-radius);
   }
 </style>
