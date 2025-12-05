@@ -36,7 +36,10 @@ nav ul li {
 
 nav ul li a {
   color :var(--text-color-dark);
-  background-color: var(--link-color); 
+  background-color: var(--link-color);
+  display: flex;
+  width:fit-content;
+ 
 
   &:hover {
     background-color: var(--link-color-active); 
@@ -53,7 +56,6 @@ nav ul li a {
   }
 
   & ul li a {
-    display: flex;
     height: 100%;
     align-items: center; 
     padding: 0 1rem;
@@ -61,7 +63,6 @@ nav ul li a {
   }
 }
 .title {
-
 }
   </style>
 
