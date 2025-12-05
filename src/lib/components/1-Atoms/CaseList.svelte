@@ -58,7 +58,7 @@ ul li a {
     z-index:1;
     margin: 0;
     color:white;
-    padding: 1rem;
+    padding: .5rem 1rem;
     background: black;
     width: 100%;
     text-align: left;
