@@ -25,19 +25,19 @@ ul {
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display:flex;
   gap: 2rem;
 }
 
 li {
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
   a {
-    display: block;  
+    display: flex;  
     position: relative;
     text-align: center;
+    background-color:none;  
   }
 
   a::before {
@@ -50,7 +50,7 @@ li {
   a::after{
     content:"";
     position: absolute;
-    background-color: var(--text-color-dark) ;
+
     opacity:80%;
     width:100;
     height:100;
@@ -65,7 +65,7 @@ li {
     width: 100%;
     height: auto;
     object-fit: cover;
-    
+    border-radius:var(--border-radius);
   }
   a h2 {
     position: absolute;
