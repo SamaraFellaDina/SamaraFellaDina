@@ -7,7 +7,5 @@ export { default as Hero } from './components/1-Atoms/Hero.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
 
-
 export { default as HomepageTitle } from './components/2-Molecules/HomepageTitle.svelte';
 export { default as Header } from './components/2-Molecules/Header.svelte';
-

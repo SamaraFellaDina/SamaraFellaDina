@@ -1,7 +1,7 @@
 <script>
-  import { Hero, Wrapper } from '$lib/index.js'
+	import { Hero, Wrapper } from '$lib/index.js';
 </script>
 
 <Wrapper>
-  <Hero heroTitle="contact"/>
+	<Hero heroTitle="contact" />
 </Wrapper>

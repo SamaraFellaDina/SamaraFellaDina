@@ -1,21 +1,18 @@
 <script>
-    import { Header } from "$lib/index.js";
-    /**
-     * @typedef {Object} Props
-     * @property {import('svelte').Snippet} [children]
-     */
+	import { Header } from '$lib/index.js';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
 
-    /** @type {Props} */
-    let { children } = $props();
+	/** @type {Props} */
+	let { children } = $props();
 </script>
 
 <div>
-  <Header variant='default'/>
-  <main>{@render children?.()}</main>
-
+	<Header variant="default" />
+	<main>{@render children?.()}</main>
 </div>
 
 <style>
-
-
 </style>
