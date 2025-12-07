@@ -1,7 +1,7 @@
 <script>
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
-  const fallbackImage = "https://preview.redd.it/random-question-but-does-anyone-have-versions-of-this-cat-v0-ya8qikz9kn0f1.png?auto=webp&s=c2fdba9a3904ab3bec9e7367e380f66343c2929a"
+  const fallbackImage = "/images/fallback.jpg"
 </script>
 
 <ul>
