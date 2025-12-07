@@ -6,6 +6,9 @@
 :root {
   /* color */
   --link-color: hsl(125, 100%, 50%);
+  --link-color-visited:hsl(83, 89%, 65%);
+  --link-color-hover:hsl(314, 100%, 53%);
+
   --link-color-active: hsl(231, 100%, 50%);
   --site-background: hsl(62, 100%, 50%);
   --text-color-light: hsl(0, 9%, 93%);
@@ -13,7 +16,16 @@
 
   /* transition */
   --hover-transition: 250ms ease-in-out;
-  --transition: 400ms ease-in-out;
+  --transition: 200ms ease-in-out;
+
+  /* utils */
+  --margin-block: 1.5rem;
+  --border-radius:1rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 * {
@@ -28,53 +40,48 @@ html {
   overflow-x: hidden;
   min-height: 100dvh;
   width: 100dvw;
-  background-color: var(--site-background);
-  color: var(--text-color-dark);
+  background-color: var(--text-color-dark);
+  color: var(--text-color-light);
   display: block;
 }
 
-a {
-  text-decoration: none;
-  color:var(--text-color-dark);
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--link-color); 
-    z-index: -2; 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-block-start: 3rem;
   }
 
-  &::after {
-    content: "";
-    color:var(--text-color-light);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: var(--link-color-active); 
-    transition: var(--hover-transition);
-    z-index: -1; 
-  }
+ul {
+  padding-inline-start: 2rem;
+}
 
-  &:hover::after {
-    width: 100%;
-  }
-
-  &:hover {
-    color: var(--text-color-light);
-    transition-delay: 100ms;
-  }
+p,
+a,
+li {
+  font-size: 1.2rem;
+  line-height: 2.3rem;
 }
 
 p {
-  font-size: 1.2rem;
+  margin-block:var(--margin-block);
+}
+
+
+a {
+  text-decoration: none;
+  color :var(--link-color);
+  font-weight: 600;
+  position: relative;
+
+  &:visited {
+    color: var(--link-color-visited);
+  }
+
+  &:hover{
+    color: var(--site-background);
+    text-decoration:underline;
+  }
 }

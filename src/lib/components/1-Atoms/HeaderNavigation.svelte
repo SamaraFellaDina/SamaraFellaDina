@@ -12,49 +12,63 @@
     >
     <ul>
       <li><a href="/contact">contact</a></li>
-      <li><a href="/portfolio">my work</a></li>
+      <li><a href="/portfolio">portfolio</a></li>
       <li><a href="/about-me">about me</a></li>
     </ul>
   </nav>
 
+
   <style>
+  nav {
+    z-index:2;
+  }
 
-
-.default ul,
-.title ul {
+  nav ul {
   list-style: none;
   z-index: 2;
   margin-block:0;
   padding-inline:0;
 }
 
-.title {
-  display: block;
-  position: relative;
-  z-index: 3;
-  font-size: 2rem;
+nav ul li {
+  height:100%;
 }
 
-.default {
-  height: 100%;
+nav ul li a {
+  color :var(--text-color-dark);
+  background-color: var(--link-color);
+  display: flex;
+  width:fit-content;
 
-  &  ul {
-    display: flex;
-    justify-content: flex-end;
-    height: 100%
+  &:hover {
+    background-color: var(--link-color-active); 
+    color: hsl(56.26deg 100% 50%);
+  }
+}
 
+.default{
+  height:100%;
+
+  & ul {
+    display:flex;
+    height:100%;
   }
 
-  &  ul li {
+  & ul li a {
+    --padding-inline:1rem;
     height: 100%;
+    align-items: center; 
+    padding-inline: var(--padding-inline)
   }
 
-  &  ul li a {
-  display: flex;        
-  align-items: center; 
-  height: 100%;
-  padding: 0 1rem;
+    & ul li:last-child a {
+      padding-inline-end:calc(var(--padding-inline)*2)
   }
 }
+
+.title a{
+  font-size:1.5rem;
+}
+
 
   </style>

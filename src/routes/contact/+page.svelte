@@ -1,3 +1,7 @@
-<h1>
-  contact
-</h1>
+<script>
+  import { Hero, Wrapper } from '$lib/index.js'
+</script>
+
+<Wrapper>
+  <Hero heroTitle="contact"/>
+</Wrapper>

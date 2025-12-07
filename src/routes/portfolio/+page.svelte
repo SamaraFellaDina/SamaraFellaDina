@@ -1,10 +1,10 @@
 <script>
-  import { CaseList } from '$lib/index.js';
+  import { CaseList, Hero, Wrapper } from '$lib/index.js';
   export let data
 </script>
-<h1>
-  Portfolio Page
-</h1>
 
-<CaseList cases={data.cases} />
+<Wrapper>
+  <Hero heroTitle='Portfolio'/>
+  <CaseList cases={data.cases} />
+</Wrapper>
 

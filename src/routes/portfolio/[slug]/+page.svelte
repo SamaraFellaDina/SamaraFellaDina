@@ -1,39 +1,28 @@
 <script>
-  import { MarkDownContent } from '$lib/index.js';
+  import { MarkDownContent, Wrapper, Hero, Tag } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
 </script>
-<a href="/portfolio">
-  go back
-</a>
 
-<h1>{caseData.caseTitle}</h1>
-<ul>
-  {#each caseData.tags as tag}
-    <li>{tag}</li>
-  {/each}
-</ul>
-<section>
-  <h2>About this project</h2>
+<Wrapper>
 
-  <MarkDownContent content={caseData.casecontent} />
+  <a href="/portfolio">
+    go back
+  </a>
+  <Hero 
+  heroTitle={caseData.caseTitle} 
+  thumbnail={caseData.thumbnail?.url}
+  thumbnailHeight={caseData.thumbnail?.height}
+  thumbnailWidth={caseData.thumbnail?.width}
+  tags={caseData.tags}
+  />
 
-  {#if caseData.references.length}
-    <h2>References</h2>
-    <ul>
+  <section>
+    <MarkDownContent 
+    content={caseData.casecontent} 
+    references={caseData.references}
+    />
+  </section>
 
-      {#each caseData.references as reference}
-        <li>
-          <a href="{reference.link}">
-            {reference.titleOfHyperlink}
-          </a>
-        </li>
-      {/each}
-
-    </ul>
-  {/if}
-</section>
-
-
-
+</Wrapper>
