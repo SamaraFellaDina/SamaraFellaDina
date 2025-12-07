@@ -15,14 +15,14 @@
     list-style: none;
     margin-block:0;
     padding-inline:0;
-    color:var(--link-color);
+    color:var(--color-primary);
     display:flex;
     flex-wrap:wrap;
     gap:1rem;
   }
   
   li {
-    border: .2em solid var(--link-color);
+    border: .2em solid var(--color-primary);
     border-radius:var(--border-radius);    
     padding: .5rem .8rem;
   }

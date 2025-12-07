@@ -35,13 +35,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color :var(--text-color-dark);
-  background-color: var(--link-color);
+  color :var(--color-dark);
+  background-color: var(--color-primary);
   display: flex;
   width:fit-content;
 
   &:hover {
-    background-color: var(--link-color-active); 
+    background-color: var(--color-secondary); 
     color: hsl(56.26deg 100% 50%);
   }
 }

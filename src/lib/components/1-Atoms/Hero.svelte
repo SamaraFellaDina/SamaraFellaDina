@@ -36,7 +36,7 @@
     gap:1rem;
 
     & h1 {
-    color: var(--link-color);
+    color: var(--color-primary);
     font-style:italic;
     letter-spacing: .2rem;
     text-transform:uppercase;
@@ -49,14 +49,14 @@
 
   .shadow {
     position: relative;
-    box-shadow: 0 0 50px 50px var(--text-color-dark);
+    box-shadow: 0 0 50px 50px var(--color-dark);
 
   }
   .shadow::after {
     content: "";
     position: absolute;
     inset: 0;
-    box-shadow: inset 0 0 20px 20px var(--text-color-dark);
+    box-shadow: inset 0 0 20px 20px var(--color-dark);
 
   }
     img {
