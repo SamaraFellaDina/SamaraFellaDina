@@ -1,4 +1,6 @@
 // place files you want to import through the `$lib` alias in this folder.
+
+// Atoms
 export { default as BackgroundAnimation } from './components/1-Atoms/BackgroundAnimation.svelte';
 export { default as HeaderNavigation } from './components/1-Atoms/HeaderNavigation.svelte';
 export { default as CaseList } from './components/1-Atoms/CaseList.svelte';
@@ -7,7 +9,9 @@ export { default as Hero } from './components/2-Molecules/Hero.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
 
-
-export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.svelte';
+// Molecules
 export { default as Header } from './components/2-Molecules/Header.svelte';
+
+// Organisms
+export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.svelte';
 
