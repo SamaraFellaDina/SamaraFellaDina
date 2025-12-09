@@ -39,18 +39,32 @@ ul {
 ul li {
   width: 100%;
   height: 100%;
-
-
 }
 ul li a {
   display: flex;  
   flex-direction:column;
-  text-align: center;
   width:100%;
   height:100%;
-  transition:var(--transition)
+  transition:var(--transition);
+  position: relative;
+
+      @media (min-width: 500px) {
+      & section {
+        opacity: 0;
+
+      }
+    }
   }
 
+ul li a:hover {
+  @media (min-width: 500px) {
+      transform: scale(1.02);
+
+      & section {
+        opacity: 1;
+    }
+  }
+}
 
   ul li a img {
     width: inherit;
@@ -61,6 +75,14 @@ ul li a {
 
   ul li a section {
     display:none;
+    @media (min-width: 500px) {
+      display:block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: var(--border-radius);
+    }
   }
 
 </style> 
