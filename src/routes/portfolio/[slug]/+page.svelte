@@ -3,6 +3,7 @@
   export let data;
 
   const caseData = data.cases[0];
+
 </script>
 
 <Wrapper>
@@ -19,10 +20,15 @@
   />
 
   <section>
-    <MarkDownContent 
-    content={caseData.casecontent} 
-    references={caseData.references}
-    />
+    {#each caseData.paragraphs as paragraph}
+    <details>
+      <summary>{paragraph.subject}</summary>
+      <MarkDownContent content={paragraph.context} />
+    </details>
+      
+    {/each}
   </section>
+
+
 
 </Wrapper>

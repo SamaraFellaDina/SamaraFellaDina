@@ -6,7 +6,7 @@ export const load = async ({ params }) => {
   const query = gql`
     query PortfolioCase {
       portfolios {
-        listOfCases (where: { slug: "${slug}" }){{
+        listOfCases (where: { slug: "${slug}" }){
       id
       caseTitle
       tags
