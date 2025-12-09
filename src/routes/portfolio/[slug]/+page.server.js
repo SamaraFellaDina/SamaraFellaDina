@@ -6,27 +6,31 @@ export const load = async ({ params }) => {
   const query = gql`
     query PortfolioCase {
       portfolios {
-        listOfCases (where: { slug: "${slug}" }){
-          id
-          caseTitle
-          casecontent
-          tags
-          date
-          location
-          references {
-            id
-            link
-            titleOfHyperlink
-          }
-          thumbnail {
-            height
-            width
-            url
-            size
-          }
-        }
+        listOfCases (where: { slug: "${slug}" }){{
+      id
+      caseTitle
+      tags
+      year
+      location
+      summary
+      references {
+        id
+        link
+        titleOfHyperlink
+      }
+      thumbnail {
+        height
+        width
+        url
+        size
+      }
+      paragraphs {
+        context
+        subject
       }
     }
+  }
+}
   `;
 
   const data = await hygraph.request(query);
