@@ -1,5 +1,4 @@
 <script>
-  import { MarkDownContent } from '$lib/index.js';
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
   const fallbackImage = "/images/fallback.jpg"
@@ -17,7 +16,7 @@
         />
         <section>
           <h2>{caseItem.caseTitle}</h2>
-          <MarkDownContent content={caseItem.summary} />
+          <p>{caseItem.summary}</p>
         </section>
       </a>
     </li>
