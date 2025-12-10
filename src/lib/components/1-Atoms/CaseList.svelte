@@ -80,8 +80,9 @@ ul li a:hover {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.6);
       border-radius: var(--border-radius);
+      color: var(--text-color-light);
+      background-color: rgba(0, 0, 0, 0.847);
     }
   }
 
