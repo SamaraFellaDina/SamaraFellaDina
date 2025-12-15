@@ -1,5 +1,5 @@
 <script>
-  import { MarkDownContent, Wrapper, Hero, Tag } from '$lib/index.js';
+  import { MarkDownContent, Wrapper, Hero, Tag, CaseSummary } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
@@ -19,16 +19,7 @@
   tags={caseData.tags}
   />
 
-  <section>
-    {#each caseData.paragraphs as paragraph}
-    <details>
-      <summary>{paragraph.subject}</summary>
-      <MarkDownContent content={paragraph.context} />
-    </details>
-      
-    {/each}
-  </section>
-
+  <CaseSummary summary={caseData.paragraphs} />
 
 
 </Wrapper>
