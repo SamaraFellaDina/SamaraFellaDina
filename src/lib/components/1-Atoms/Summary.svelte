@@ -28,15 +28,17 @@
 }
 
  details summary {
+  --font-size: 1.5rem;
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   list-style: none;
   transition: var(--transition);
-  font-size: 2rem;
+  font-size: var(--font-size);
 }
 [open] summary {
   padding: 1em 0em;
+  font-size: calc(var(--font-size) + 0.5rem);
 }
 
 </style>
