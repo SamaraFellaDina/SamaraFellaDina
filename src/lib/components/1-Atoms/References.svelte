@@ -1,9 +1,11 @@
 <script> 
+  import { Wrapper } from '$lib/index.js';
   export let references;
 </script>
 
 
-  <section>
+<Wrapper backgroundColor="var(--link-color)">
+    <section>
     <h2>references</h2>
     <ul>
     {#each references as reference}
@@ -13,3 +15,12 @@
     {/each}
     </ul>
   </section>
+</Wrapper>
+
+
+  <style> 
+    section, 
+    a {
+      color: var(--text-color-dark);
+    }
+  </style>

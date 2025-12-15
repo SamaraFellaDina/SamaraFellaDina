@@ -31,10 +31,12 @@
   caseSummary={caseData.summary}
   caseParagraphs={caseData.paragraphs} 
   />
+  
 </Wrapper>
-
-
 
   {#if caseData.references.length > 0}
     <References references={caseData.references}/>
   {/if}
+
+
+

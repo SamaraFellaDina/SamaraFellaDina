@@ -1,4 +1,10 @@
-<div class="wrapper">
+<script>
+  export let backgroundColor = 'var(--wrapper-background-color)';
+</script>
+<div 
+  class="wrapper"
+  style="background-color: {backgroundColor};"
+>
   <div class="wrapper-content">
     <slot />
   </div>
@@ -9,6 +15,7 @@
     display: flex;
     justify-content: center;
     padding: 4rem;
+    background-color: var(--wrapper-background-color);
   }
 
   .wrapper-content {
