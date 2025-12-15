@@ -20,7 +20,13 @@
 
   <style> 
     section, 
+    li,
     a {
       color: var(--text-color-dark);
+    }
+
+    section ul {
+      list-style: none;
+      padding-inline:0
     }
   </style>
