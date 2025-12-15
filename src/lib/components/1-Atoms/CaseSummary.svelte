@@ -7,11 +7,13 @@
   <section>
     <Summary 
     summary='Summary'
-    content={caseSummary}/>
+    content={caseSummary}
+    />
     {#each caseParagraphs as paragraph}
     <Summary 
     summary={paragraph.subject} 
     content={paragraph.context}
-    />      
+    /> 
     {/each}
-  </section>
+
+    </section>

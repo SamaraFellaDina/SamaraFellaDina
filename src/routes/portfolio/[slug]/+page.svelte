@@ -1,9 +1,16 @@
 <script>
-  import { MarkDownContent, Wrapper, Hero, Tag, CaseSummary } from '$lib/index.js';
+  import { 
+    MarkDownContent, 
+    Wrapper, 
+    Hero, 
+    Tag, 
+    CaseSummary,
+    References 
+  } from '$lib/index.js';
   export let data;
 
   const caseData = data.cases[0];
-  console.log(caseData);
+  console.log(caseData.references);
 
 </script>
 
@@ -24,6 +31,10 @@
   caseSummary={caseData.summary}
   caseParagraphs={caseData.paragraphs} 
   />
-
-
 </Wrapper>
+
+
+
+  {#if caseData.references.length > 0}
+    <References references={caseData.references}/>
+  {/if}
