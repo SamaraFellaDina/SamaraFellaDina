@@ -3,6 +3,7 @@
   export let data;
 
   const caseData = data.cases[0];
+  console.log(caseData);
 
 </script>
 
@@ -19,7 +20,10 @@
   tags={caseData.tags}
   />
 
-  <CaseSummary summary={caseData.paragraphs} />
+  <CaseSummary 
+  caseSummary={caseData.summary}
+  caseParagraphs={caseData.paragraphs} 
+  />
 
 
 </Wrapper>

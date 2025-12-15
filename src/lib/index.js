@@ -4,6 +4,7 @@ export { default as HeaderNavigation } from './components/1-Atoms/HeaderNavigati
 export { default as CaseList } from './components/1-Atoms/CaseList.svelte';
 export { default as CaseSummary } from './components/1-Atoms/CaseSummary.svelte';
 export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent.svelte';
+export { default as Summary } from './components/1-Atoms/Summary.svelte';
 export { default as Hero } from './components/1-Atoms/Hero.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
