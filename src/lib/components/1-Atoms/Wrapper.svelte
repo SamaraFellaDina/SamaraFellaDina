@@ -4,17 +4,17 @@
 </script>
 
 {#if fullwidth === true}
-<div 
-  class="wrapper-fullwidth"
-  style="background-color: {backgroundColor};"
->
-  <div class="wrapper-content">
-    <slot />
+  <div 
+    class="wrapper-fullwidth"
+    style="background-color: {backgroundColor};"
+  >
+    <div class="wrapper-content">
+      <slot />
+    </div>
   </div>
-</div>
-{/if}
 
-<div 
+  {:else}
+  <div 
   class="wrapper"
   style="background-color: {backgroundColor};"
 >
@@ -22,6 +22,7 @@
     <slot />
   </div>
 </div>
+{/if}
 
 <style>
   .wrapper {
