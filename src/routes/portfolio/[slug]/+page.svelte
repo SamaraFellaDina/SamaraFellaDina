@@ -18,10 +18,11 @@
   thumbnailHeight={caseData.thumbnail?.height}
   thumbnailWidth={caseData.thumbnail?.width}
   tags={caseData.tags}
+  showCase={true}
   />
 
     <CaseAssets assets={caseData.allAssets} />
-    
+
     <CaseSummary 
     caseSummary={caseData.summary}
     caseParagraphs={caseData.paragraphs} 
