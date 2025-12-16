@@ -9,22 +9,23 @@
 </script>
 
 <div class="hero">
-{#if thumbnail}
-<div class="shadow">
-  <img 
-  alt="thumbnail" 
-  src="{thumbnail}"
-  height="{thumbnailHeight}"
-  width="{thumbnailWidth}"
-  />
 
-</div>
-{/if}
-<h1>{heroTitle}</h1>
+  <h1>{heroTitle}</h1>
   {#if Tag}
-  <Tag tags={tags}/>
+    <Tag tags={tags}/>
   {/if}
 
+  {#if thumbnail}
+    <div class="shadow">
+      <img 
+      alt="thumbnail" 
+      src="{thumbnail}"
+      height="{thumbnailHeight}"
+      width="{thumbnailWidth}"
+      />
+    </div>
+  {/if}
+  
 </div>
 
 <style>
