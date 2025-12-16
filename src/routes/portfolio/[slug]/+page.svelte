@@ -21,16 +21,11 @@
   tags={caseData.tags}
   />
 
-  
-
-
-
+  <CaseAssets />
   <CaseSummary 
   caseSummary={caseData.summary}
   caseParagraphs={caseData.paragraphs} 
   />
-
-
   {#if caseData.references.length > 0}
     <References references={caseData.references}/>
   {/if}
