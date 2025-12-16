@@ -4,5 +4,5 @@
 </script>
 
 {#each assets as asset}
-  <img src={asset.url} alt="Case Asset" width="600" />
+  <img src={asset.url} alt={asset.fileName} width="600" />
 {/each}

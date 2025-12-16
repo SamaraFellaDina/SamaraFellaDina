@@ -32,6 +32,7 @@ export const load = async ({ params }) => {
         height
         url
         width
+        fileName
       }
     }
   }
