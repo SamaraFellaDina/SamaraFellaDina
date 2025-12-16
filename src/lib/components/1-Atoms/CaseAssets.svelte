@@ -1,7 +1,6 @@
 <script>
   import { Wrapper } from '$lib/index.js';
   export let assets;
-  console.log(assets);
 </script>
 
 
