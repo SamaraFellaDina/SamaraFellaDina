@@ -18,12 +18,6 @@ export const load = async ({ params }) => {
         link
         titleOfHyperlink
       }
-      thumbnail {
-        height
-        width
-        url
-        size
-      }
       paragraphs {
         context
         subject
