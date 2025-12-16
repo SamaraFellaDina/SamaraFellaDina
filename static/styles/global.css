@@ -45,6 +45,10 @@ html {
   display: block;
 }
 
+img {
+  border-radius:var(--border-radius);
+}
+
   h1,
   h2,
   h3,
