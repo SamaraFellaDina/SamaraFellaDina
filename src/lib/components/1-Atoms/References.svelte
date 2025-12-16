@@ -29,4 +29,9 @@
       list-style: none;
       padding-inline:0
     }
+
+    section ul li a,
+    section h2 {
+      color:var(--link-color-active)
+    }
   </style>
