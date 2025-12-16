@@ -26,8 +26,8 @@
     border-radius:10em;    
     padding: .5rem 1rem;
     font-weight: 600;
-    width: min-content;
-    line-height: 1.3em;
+    width: auto;
     height: fit-content;
+    line-height: 1.3em;
   }
 </style>
