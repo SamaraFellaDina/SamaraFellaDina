@@ -21,7 +21,7 @@
       muted
       preload="metadata"
       playsinline
-      controls
+
     >
       <source src={asset.url} type="video/mp4" />
     </video>
