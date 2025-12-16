@@ -20,6 +20,7 @@
     <video
       autoplay
       muted
+      preload="metadata"
       playsinline
       controls
     >
