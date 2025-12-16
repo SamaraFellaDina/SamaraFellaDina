@@ -13,12 +13,6 @@
   console.log(caseData.references);
 
 </script>
-
-
-
-  <a href="/portfolio">
-    go back
-  </a>
   <Hero 
   heroTitle={caseData.caseTitle} 
   thumbnail={caseData.thumbnail?.url}
