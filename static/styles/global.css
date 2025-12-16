@@ -45,7 +45,8 @@ html {
   display: block;
 }
 
-img {
+img,
+video {
   border-radius:var(--border-radius);
 }
 
