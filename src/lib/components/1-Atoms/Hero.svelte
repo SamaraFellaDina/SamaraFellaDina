@@ -16,14 +16,12 @@
   {/if}
 
   {#if thumbnail}
-    <div class="shadow">
       <img 
       alt="thumbnail" 
       src="{thumbnail}"
       height="{thumbnailHeight}"
       width="{thumbnailWidth}"
       />
-    </div>
   {/if}
   
 </div>
@@ -46,19 +44,6 @@
     margin-block:0;
     line-height: 4.5rem;
     }
-  }
-
-  .shadow {
-    position: relative;
-    box-shadow: 0 0 50px 50px var(--text-color-dark);
-
-  }
-  .shadow::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    box-shadow: inset 0 0 20px 20px var(--text-color-dark);
-
   }
     img {
     height:fit-content;
