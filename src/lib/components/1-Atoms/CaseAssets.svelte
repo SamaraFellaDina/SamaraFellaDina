@@ -65,6 +65,11 @@
 
     @media (min-width: 768px) {
       margin-left: var(--default-space);
+
+          & img, 
+    video {
+      border-radius: var(--border-radius);
+    }
     }
   }
 
@@ -77,6 +82,11 @@
 
       @media (min-width: 768px) {
       margin-right: var(--default-space);
+
+    & img, 
+    video {
+      border-radius: var(--border-radius);
+    }
     }
   }
 
