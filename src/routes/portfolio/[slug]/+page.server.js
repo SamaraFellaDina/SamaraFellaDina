@@ -28,6 +28,11 @@ export const load = async ({ params }) => {
         context
         subject
       }
+      allAssets {
+        height
+        url
+        width
+      }
     }
   }
 }
