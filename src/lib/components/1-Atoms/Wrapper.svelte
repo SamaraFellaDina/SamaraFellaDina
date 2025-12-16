@@ -14,7 +14,7 @@
   .wrapper {
     display: flex;
     justify-content: center;
-    padding: 4rem;
+    padding: 2rem 4rem;
     background-color: var(--wrapper-background-color);
   }
 
