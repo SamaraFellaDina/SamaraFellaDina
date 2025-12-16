@@ -1,5 +1,5 @@
 <script>
-  import { Tag } from '$lib/index.js'
+  import { Tag, Wrapper } from '$lib/index.js'
   export let heroTitle ='input hero title here!';
   export let thumbnail;
   export let thumbnailHeight = 700;
@@ -8,7 +8,8 @@
 
 </script>
 
-<div class="hero">
+<Wrapper>
+  <div class="hero">
 
   <h1>{heroTitle}</h1>
   {#if Tag}
@@ -25,6 +26,8 @@
   {/if}
   
 </div>
+
+</Wrapper>
 
 <style>
   .hero {

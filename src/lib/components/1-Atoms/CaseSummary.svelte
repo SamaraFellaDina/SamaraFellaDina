@@ -1,10 +1,11 @@
 <script>
-  import { Summary } from '$lib/index.js';
+  import { Summary, Wrapper } from '$lib/index.js';
   export let caseParagraphs;
   export let caseSummary = 'Case Summary';
 </script>
 
-  <section>
+<Wrapper>
+    <section>
     <Summary 
     summary='Summary'
     content={caseSummary}
@@ -17,3 +18,5 @@
     {/each}
 
     </section>
+</Wrapper>
+
