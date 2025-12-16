@@ -13,7 +13,7 @@
 
 .default {
   width: 100%;
-  height: 3em;
+  height: 5dvh;
   background-color: var(--text-color-dark);
   padding:0;
   margin:0;
