@@ -49,6 +49,10 @@
 
   ul li {
     --default-space: 4rem;
+
+    @media (min-width: 768px) {
+      --default-space: -4rem;
+    }
   }
 
   ul li:nth-child(odd) {
@@ -58,6 +62,10 @@
     video {
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
+
+    @media (min-width: 768px) {
+      margin-left: var(--default-space);
+    }
   }
 
   ul li:nth-child(even) {
@@ -65,6 +73,10 @@
     & img, 
     video {
       border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+
+      @media (min-width: 768px) {
+      margin-right: var(--default-space);
     }
   }
 
