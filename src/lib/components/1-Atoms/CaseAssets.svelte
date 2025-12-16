@@ -3,10 +3,8 @@
   export let assets;
 </script>
 
-
-  <ul>
-
-
+<Wrapper fullwidth={true}>
+<ul>
   {#each assets as asset}
   <li>
     {#if asset.mimeType.startsWith('image/')}
@@ -33,7 +31,8 @@
 
   {/each}
     </ul>
-
+</Wrapper>
+  
 
 
 <style>
