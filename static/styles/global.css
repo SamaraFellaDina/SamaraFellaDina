@@ -15,7 +15,7 @@
   --text-color-dark: hsl(0, 0%, 10%);
 
   /* transition */
-  --hover-transition: 250ms ease-in-out;
+  --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
 
   /* utils */
@@ -43,6 +43,11 @@ html {
   background-color: var(--text-color-dark);
   color: var(--text-color-light);
   display: block;
+}
+
+img,
+video {
+  border-radius:var(--border-radius);
 }
 
   h1,

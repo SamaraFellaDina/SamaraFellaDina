@@ -1,7 +1,20 @@
 <script>
   export let backgroundColor = 'var(--wrapper-background-color)';
+  export let fullwidth = false;
 </script>
-<div 
+
+{#if fullwidth === true}
+  <div 
+    class="wrapper-fullwidth"
+    style="background-color: {backgroundColor};"
+  >
+    <div class="wrapper-content">
+      <slot />
+    </div>
+  </div>
+
+  {:else}
+  <div 
   class="wrapper"
   style="background-color: {backgroundColor};"
 >
@@ -9,17 +22,35 @@
     <slot />
   </div>
 </div>
+{/if}
 
 <style>
   .wrapper {
     display: flex;
     justify-content: center;
-    padding: 4rem;
+    padding: 2rem 4rem;
     background-color: var(--wrapper-background-color);
   }
 
-  .wrapper-content {
+  .wrapper .wrapper-content {
     max-width: 900px;
     width: 100%;
+  }
+
+  .wrapper-fullwidth {
+    display: flex;
+    justify-content: center;
+    background-color: var(--wrapper-background-color);
+
+    @media (min-width: 768px) {
+    padding: 2rem 4rem;
+    }
+  }
+    .wrapper-fullwidth .wrapper-content {
+    width: 100%;
+
+    @media (min-width: 768px) {
+    max-width: 900px;
+  }
   }
 </style>
