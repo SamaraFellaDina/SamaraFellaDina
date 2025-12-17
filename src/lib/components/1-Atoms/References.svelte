@@ -12,7 +12,7 @@
       <li>
         <a href={reference.link}>
           {reference.titleOfHyperlink}
-          <Icons name="arrow-right" />
+          <Icons icon="arrow-right" />
 
         </a>
       </li>
