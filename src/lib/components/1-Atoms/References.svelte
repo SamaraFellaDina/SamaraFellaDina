@@ -1,5 +1,8 @@
 <script> 
-  import { Wrapper, Icons } from '$lib/index.js';
+  import { 
+    Wrapper, 
+    Icons 
+  } from '$lib/index.js';
   export let references;
 </script>
 

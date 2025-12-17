@@ -1,5 +1,8 @@
 <script>
-  import { Hero, Wrapper } from '$lib/index.js'
+  import { 
+    Hero, 
+    Wrapper 
+    } from '$lib/index.js'
 </script>
 
 <Wrapper>

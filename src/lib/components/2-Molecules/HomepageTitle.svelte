@@ -1,5 +1,8 @@
 <script>
-  import { BackgroundAnimation, HeaderNavigation } from "$lib/index.js";
+  import { 
+    BackgroundAnimation, 
+    HeaderNavigation 
+  } from "$lib/index.js";
   // folling video: https://www.youtube.com/watch?v=L1afzNAhI40
   // import gsap
   import { gsap } from "gsap";

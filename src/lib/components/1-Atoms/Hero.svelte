@@ -1,7 +1,10 @@
 <script>
+  import { 
+    Tag, 
+    Wrapper 
+  } from '$lib/index.js'
   import { onMount } from 'svelte';
   import gsap from 'gsap'
-  import { Tag, Wrapper } from '$lib/index.js'
   export let heroTitle ='input hero title here!';
   export let thumbnail;
   export let thumbnailHeight = 700;
