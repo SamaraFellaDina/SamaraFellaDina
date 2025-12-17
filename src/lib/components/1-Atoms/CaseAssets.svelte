@@ -1,5 +1,5 @@
 <script>
-   Wrapper } from '$lib/index.js';
+  import { Wrapper } from '$lib/index.js';
   export let assets;
 </script>
 
