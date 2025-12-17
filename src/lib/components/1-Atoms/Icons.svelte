@@ -12,8 +12,7 @@
     icon = "undefined",
     width = "30",
     height = "30",
-    color = 'var(--link-color-active)',
-    class: className = 'icon'
+    color = 'currentColor',
   } = $props();
 </script>
   
