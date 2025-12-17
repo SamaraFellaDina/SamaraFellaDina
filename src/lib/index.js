@@ -9,6 +9,7 @@ export { default as CaseAssets } from './components/1-Atoms/CaseAssets.svelte';
 export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent.svelte';
 export { default as Summary } from './components/1-Atoms/Summary.svelte';
 export { default as Hero } from './components/1-Atoms/Hero.svelte';
+export { default as Icons } from './components/1-Atoms/Icons.svelte';
 export { default as References } from './components/1-Atoms/References.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
