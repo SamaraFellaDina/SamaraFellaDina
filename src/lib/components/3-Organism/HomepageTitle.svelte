@@ -49,11 +49,6 @@
 
 
 <style>
-.frame {
-  position: relative;  
-  width: 100%;
-  height: 100vh;       
-}
   section {
     z-index: 1;
     display: grid;
