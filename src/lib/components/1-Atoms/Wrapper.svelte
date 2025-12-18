@@ -3,26 +3,14 @@
   export let fullwidth = false;
 </script>
 
-{#if fullwidth === true}
   <div 
-    class="wrapper-fullwidth"
+    class={fullwidth ? 'wrapper-fullwidth' : 'wrapper'}
     style="background-color: {backgroundColor};"
   >
     <div class="wrapper-content">
       <slot />
     </div>
   </div>
-
-  {:else}
-  <div 
-  class="wrapper"
-  style="background-color: {backgroundColor};"
->
-  <div class="wrapper-content">
-    <slot />
-  </div>
-</div>
-{/if}
 
 <style>
   .wrapper {
