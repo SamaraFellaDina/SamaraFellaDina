@@ -18,3 +18,6 @@ export { default as Tag } from './components/1-Atoms/Tag.svelte';
 export { default as HomepageTitle } from './components/2-Molecules/HomepageTitle.svelte';
 export { default as Header } from './components/2-Molecules/Header.svelte';
 
+
+// Pages
+export { default as Cases } from './components/5-Pages/Cases.svelte';
