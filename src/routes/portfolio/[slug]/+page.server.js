@@ -10,8 +10,6 @@ export const load = async ({ params }) => {
       id
       caseTitle
       tags
-      year
-      location
       summary
       references {
         id
