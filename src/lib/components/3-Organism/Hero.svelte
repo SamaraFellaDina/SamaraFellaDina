@@ -28,42 +28,20 @@
 </script>
 
 <Wrapper>
-
-  {#if showCase === true}
-      <div class="hero-showcase">
-      <h1>{heroTitle}</h1>
-      {#if Tag}
+  <div class={showCase ? 'hero-showcase' : 'hero'}>
+    <h1>{heroTitle}</h1>
+    {#if Tag}
       <Tag tags={tags}/>
-      {/if}
-      {#if thumbnail}
+    {/if}
+    {#if thumbnail}
         <img 
         alt="thumbnail" 
         src="{thumbnail}"
         height="{thumbnailHeight}"
         width="{thumbnailWidth}"
         />
-      {/if}
-      </div>
-
-  {:else}
-      <div class="hero">
-      <h1>{heroTitle}</h1>
-      {#if Tag}
-      <Tag tags={tags}/>
-      {/if}
-      {#if thumbnail}
-        <img 
-        alt="thumbnail" 
-        src="{thumbnail}"
-        height="{thumbnailHeight}"
-        width="{thumbnailWidth}"
-        />
-      {/if}
-      </div>
-  {/if}
-
-
-
+    {/if}
+  </div>
 </Wrapper>
 
 <style>
