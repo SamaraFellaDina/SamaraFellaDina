@@ -4,11 +4,12 @@
     HeaderNavigation 
   } from "$lib/index.js";
   import { onMount } from "svelte";
-  import { gsap } from "gsap";
-  import { SplitText } from "gsap/SplitText";
 
+  onMount(async () => {
+    const module = await import ('gsap')
+    const gsap = module.gsap;
+    const SplitText = (await import('gsap/SplitText')).SplitText;
 
-  onMount(() => {
     gsap.registerPlugin(SplitText);
 
     const split = new SplitText(".logo", {
