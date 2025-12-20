@@ -13,7 +13,7 @@
   --site-background: hsl(62, 100%, 50%);
   --text-color-light: hsl(0, 9%, 93%);
   --text-color-dark: hsl(0, 0%, 10%);
-  --color-shadow: hsla(0, 0%, 10%, 0.9);
+  --color-shadow: hsla(0, 0%, 10%, 0.95);
 
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
@@ -68,7 +68,7 @@ p,
 a,
 li {
   font-size: 1rem;
-    line-height: 2rem;
+  line-height: 2rem;
 
     @media (min-width: 768px) {
     font-size: 1.2rem;

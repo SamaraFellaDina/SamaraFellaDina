@@ -44,19 +44,34 @@ ul li a {
   flex-direction:column;
   width:100%;
   height:100%;
-  transition:var(--hover-transition);
   position: relative;
 
       @media (min-width: 500px) {
       & section {
         opacity: 0;
+        padding: 2rem;
+        transition:var(--hover-transition);
+
+
+        & h2 {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          font-weight: 700;
+          margin-block:0;
+        }
+
+        & p {
+          font-size: 1rem;
+          line-height: 2rem;
+          font-weight: 500;
+
+        }
       }
     }
   }
 
 ul li a:hover {
   @media (min-width: 500px) {
-      transform: scale(1.02);
 
       & section {
         opacity: 1;
