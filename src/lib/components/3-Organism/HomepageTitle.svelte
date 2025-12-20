@@ -3,17 +3,14 @@
     BackgroundAnimation, 
     HeaderNavigation 
   } from "$lib/index.js";
-  // folling video: https://www.youtube.com/watch?v=L1afzNAhI40
-  // import gsap
+
   import { gsap } from "gsap";
   import { SplitText } from "gsap/SplitText";
   import { onMount } from "svelte";
 
-    // import plugin from gsap
   gsap.registerPlugin(SplitText); 
 
   onMount(() => {
-    // This will split the text into lines
     let split = SplitText.create(".logo", {
       type: "chars",
     });
