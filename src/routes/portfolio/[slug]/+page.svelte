@@ -1,6 +1,6 @@
 <script>
-  import { Cases } from '$lib/index.js';
+  import { CaseDetail } from '$lib/index.js';
   export let data;
 </script>
 
-<Cases caseData={data.cases[0]}/>
+<CaseDetail caseData={data.cases[0]} />
