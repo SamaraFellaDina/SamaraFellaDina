@@ -3,33 +3,29 @@
     BackgroundAnimation, 
     HeaderNavigation 
   } from "$lib/index.js";
-
+  import { onMount } from "svelte";
   import { gsap } from "gsap";
   import { SplitText } from "gsap/SplitText";
-  import { onMount } from "svelte";
 
-  gsap.registerPlugin(SplitText); 
 
   onMount(() => {
-    let split = SplitText.create(".logo", {
-      type: "chars",
+    gsap.registerPlugin(SplitText);
+
+    const split = new SplitText(".logo", {
+      type: "chars"
     });
 
-
     gsap.from(split.chars, {
-      x:1000,
+      x: 1000,
       duration: 3,
-      stagger: 0.2,
       opacity: 0,
       ease: "elastic.out(1,1)",
-      stagger : {
+      stagger: {
         amount: 0.5,
-        from: "random",
-      },
-    })
+        from: "random"
+      }
+    });
   });
-
-
 </script>
 
 <BackgroundAnimation>
