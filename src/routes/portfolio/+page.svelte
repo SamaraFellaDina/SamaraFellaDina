@@ -3,5 +3,5 @@
   export let data
 </script>
 
-<Cases {data} />
+<Cases caseData={data} />
 

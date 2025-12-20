@@ -4,11 +4,11 @@
     Hero, 
     Wrapper 
   } from '$lib/index.js';
-  export let data
+  export let caseData;
 </script>
 
 <Wrapper>
   <Hero heroTitle='Portfolio'/>
-  <CaseList cases={data.cases} />
+  <CaseList cases={caseData.cases} />
 </Wrapper>
 
