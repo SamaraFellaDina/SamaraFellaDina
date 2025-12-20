@@ -24,7 +24,6 @@
 </ul>
 
 <style>
-
 ul {
   list-style: none;
   margin-block: 0;
@@ -39,8 +38,8 @@ ul li {
   width: 100%;
   height: 100%;
 }
+
 ul li a {
-  --hover-transition: 500ms ease-in-out;
   display: flex;  
   flex-direction:column;
   width:100%;

@@ -15,7 +15,7 @@
   --text-color-dark: hsl(0, 0%, 10%);
 
   /* transition */
-  --hover-transition: 250ms ease-in-out;
+  --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
 
   /* utils */
@@ -45,6 +45,11 @@ html {
   display: block;
 }
 
+img,
+video {
+  border-radius:var(--border-radius);
+}
+
   h1,
   h2,
   h3,
@@ -61,8 +66,13 @@ ul {
 p,
 a,
 li {
-  font-size: 1.2rem;
-  line-height: 2.3rem;
+  font-size: 1rem;
+    line-height: 2rem;
+
+    @media (min-width: 768px) {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    }
 }
 
 p {

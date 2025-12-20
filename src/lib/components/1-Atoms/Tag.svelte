@@ -22,8 +22,12 @@
   }
   
   li {
-    border: .2em solid var(--link-color);
-    border-radius:var(--border-radius);    
-    padding: .5rem .8rem;
+    background-color: var(--link-color-active);
+    border-radius:10em;    
+    padding: .5rem 1rem;
+    font-weight: 600;
+    width: auto;
+    height: fit-content;
+    line-height: 1.3em;
   }
 </style>
