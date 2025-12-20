@@ -1,7 +1,7 @@
 <script>
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
-  const fallbackImage = "/images/fallback.jpg"
+  const fallbackImage = "/images/fallback.jpg";
 </script>
 
 <ul>
@@ -50,7 +50,6 @@ ul li a {
       @media (min-width: 500px) {
       & section {
         opacity: 0;
-
       }
     }
   }
@@ -81,7 +80,7 @@ ul li a:hover {
       height: 100%;
       border-radius: var(--border-radius);
       color: var(--text-color-light);
-      background-color: rgba(0, 0, 0, 0.847);
+      background-color: var(--color-shadow);
     }
   }
 
