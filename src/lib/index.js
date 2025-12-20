@@ -21,7 +21,7 @@ export { default as References } from './components/3-Organism/References.svelte
 export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.svelte';
 
 // Templates
-
+export { default as Cases } from './components/4-Templates/Cases.svelte';
 
 // Pages
-export { default as Cases } from './components/5-Pages/CaseDetail.svelte';
+export { default as CaseDetail } from './components/5-Pages/CaseDetail.svelte';
