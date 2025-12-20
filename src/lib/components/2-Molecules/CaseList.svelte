@@ -49,12 +49,19 @@ ul li a {
   height:100%;
   position: relative;
 
+  & section {
+    display: none
+  }
+
       @media (min-width: 500px) {
       & section {
         opacity: 0;
         padding: 2rem;
         transition:var(--hover-transition);
-
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: bottom;
 
         & h2 {
           font-size: 1.5rem;
