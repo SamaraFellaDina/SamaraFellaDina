@@ -1,27 +1,30 @@
 <script>
+  import { Wrapper } from '$lib/index.js';
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
   const fallbackImage = "/images/fallback.jpg";
 </script>
 
-<ul>
-  {#each listOfCases as caseItem}
-    <li>
-      <a href="/portfolio/{caseItem.slug}">
-        <img 
-        src="{caseItem.thumbnail?.url || fallbackImage}"
-        alt="thumbnail"
-        width="{caseItem.thumbnail?.width}"
-        height="{caseItem.thumbnail?.height}"
-        />
-        <section>
-          <h2>{caseItem.caseTitle}</h2>
-          <p>{caseItem.summary}</p>
-        </section>
-      </a>
-    </li>
-  {/each}
-</ul>
+<Wrapper>
+  <ul>
+    {#each listOfCases as caseItem}
+      <li>
+        <a href="/portfolio/{caseItem.slug}">
+          <img 
+          src="{caseItem.thumbnail?.url || fallbackImage}"
+          alt="thumbnail"
+          width="{caseItem.thumbnail?.width}"
+          height="{caseItem.thumbnail?.height}"
+          />
+          <section>
+            <h2>{caseItem.caseTitle}</h2>
+            <p>{caseItem.summary}</p>
+          </section>
+        </a>
+      </li>
+    {/each}
+  </ul>
+</Wrapper>
 
 <style>
 ul {
