@@ -7,26 +7,29 @@ export const load = async ({ params }) => {
     query PortfolioCase {
       portfolios {
         listOfCases (where: { slug: "${slug}" }){
-          id
-          caseTitle
-          casecontent
-          tags
-          date
-          location
-          references {
-            id
-            link
-            titleOfHyperlink
-          }
-          thumbnail {
-            height
-            width
-            url
-            size
-          }
-        }
+      id
+      caseTitle
+      tags
+      summary
+      references {
+        id
+        link
+        titleOfHyperlink
+      }
+      paragraphs {
+        context
+        subject
+      }
+      allAssets {
+        height
+        url
+        width
+        fileName
+        mimeType
       }
     }
+  }
+}
   `;
 
   const data = await hygraph.request(query);

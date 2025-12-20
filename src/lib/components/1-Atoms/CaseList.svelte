@@ -14,7 +14,10 @@
         width="{caseItem.thumbnail?.width}"
         height="{caseItem.thumbnail?.height}"
         />
-        <h2>{caseItem.caseTitle}</h2>
+        <section>
+          <h2>{caseItem.caseTitle}</h2>
+          <p>{caseItem.summary}</p>
+        </section>
       </a>
     </li>
   {/each}
@@ -26,6 +29,7 @@ ul {
   margin-block: 0;
   padding-inline: 0;
   display:flex;
+  flex-direction: column;
   gap: 2rem;
   position: relative;
 }
@@ -33,40 +37,52 @@ ul {
 ul li {
   width: 100%;
   height: 100%;
-
-
 }
+
 ul li a {
   display: flex;  
   flex-direction:column;
-  text-align: center;
   width:100%;
   height:100%;
-  transition:var(--transition)
+  transition:var(--hover-transition);
+  position: relative;
+
+      @media (min-width: 500px) {
+      & section {
+        opacity: 0;
+
+      }
+    }
   }
 
 ul li a:hover {
-  transform: scale(1.1) rotate(3deg);
-  text-decoration:none;
+  @media (min-width: 500px) {
+      transform: scale(1.02);
+
+      & section {
+        opacity: 1;
+    }
+  }
 }
 
   ul li a img {
     width: inherit;
     height: inherit;
     object-fit: cover;
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border-radius: var(--border-radius);
   }
 
-  ul li a h2 {
-    z-index:1;
-    margin: 0;
-    color:white;
-    padding: .5rem 1rem;
-    background: black;
-    width: 100%;
-    text-align: left;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    font-size:1.3rem;
+  ul li a section {
+    display:none;
+    @media (min-width: 500px) {
+      display:block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      color: var(--text-color-light);
+      background-color: rgba(0, 0, 0, 0.847);
+    }
   }
 
 </style> 

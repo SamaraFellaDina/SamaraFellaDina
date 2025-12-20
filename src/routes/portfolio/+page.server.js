@@ -9,6 +9,7 @@ export const load = async () => {
 					id
 					caseTitle
 					slug
+					summary
 					archive
 					thumbnail {
 						height
