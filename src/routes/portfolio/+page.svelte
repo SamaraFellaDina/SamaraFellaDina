@@ -1,7 +1,5 @@
 <script>
-  import { 
-    Cases
-  } from '$lib/index.js';
+  import { Cases } from '$lib/index.js';
   export let data
 </script>
 
