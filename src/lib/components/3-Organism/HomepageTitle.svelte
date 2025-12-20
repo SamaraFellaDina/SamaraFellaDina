@@ -6,9 +6,8 @@
   import { onMount } from "svelte";
 
   onMount(async () => {
-    const module = await import ('gsap')
-    const gsap = module.gsap;
-    const SplitText = (await import('gsap/SplitText')).SplitText;
+    const { gsap } = await import("gsap");
+    const { SplitText } = await import("gsap/SplitText");
 
     gsap.registerPlugin(SplitText);
 
