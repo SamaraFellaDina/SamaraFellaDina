@@ -24,4 +24,4 @@ export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.
 
 
 // Pages
-export { default as Cases } from './components/5-Pages/Cases.svelte';
+export { default as Cases } from './components/5-Pages/CaseDetail.svelte';
