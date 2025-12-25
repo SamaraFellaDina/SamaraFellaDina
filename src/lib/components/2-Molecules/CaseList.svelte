@@ -57,29 +57,6 @@ ul li a {
   width:100%;
   height:100%;
   position: relative;
-
-  & section {
-    display: none
-  }
-
-      @media (min-width: 1000px) {
-      & section {
-        opacity: 0;
-        padding: 2rem;
-        transition:var(--hover-transition);
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: bottom;
-
-        & h2 {
-          font-size: 1.5rem;
-          line-height: 2.5rem;
-          font-weight: 700;
-          margin-block:0;
-        }
-      }
-    }
   }
 
 ul li a:hover {
@@ -101,6 +78,11 @@ ul li a:hover {
   ul li a section {
     display:none;
     @media (min-width: 1000px) {
+
+      opacity: 0;
+      padding: 2rem;
+      transition:var(--hover-transition);
+
       display:block;
       position: absolute;
       width: 100%;
@@ -109,6 +91,13 @@ ul li a:hover {
       color: var(--text-color-light);
       background-color: var(--color-shadow);
     }
+  }
+
+    ul li a section h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-block:0;
   }
 
 </style> 
