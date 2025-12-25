@@ -16,8 +16,12 @@
   .wrapper {
     display: flex;
     justify-content: center;
-    padding: 2rem 4rem;
+    padding: 2rem;
     background-color: var(--wrapper-background-color);
+
+    @media (min-width: 700px) {
+      padding: 2rem 4rem;
+    }
   }
 
   .wrapper .wrapper-content {
