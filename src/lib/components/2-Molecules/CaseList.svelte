@@ -60,9 +60,10 @@ ul li a {
   }
 
 ul li:hover {
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
+
     &:nth-child(even) {
-      transform:rotate(4deg);
+      transform:rotate(4deg) scale(1.05);
     }
     &:nth-child(odd) {
     transform:rotate(-4deg);
@@ -77,7 +78,7 @@ ul li:hover {
 
   ul li a section {
     display:none;
-    @media (min-width: 1000px) {
+    @media (min-width: 700px) {
 
       opacity: 0;
       padding: 2rem;
