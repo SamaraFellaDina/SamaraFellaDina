@@ -31,10 +31,15 @@ ul {
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
-  display:flex;
-  flex-direction: column;
+  display: grid;
   gap: 2rem;
   position: relative;
+
+  @media (min-width: 700px) {
+    display: block;
+    columns: 2;
+    margin: 2rem;
+  }
 }
 
 ul li {
