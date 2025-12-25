@@ -18,7 +18,6 @@
           />
           <section>
             <h2>{caseItem.caseTitle}</h2>
-            <p>{caseItem.summary}</p>
           </section>
         </a>
       </li>
@@ -78,13 +77,6 @@ ul li a {
           line-height: 2.5rem;
           font-weight: 700;
           margin-block:0;
-        }
-
-        & p {
-          font-size: 1rem;
-          line-height: 2rem;
-          font-weight: 500;
-
         }
       }
     }
