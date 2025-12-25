@@ -22,3 +22,15 @@
       <source src={asset.url} type="video/mp4" />
     </video>
   {/if}
+
+  <style>
+    img, 
+    video {
+    width: 100%;
+    height: auto;
+    max-height:80dvh;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+
+  }
+  </style>
