@@ -107,7 +107,6 @@ ul li:hover {
     line-height: 1.5rem;
     font-weight: 700;
     margin-block:0;
-    text-style:capitalize;
   }
 
 </style> 
