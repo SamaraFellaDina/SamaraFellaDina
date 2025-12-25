@@ -28,23 +28,28 @@
 
 <style>
 ul {
+  --gap-size: 1rem;
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
   display: grid;
-  gap: 2rem;
   position: relative;
+  gap: var(--gap-size);
 
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     display: block;
     columns: 2;
-    margin: 2rem;
   }
 }
 
 ul li {
   width: 100%;
   height: 100%;
+
+  @media (min-width: 1000px) {
+    break-inside: avoid;
+    margin-bottom: var(--gap-size);
+  }
 }
 
 ul li a {
@@ -58,7 +63,7 @@ ul li a {
     display: none
   }
 
-      @media (min-width: 500px) {
+      @media (min-width: 1000px) {
       & section {
         opacity: 0;
         padding: 2rem;
@@ -86,7 +91,7 @@ ul li a {
   }
 
 ul li a:hover {
-  @media (min-width: 500px) {
+  @media (min-width: 1000px) {
 
       & section {
         opacity: 1;
@@ -103,7 +108,7 @@ ul li a:hover {
 
   ul li a section {
     display:none;
-    @media (min-width: 500px) {
+    @media (min-width: 1000px) {
       display:block;
       position: absolute;
       width: 100%;
