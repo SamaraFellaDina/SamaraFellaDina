@@ -46,10 +46,13 @@ html {
   display: block;
 }
 
-img,
-video {
-  border-radius:var(--border-radius);
-}
+  img, 
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
 
   h1,
   h2,

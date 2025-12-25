@@ -26,11 +26,6 @@
   <style>
     img, 
     video {
-    width: 100%;
-    height: auto;
-    max-height:80dvh;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-
+      max-height: 90dvh;
   }
   </style>
