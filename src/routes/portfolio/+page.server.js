@@ -16,6 +16,8 @@ export const load = async () => {
 						width
 						url
 						size
+						fileName
+        		mimeType
 					}
 				}
 			}

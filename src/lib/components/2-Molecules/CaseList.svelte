@@ -1,5 +1,8 @@
 <script>
-  import { Wrapper } from '$lib/index.js';
+  import { 
+    Wrapper,
+    ContentGenerator
+  } from '$lib/index.js';
   export let cases = [];
   const listOfCases = cases?.[0]?.listOfCases ?? [];
   const fallbackImage = "/images/fallback.jpg";
@@ -10,12 +13,7 @@
     {#each listOfCases as caseItem}
       <li>
         <a href="/portfolio/{caseItem.slug}">
-          <img 
-          src="{caseItem.thumbnail?.url || fallbackImage}"
-          alt="thumbnail"
-          width="{caseItem.thumbnail?.width}"
-          height="{caseItem.thumbnail?.height}"
-          />
+          <ContentGenerator asset={caseItem.thumbnail} />
           <section>
             <h2>{caseItem.caseTitle}</h2>
           </section>
@@ -76,12 +74,6 @@ ul li:hover {
   }
 }
 
-  ul li a img {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-  }
 
   ul li a section {
     display:none;
