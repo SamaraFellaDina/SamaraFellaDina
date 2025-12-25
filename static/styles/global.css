@@ -30,7 +30,6 @@
 
 :focus {
   color:var(--color-link-active);
-  border-radius:var(--border-radius);
 }
 
 body,
@@ -44,9 +43,10 @@ html {
   color: var(--text-color-light);
   display: block;
 }
-
 img,
-video {
+img:focus,
+video,
+video:focus {
   border-radius:var(--border-radius);
 }
 
