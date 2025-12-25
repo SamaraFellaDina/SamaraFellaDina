@@ -28,9 +28,9 @@
   font-family: "Inter", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+:focus {
+  color:var(--color-link-active);
+  border-radius:var(--border-radius);
 }
 
 body,
