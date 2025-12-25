@@ -1,8 +1,5 @@
 <script>
-  import { 
-    Wrapper, 
-    ContentGenerator 
-  } from '$lib/index.js';
+  import { Wrapper } from '$lib/index.js';
   export let assets;
 </script>
 
@@ -10,7 +7,26 @@
 <ul>
   {#each assets as asset}
   <li>
-    <ContentGenerator asset={asset} />
+    {#if asset.mimeType.startsWith('image/')}
+      <img 
+        src={asset.url} 
+        alt={asset.fileName} 
+        width={asset.width} 
+        height={asset.height}
+      />
+    {/if}
+
+    {#if asset.mimeType.startsWith('video/')}
+    <video
+      autoplay
+      muted
+      preload="metadata"
+      playsinline
+      loop
+    >
+      <source src={asset.url} type="video/mp4" />
+    </video>
+    {/if}
   </li>
 
   {/each}
@@ -42,16 +58,35 @@
   ul li:nth-child(odd) {
     padding-right: var(--default-space);
 
+    & :global(img),
+    :global(video) {
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+
     @media (min-width: 768px) {
       margin-left: var(--default-space);
+
+        & :global(img),
+        :global(video) {
+      border-radius: var(--border-radius);
+    }
     }
   }
 
   ul li:nth-child(even) {
     padding-left: var(--default-space);
+    & :global(img), 
+    :global(video) {
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
 
       @media (min-width: 768px) {
       margin-right: var(--default-space);
+
+    & :global(img), 
+    :global(video) {
+      border-radius: var(--border-radius);
+    }
     }
   }
 </style>
