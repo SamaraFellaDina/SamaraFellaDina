@@ -22,10 +22,3 @@
       <source src={asset.url} type="video/mp4" />
     </video>
   {/if}
-
-  <style>
-    img, 
-    video {
-      max-height: 90dvh;
-  }
-  </style>
