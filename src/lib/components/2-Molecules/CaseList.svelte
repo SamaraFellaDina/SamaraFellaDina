@@ -44,6 +44,8 @@ ul {
 ul li {
   width: 100%;
   height: 100%;
+  transition:var(--hover-transition);
+
 
   @media (min-width: 1000px) {
     break-inside: avoid;
@@ -59,10 +61,16 @@ ul li a {
   position: relative;
   }
 
-ul li a:hover {
+ul li:hover {
   @media (min-width: 1000px) {
+    &:nth-child(even) {
+      transform:rotate(4deg);
+    }
+    &:nth-child(odd) {
+    transform:rotate(-4deg);
+    }
 
-      & section {
+      & a section {
         opacity: 1;
     }
   }
@@ -83,21 +91,23 @@ ul li a:hover {
       padding: 2rem;
       transition:var(--hover-transition);
 
-      display:block;
+      display: flex; 
+      align-items: flex-end;
       position: absolute;
       width: 100%;
       height: 100%;
       border-radius: var(--border-radius);
-      color: var(--text-color-light);
+      color: var(--link-color);
       background-color: var(--color-shadow);
     }
   }
 
     ul li a section h2 {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     font-weight: 700;
     margin-block:0;
+    text-style:capitalize;
   }
 
 </style> 
