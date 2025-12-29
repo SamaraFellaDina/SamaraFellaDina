@@ -21,12 +21,12 @@
   --text-regular-line-height-s:2rem;
   --text-regular-line-height-m:2.3rem;
 
-
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
 
   /* utils */
+  --padding-regular:1.5rem;
   --margin-block: 1.5rem;
   --border-radius:1rem;
 }

@@ -6,11 +6,11 @@
 <style>
   div {
     z-index: 0;
-    background-color: yellow;
-    background: yellow;
+    background-color: var(--color-tertriary);
+    background: var(--color-tertriary);
     height: 100vh;
     width: 100vw;
-    padding: 1rem;
+    padding: var(--padding-regular);
     display: flex;
     justify-content: center;
     align-items: center;
