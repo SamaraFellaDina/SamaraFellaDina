@@ -10,6 +10,7 @@
   --color-tertriary: hsl(62, 100%, 50%);
   --color-light: hsl(0, 9%, 93%);
   --color-dark: hsl(0, 0%, 10%);
+  --color-shadow:hsla(0, 0%, 10%, 0.9);
   --color-link-visited:hsl(83, 89%, 65%);
 
   /* fonts */

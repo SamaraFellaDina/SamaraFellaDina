@@ -90,7 +90,7 @@ ul li:hover {
       width: 100%;
       height: 100%;
       border-radius: var(--border-radius);
-      color: var(--link-color);
+      color: var(--color-primary);
       background-color: var(--color-shadow);
     }
   }
