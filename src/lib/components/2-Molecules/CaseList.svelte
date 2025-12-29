@@ -33,7 +33,7 @@ ul {
   position: relative;
   gap: var(--gap-size);
 
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
     display: block;
     columns: 2;
   }
@@ -45,7 +45,7 @@ ul li {
   transition:var(--hover-transition);
 
 
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
     break-inside: avoid;
     margin-bottom: var(--gap-size);
   }
