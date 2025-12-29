@@ -14,6 +14,8 @@
 
   /* fonts */
   --font-family-primary: "Inter", sans-serif;
+  --font-weight-medium:600;
+  --font-weight-bold:900;
 
   /* text sizes */  
   --text-regular-size-s:1rem;
@@ -91,7 +93,7 @@ p {
 a {
   text-decoration: none;
   color :var(--color-primary);
-  font-weight: 600;
+  font-weight: var(--font-weight-medium);
   position: relative;
 
   &:visited {
