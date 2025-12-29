@@ -7,7 +7,7 @@
 </script>
 
 
-<Wrapper backgroundColor="var(--link-color)">
+<Wrapper backgroundColor="var(--color-primary)">
     <section>
     <h2>references</h2>
     <ul>
@@ -33,7 +33,7 @@
     section, 
     li,
     a {
-      color: var(--text-color-dark);
+      color: var(--color-dark);
     }
 
     section ul {
@@ -52,13 +52,13 @@
 
     section ul li a:hover {
       gap: .5rem;
-      background-color: var(--link-color-active);
-      color: var(--link-color);
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
       padding: .2rem .4rem;
     }
 
     section ul li a,
     section h2 {
-      color:var(--link-color-active)
+      color:var(--color-secondary)
     }
   </style>
