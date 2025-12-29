@@ -5,17 +5,17 @@
 
 :root {
   /* color */
-    --color-primary: hsl(125, 100%, 50%);
-    --color-secondary: hsl(231, 100%, 50%);
-    --color-tertriary: hsl(62, 100%, 50%);
-    --color-light: hsl(0, 9%, 93%);
-    --color-dark: hsl(0, 0%, 10%);
-
+  --color-primary: hsl(125, 100%, 50%);
+  --color-secondary: hsl(231, 100%, 50%);
+  --color-tertriary: hsl(62, 100%, 50%);
+  --color-light: hsl(0, 9%, 93%);
+  --color-dark: hsl(0, 0%, 10%);
   --link-color-visited:hsl(83, 89%, 65%);
-  --link-color-hover:hsl(314, 100%, 53%);
 
+  /* fonts */
+  --font-family-primary: "Inter", sans-serif;
   
-
+  /* sizes */
 
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
@@ -28,7 +28,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-primary);
 }
 
 :focus {
