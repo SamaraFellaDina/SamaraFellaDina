@@ -59,12 +59,12 @@
   }
 
     h1 {
-    color: var(--link-color);
+    color: var(--color-primary);
     font-style:italic;
     letter-spacing: .2rem;
     text-transform:uppercase;
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: var(--font-weight-bold);
     margin-block:0;
     line-height: 4.5rem;
     }

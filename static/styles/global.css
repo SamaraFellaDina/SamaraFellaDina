@@ -5,32 +5,41 @@
 
 :root {
   /* color */
-  --link-color: hsl(125, 100%, 50%);
-  --link-color-visited:hsl(83, 89%, 65%);
-  --link-color-hover:hsl(314, 100%, 53%);
+  --color-primary: hsl(125, 100%, 50%);
+  --color-secondary: hsl(231, 100%, 50%);
+  --color-tertriary: hsl(62, 100%, 50%);
+  --color-light: hsl(0, 9%, 93%);
+  --color-dark: hsl(0, 0%, 10%);
+  --color-link-visited:hsl(83, 89%, 65%);
 
-  --link-color-active: hsl(231, 100%, 50%);
-  --site-background: hsl(62, 100%, 50%);
-  --text-color-light: hsl(0, 9%, 93%);
-  --text-color-dark: hsl(0, 0%, 10%);
+  /* fonts */
+  --font-family-primary: "Inter", sans-serif;
+  --font-weight-medium:600;
+  --font-weight-bold:900;
+
+  /* text sizes */  
+  --text-regular-size-s:1rem;
+  --text-regular-size-m:1.2rem;
+  --text-regular-line-height-s:2rem;
+  --text-regular-line-height-m:2.3rem;
 
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
 
   /* utils */
+  --padding-regular:1.5rem;
   --margin-block: 1.5rem;
   --border-radius:1rem;
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-primary);
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+:focus {
+  color:var(--color-link-active);
 }
 
 body,
@@ -40,13 +49,14 @@ html {
   overflow-x: hidden;
   min-height: 100dvh;
   width: 100dvw;
-  background-color: var(--text-color-dark);
-  color: var(--text-color-light);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   display: block;
 }
-
 img,
-video {
+img:focus,
+video,
+video:focus {
   border-radius:var(--border-radius);
 }
 
@@ -66,12 +76,12 @@ ul {
 p,
 a,
 li {
-  font-size: 1rem;
-    line-height: 2rem;
+  font-size: var(--text-regular-size-s);
+    line-height: var(--text-regular-line-height-s);
 
     @media (min-width: 768px) {
-    font-size: 1.2rem;
-    line-height: 2.3rem;
+    font-size: var(--text-regular-size-m);
+    line-height: var(--text-regular-line-height-m);
     }
 }
 
@@ -82,16 +92,16 @@ p {
 
 a {
   text-decoration: none;
-  color :var(--link-color);
-  font-weight: 600;
+  color :var(--color-primary);
+  font-weight: var(--font-weight-medium);
   position: relative;
 
   &:visited {
-    color: var(--link-color-visited);
+    color: var(--color-link-visited);
   }
 
   &:hover{
-    color: var(--site-background);
+    color: var(--color-tertriary);
     text-decoration:underline;
   }
 }

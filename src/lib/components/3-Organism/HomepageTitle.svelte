@@ -53,7 +53,7 @@
 
   h1 {
     font-size: 5rem;
-    color: #000;
+    color: var(--color-dark);
     text-transform: uppercase;
 
     display: flex;

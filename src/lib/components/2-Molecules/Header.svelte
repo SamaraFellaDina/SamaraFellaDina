@@ -14,7 +14,7 @@
 .default {
   width: 100%;
   height: 5dvh;
-  background-color: var(--text-color-dark);
+  background-color: var(--color-dark);
   padding:0;
   margin:0;
   display: flex;
@@ -24,7 +24,7 @@
 
 
   & .logo {
-    color: var(--text-color-light);
+    color: var(--color-light);
 
     &::before {
     background-color: transparent;
