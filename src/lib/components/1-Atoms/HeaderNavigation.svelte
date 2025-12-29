@@ -42,7 +42,7 @@ nav ul li a {
 
   &:hover {
     background-color: var(--color-secondary); 
-    color: hsl(56.26deg 100% 50%);
+    color: var(--color-tertriary);
   }
 }
 

@@ -81,7 +81,7 @@ ul li a:hover {
       height: 100%;
       border-radius: var(--border-radius);
       color: var(--color-light);
-      background-color: rgba(0, 0, 0, 0.847);
+      background-color: var(color-dark);
     }
   }
 
