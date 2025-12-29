@@ -12,7 +12,7 @@
 
 <style> 
  details {
-  --details-border: 1px solid var(--link-color);
+  --details-border: 1px solid var(--color-primary);
 	border-top: var(--details-border);
 	border-left: none;
 	border-right: none;

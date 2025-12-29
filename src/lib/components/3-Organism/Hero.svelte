@@ -59,7 +59,7 @@
   }
 
     h1 {
-    color: var(--link-color);
+    color: var(--color-primary);
     font-style:italic;
     letter-spacing: .2rem;
     text-transform:uppercase;

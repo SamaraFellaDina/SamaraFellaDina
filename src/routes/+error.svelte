@@ -5,7 +5,7 @@
   const gif = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2l4bzFlNjcxdjI2endvN3g0MHc0MDNrYnFxa2FhazhjajcyZG9oMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LgR0AnXJBrO4E/giphy.gif'
 </script>
 
-<Wrapper backgroundColor='var(--link-color-active)'>
+<Wrapper backgroundColor='var(--color-secondary)'>
   <section>
   <h1>{page.status} | {page.error.message}</h1>
   <p>It seems like you're a little lost.</p>

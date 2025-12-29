@@ -5,14 +5,17 @@
 
 :root {
   /* color */
-  --link-color: hsl(125, 100%, 50%);
+    --color-primary: hsl(125, 100%, 50%);
+    --color-secondary: hsl(231, 100%, 50%);
+    --color-tertriary: hsl(62, 100%, 50%);
+    --color-light: hsl(0, 9%, 93%);
+    --color-dark: hsl(0, 0%, 10%);
+
   --link-color-visited:hsl(83, 89%, 65%);
   --link-color-hover:hsl(314, 100%, 53%);
 
-  --link-color-active: hsl(231, 100%, 50%);
-  --site-background: hsl(62, 100%, 50%);
-  --text-color-light: hsl(0, 9%, 93%);
-  --text-color-dark: hsl(0, 0%, 10%);
+  
+
 
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
@@ -39,8 +42,8 @@ html {
   overflow-x: hidden;
   min-height: 100dvh;
   width: 100dvw;
-  background-color: var(--text-color-dark);
-  color: var(--text-color-light);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   display: block;
 }
 img,
@@ -82,7 +85,7 @@ p {
 
 a {
   text-decoration: none;
-  color :var(--link-color);
+  color :var(--color-primary);
   font-weight: 600;
   position: relative;
 
@@ -91,7 +94,7 @@ a {
   }
 
   &:hover{
-    color: var(--site-background);
+    color: var(--color-tertriary);
     text-decoration:underline;
   }
 }

@@ -15,14 +15,14 @@
     list-style: none;
     margin-block:0;
     padding-inline:0;
-    color:var(--link-color);
+    color:var(--color-primary);
     display:flex;
     flex-wrap:wrap;
     gap:1rem;
   }
   
   li {
-    background-color: var(--link-color-active);
+    background-color: var(--color-secondary);
     border-radius:10em;    
     padding: .5rem 1rem;
     font-weight: 600;
