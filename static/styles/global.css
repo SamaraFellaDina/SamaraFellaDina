@@ -10,7 +10,7 @@
   --color-tertriary: hsl(62, 100%, 50%);
   --color-light: hsl(0, 9%, 93%);
   --color-dark: hsl(0, 0%, 10%);
-  --link-color-visited:hsl(83, 89%, 65%);
+  --color-link-visited:hsl(83, 89%, 65%);
 
   /* fonts */
   --font-family-primary: "Inter", sans-serif;
@@ -97,7 +97,7 @@ a {
   position: relative;
 
   &:visited {
-    color: var(--link-color-visited);
+    color: var(--color-link-visited);
   }
 
   &:hover{
