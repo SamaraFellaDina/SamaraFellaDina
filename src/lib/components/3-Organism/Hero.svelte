@@ -50,7 +50,7 @@
     flex-direction:column;
     justify-content:flex-end;
     margin: 2rem 0;
-    gap:1rem;
+    gap: var(--gap-regular);
   }
     img {
     height:fit-content;
@@ -74,7 +74,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 10rem;
-  gap: 1rem;
+  gap: var(--gap-regular);
   height: 80dvh; 
   overflow: hidden;
   }
