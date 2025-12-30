@@ -50,7 +50,7 @@
   ul li {
     --default-space: 4rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
       --default-space: -4rem;
     }
   }
@@ -58,16 +58,16 @@
   ul li:nth-child(odd) {
     padding-right: var(--default-space);
 
-    & img, 
-    video {
+    & :global(img),
+    :global(video) {
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
       margin-left: var(--default-space);
 
-          & img, 
-    video {
+        & :global(img),
+        :global(video) {
       border-radius: var(--border-radius);
     }
     }
@@ -75,29 +75,19 @@
 
   ul li:nth-child(even) {
     padding-left: var(--default-space);
-    & img, 
-    video {
+    & :global(img), 
+    :global(video) {
       border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
 
-      @media (min-width: 768px) {
+      @media (min-width: 700px) {
       margin-right: var(--default-space);
 
-    & img, 
-    video {
+    & :global(img), 
+    :global(video) {
       border-radius: var(--border-radius);
     }
     }
-  }
-
-  ul li img, 
-  ul li video {
-    width: 100%;
-    height: auto;
-    max-height:80dvh;
-    object-fit: cover;
-    border-radius: 0;
-
   }
 </style>
 

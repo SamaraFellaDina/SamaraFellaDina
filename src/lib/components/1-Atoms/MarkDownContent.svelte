@@ -5,9 +5,13 @@
 
 </script>
 
-<div class="markdown">
-  {@html marked(content)}
-</div>
+{#if content === null || content === undefined}
+  <p>No content available.</p>
+{:else}
+  <div class="markdown">
+    {@html marked(content)}
+  </div>
+{/if}
 
 
 <style> 
