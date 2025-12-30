@@ -56,6 +56,10 @@ html {
   display: block;
 }
 
+main {
+  min-height:100dvh
+}
+
   img, 
   video {
     width: 100%;
