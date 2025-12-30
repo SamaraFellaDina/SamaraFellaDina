@@ -50,7 +50,7 @@
   ul li {
     --default-space: 4rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
       --default-space: -4rem;
     }
   }
@@ -63,7 +63,7 @@
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
       margin-left: var(--default-space);
 
         & :global(img),
@@ -80,7 +80,7 @@
       border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
 
-      @media (min-width: 768px) {
+      @media (min-width: 700px) {
       margin-right: var(--default-space);
 
     & :global(img), 

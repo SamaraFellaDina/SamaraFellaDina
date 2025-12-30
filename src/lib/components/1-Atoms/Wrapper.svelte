@@ -34,14 +34,14 @@
     justify-content: center;
     background-color: var(--wrapper-background-color);
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
     padding: 2rem 4rem;
     }
   }
     .wrapper-fullwidth .wrapper-content {
     width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: 700px) {
     max-width: 900px;
   }
   }
