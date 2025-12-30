@@ -1,5 +1,8 @@
 <script>
-    import { Header } from "$lib/index.js";
+    import { 
+      Header,
+      Footer
+    } from "$lib/index.js";
     /**
      * @typedef {Object} Props
      * @property {import('svelte').Snippet} [children]
@@ -12,7 +15,7 @@
 <div>
   <Header variant='default'/>
   <main>{@render children?.()}</main>
-
+  <Footer />
 </div>
 
 <style>

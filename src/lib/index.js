@@ -8,6 +8,7 @@ export { default as Icons } from './components/1-Atoms/Icons.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
+export { default as Footer } from './components/1-Atoms/Footer.svelte';
 
 // Molenules
 export { default as CaseList } from './components/2-Molecules/CaseList.svelte';
