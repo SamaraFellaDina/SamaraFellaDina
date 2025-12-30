@@ -25,13 +25,12 @@
 
 <style>
 ul {
-  --gap-size: 1rem;
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
   display: grid;
   position: relative;
-  gap: var(--gap-size);
+  gap: var(--gap-regular);
 
   @media (min-width: 700px) {
     display: block;
@@ -47,7 +46,7 @@ ul li {
 
   @media (min-width: 700px) {
     break-inside: avoid;
-    margin-bottom: var(--gap-size);
+    margin-bottom: var(--gap-regular);
   }
 }
 

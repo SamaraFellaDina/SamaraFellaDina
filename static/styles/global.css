@@ -32,6 +32,7 @@
   --padding-regular:1.5rem;
   --margin-block: 1.5rem;
   --border-radius:1rem;
+  --gap-regular: 1rem; 
 }
 
 * {
