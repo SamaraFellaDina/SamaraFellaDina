@@ -1,5 +1,8 @@
 <script>
-  import { Wrapper } from '$lib/index.js'
+  import { 
+    Wrapper,
+    Icons
+  } from '$lib/index.js'
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>
@@ -12,14 +15,23 @@
   <h2>Socials</h2>
   <ul>
     <li>
-      <a href='/'>Instagram</a>
+      <a href='/'>
+        <Icons icon='Instagram' />
+        Instagram
+      </a>
     </li>
       <li>
-      <a href='/'>Github</a>
-    </li>
+      <a href='/'>
+        <Icons icon='Github' />
+        Github
+      </a>
+        </li>
       <li>
-      <a href='/'>LinkedIn</a>
-    </li>
+      <a href='/'>
+        <Icons icon='LinkedIn' />
+        LinkedIn
+      </a>
+        </li>
   </ul>
 </section>
 
