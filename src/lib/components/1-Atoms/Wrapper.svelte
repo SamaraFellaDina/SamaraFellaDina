@@ -4,7 +4,7 @@
 </script>
 
   <div 
-    class={fullwidth ? 'wrapper-fullwidth' : 'wrapper'}
+    class="wrapper {fullwidth ? 'wrapper-fullwidth' : ''}"
     style="background-color: {backgroundColor};"
   >
     <div class="wrapper-content">
@@ -13,14 +13,15 @@
   </div>
 
 <style>
+
   .wrapper {
+    padding: 2rem;
     display: flex;
     justify-content: center;
-    padding: 2rem;
     background-color: var(--wrapper-background-color);
 
     @media (min-width: 700px) {
-      padding: 2rem 4rem;
+      padding: var(--gap-containter);
     }
   }
 
@@ -30,12 +31,10 @@
   }
 
   .wrapper-fullwidth {
-    display: flex;
-    justify-content: center;
-    background-color: var(--wrapper-background-color);
+    padding: 0;
 
     @media (min-width: 700px) {
-    padding: 2rem 4rem;
+    padding: var(--gap-containter);
     }
   }
     .wrapper-fullwidth .wrapper-content {
@@ -43,6 +42,6 @@
 
     @media (min-width: 700px) {
     max-width: 900px;
-  }
+    }
   }
 </style>
