@@ -23,6 +23,7 @@
       "image"
       "name";
     justify-items: center;
+    align-content: center;
     gap:var(--gap-regular);
     height:100vh;
   }
