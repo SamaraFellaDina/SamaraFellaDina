@@ -40,4 +40,14 @@
     padding: var(--padding-containter);
     }
   }
+
+  .wrapper-slides {
+    height: 100dvh;
+    max-height:100dvh;
+
+    & .wrapper-content {
+      display:grid;
+      align-items:center;
+    }
+  }
 </style>
