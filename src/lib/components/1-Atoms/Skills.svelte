@@ -3,7 +3,6 @@
   export let skills;
 </script>
 
-<Wrapper slides='true' backgroundColor='var(--color-secondary)'>
 
   <div>
     {#each skills.skills as skillSection}
@@ -22,7 +21,6 @@
       </section>
     {/each}
   </div>
-</Wrapper>
 
 
 

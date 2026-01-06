@@ -12,11 +12,9 @@
     ]
 </script>
 
-<Wrapper slides='true'>
 <section>
   <h2>
     Love doing things like:
   </h2>
   <Tags tags={tags}/>
 </section>
-</Wrapper>
