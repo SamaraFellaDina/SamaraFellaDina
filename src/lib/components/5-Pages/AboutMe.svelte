@@ -5,14 +5,9 @@
     Skills
     } from '$lib/index.js'
 
-    let tags = [
-      "Motion Design",
-      "Frontend Development",
-      "UI/UX",
-      "Graphic Design",
-    ]
+    export let content;
 </script>
 
   <AboutMeHero /> 
   <AboutSubjects /> 
-  <Skills />
+  <Skills skills={content}/>
