@@ -11,6 +11,7 @@
   export let thumbnailWidth = 700;
   export let tags;
   export let showCase = false
+  export let intro;
 
 
   onMount(() => {
@@ -28,7 +29,7 @@
 </script>
 
 <Wrapper>
-  <div class={showCase ? 'hero-showcase' : 'hero'}>
+  <section class={showCase ? 'hero-showcase' : 'hero'}>
     <h1>{heroTitle}</h1>
     {#if Tags}
       <Tags tags={tags}/>
@@ -41,7 +42,11 @@
         width="{thumbnailWidth}"
         />
     {/if}
-  </div>
+
+    {#if intro}
+    <p>{intro}</p>
+    {/if}
+  </section>
 </Wrapper>
 
 <style>
@@ -56,6 +61,7 @@
     height:fit-content;
     width:100%;
     object-fit:cover;
+    max-height:50dvh
   }
 
     h1 {
