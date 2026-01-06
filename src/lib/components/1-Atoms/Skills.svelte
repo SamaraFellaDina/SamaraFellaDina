@@ -75,6 +75,11 @@
 <style>
   section {
     display:grid;
+    padding: var(--padding-regular);
+  }
+
+  section h2 {
+    margin-block-start: 0;
   }
   
   section ul {
@@ -89,7 +94,7 @@
     align-items:center;
     gap:var(--gap-regular);
     justify-content: space-between;
-    width:300px;
+    width:100%;
   }
 
 progress {
