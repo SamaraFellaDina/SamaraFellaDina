@@ -46,8 +46,9 @@
     max-height:100dvh;
 
     & .wrapper-content {
-      display:grid;
-      align-items:center;
+      display: grid;
+      align-items: center;
+      align-content: center;
     }
   }
 </style>
