@@ -1,7 +1,6 @@
 <script>
   import { 
     AboutMeHero,
-    Wrapper,
     AboutSubjects
     } from '$lib/index.js'
 
@@ -13,7 +12,5 @@
     ]
 </script>
 
-<Wrapper>
   <AboutMeHero /> 
   <AboutSubjects /> 
-</Wrapper>
