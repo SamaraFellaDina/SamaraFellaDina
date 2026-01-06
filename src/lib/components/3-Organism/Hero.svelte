@@ -1,11 +1,12 @@
 <script>
   import { 
     Tags, 
-    Wrapper 
+    Wrapper,
+    HeroTitle
   } from '$lib/index.js'
   import { onMount } from 'svelte';
   import gsap from 'gsap'
-  export let heroTitle ='input hero title here!';
+  export let heroTitle;
   export let thumbnail;
   export let thumbnailHeight = 700;
   export let thumbnailWidth = 700;
@@ -30,7 +31,7 @@
 
 <Wrapper>
   <section class={showCase ? 'hero-showcase' : 'hero'}>
-    <h1>{heroTitle}</h1>
+    <HeroTitle heroTitle={heroTitle} />
     {#if Tags}
       <Tags tags={tags}/>
     {/if}

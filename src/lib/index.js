@@ -7,6 +7,7 @@ export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent
 export { default as Icons } from './components/1-Atoms/Icons.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
+export { default as HeroTitle } from './components/1-Atoms/HeroTitle.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
 export { default as AboutMeHero } from './components/1-Atoms/AboutMeHero.svelte';
 export { default as Skills } from './components/1-Atoms/Skills.svelte';
