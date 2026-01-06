@@ -6,11 +6,12 @@ export { default as HeaderNavigation } from './components/1-Atoms/HeaderNavigati
 export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent.svelte';
 export { default as Icons } from './components/1-Atoms/Icons.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
-export { default as Tags } from './components/1-Atoms/Tags.svelte';
+export { default as Tag } from './components/1-Atoms/Tag.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
 export { default as AboutMeHero } from './components/1-Atoms/AboutMeHero.svelte';
 
 // Molenules
+export { default as Tags } from './components/2-Molecules/Tags.svelte';
 export { default as CaseList } from './components/2-Molecules/CaseList.svelte';
 export { default as Header } from './components/2-Molecules/Header.svelte';
 export { default as CaseAssets } from './components/2-Molecules/CaseAssets.svelte';

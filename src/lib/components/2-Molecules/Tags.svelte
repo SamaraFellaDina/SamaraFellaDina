@@ -1,12 +1,11 @@
 <script>
+  import { Tag } from '$lib/index.js';
   export let tags; 
 </script>
 
 <ul>
   {#each tags as tagItem}
-  <li>
-    {tagItem}
-  </li>
+  <Tag content={tagItem}/>
   {/each}
 </ul>
 
@@ -19,15 +18,5 @@
     display:flex;
     flex-wrap:wrap;
     gap: var(--gap-regular);
-  }
-  
-  li {
-    background-color: var(--color-secondary);
-    border-radius: 10em;    
-    padding: .5rem 1rem;
-    font-weight: var(--font-weight-medium);
-    width: auto;
-    height: fit-content;
-    line-height: 1.3em;
   }
 </style>
