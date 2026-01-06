@@ -10,4 +10,4 @@
 
   <AboutMeHero /> 
   <AboutSubjects /> 
-  <Skills skills={content}/>
+  <Skills skills={content.aboutMe}/>

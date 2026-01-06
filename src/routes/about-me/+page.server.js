@@ -19,6 +19,6 @@ query aboutMe {
   const data = await hygraph.request(query);
 
   return {
-    data: data.aboutMes[0]
+    aboutMe: data.aboutMes[0]
   };
 };

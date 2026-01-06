@@ -1,11 +1,32 @@
 <script>
   import { Wrapper } from '$lib/index.js'
   export let skills;
-  console.log(skills)
 </script>
 
 <Wrapper slides='true' backgroundColor='var(--color-secondary)'>
+
+  {#each skills.skills as skillSection}
+    <section>
+      <h2>{skillSection.sectionHeading}</h2>
+      <ul>
+        {#each skillSection.listOfSkills as skillItem}
+          <li>
+          <label for="progress-bar"> {skillItem.titleOfSkill}
+            <progress id="progress-bar" max="100" value={skillItem.experience}>{skillItem.experience}%</progress>
+          </label>
+          
+          </li>
+        {/each}
+      </ul>
+    </section>
+  {/each}
+
+
+<!--   
   <section>
+
+
+    
     <h2>Adobe Creative Cloud</h2>
     <ul>
       <li>
@@ -46,7 +67,7 @@
       </li>
     </ul>
   </section>
-  
+   -->
 </Wrapper>
 
 
