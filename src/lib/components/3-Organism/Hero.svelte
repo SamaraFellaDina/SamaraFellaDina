@@ -65,17 +65,6 @@
     max-height:50dvh
   }
 
-    h1 {
-    color: var(--color-primary);
-    font-style:italic;
-    letter-spacing: .2rem;
-    text-transform:uppercase;
-    font-size: 5rem;
-    font-weight: var(--font-weight-bold);
-    margin-block:0;
-    line-height: 4.5rem;
-    }
-
   .hero-showcase {
   display: flex;
   flex-direction: column;
