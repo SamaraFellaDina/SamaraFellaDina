@@ -4,6 +4,7 @@
 
 </script>
 
+<Wrapper slides=true>
   <section>
   <h1>
     <span class="title">Hello! I'm </span>
@@ -11,6 +12,8 @@
   </h1>
   <img alt="hero" src={heroPicture}>
 </section>
+</Wrapper>
+
 
 <style>
   section {
