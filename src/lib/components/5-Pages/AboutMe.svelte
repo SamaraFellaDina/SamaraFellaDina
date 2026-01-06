@@ -1,7 +1,8 @@
 <script>
   import { 
     AboutMeHero,
-    AboutSubjects
+    AboutSubjects,
+    Skills
     } from '$lib/index.js'
 
     let tags = [
@@ -14,3 +15,4 @@
 
   <AboutMeHero /> 
   <AboutSubjects /> 
+  <Skills />
