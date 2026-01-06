@@ -1,8 +1,7 @@
 <script>
   import { 
-    AboutMeHero,
     Wrapper,
-    AboutSubjects
+    Tag
     } from '$lib/index.js'
 
     let tags = [
@@ -14,6 +13,16 @@
 </script>
 
 <Wrapper>
-  <AboutMeHero /> 
-  <AboutSubjects /> 
+<section>
+  <h2>
+    Love doing things like:
+  </h2>
+  <Tag tags={tags}/>
+</section>
+
+<style>
+  section {
+    height:100dvh
+  }
+</style>
 </Wrapper>

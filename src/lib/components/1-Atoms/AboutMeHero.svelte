@@ -21,7 +21,7 @@
       "name";
     justify-items: center;
     gap:var(--gap-regular);
-    height:60dvh;
+    height:100vh;
   }
 
   section img {
