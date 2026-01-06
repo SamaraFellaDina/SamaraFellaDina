@@ -29,6 +29,7 @@
   --transition: 200ms ease-in-out;
 
   /* utils */
+  --padding-small:1rem;
   --padding-regular:2rem;
   --padding-medium:4rem;
   --padding-containter: var(--padding-regular) var(--padding-medium);
