@@ -1,10 +1,13 @@
 <script>
   export let backgroundColor = 'var(--wrapper-background-color)';
   export let fullwidth = false;
+  export let slides = false;
 </script>
 
   <div 
-    class="wrapper {fullwidth ? 'wrapper-fullwidth' : ''}"
+    class= "wrapper
+        {fullwidth ? ' wrapper-fullwidth' : ''}
+        {slides ? ' wrapper-slides' : ''}"
     style="background-color: {backgroundColor};"
   >
     <div class="wrapper-content">
