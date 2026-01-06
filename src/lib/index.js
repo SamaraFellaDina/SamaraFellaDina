@@ -26,3 +26,4 @@ export { default as Cases } from './components/3-Organism/Cases.svelte';
 
 // Pages
 export { default as CaseDetail } from './components/5-Pages/CaseDetail.svelte';
+export { default as AboutMe } from './components/5-Pages/AboutMe.svelte';

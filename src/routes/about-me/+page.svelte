@@ -1,10 +1,5 @@
 <script>
-  import { 
-    Hero, 
-    Wrapper 
-    } from '$lib/index.js'
+  import { AboutMe } from '$lib/index.js'
 </script>
 
-<Wrapper>
-  <Hero heroTitle="About me"/>
-</Wrapper>
+<AboutMe />
