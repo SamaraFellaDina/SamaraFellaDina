@@ -1,33 +1,38 @@
-<script> 
-  import { 
-    Wrapper, 
-    Hyperlinks
-  } from '$lib/index.js';
+<script>
+    import { Icons} from '$lib/index.js';
   export let references;
 </script>
 
+    <ul>
+    {#each references as reference}
+      <li>
+        <a href={reference.link}>
+          
+          {reference.titleOfHyperlink}
+          <Icons 
+          icon="arrow-right" 
+          width="40"
+          height="40"
+          />
 
-<Wrapper backgroundColor="var(--color-primary)">
-    <section>
-    <h2>references</h2>
-    <Hyperlinks references={references}/>
-  </section>
-</Wrapper>
+        </a>
+      </li>
+    {/each}
+    </ul>
 
-
-  <style> 
-    section, 
+<style>
+  
     li,
     a {
       color: var(--color-dark);
     }
 
-    section ul {
+  ul {
       list-style: none;
       padding-inline:0
     }
 
-    section ul li a {
+  ul li a {
       display: flex;
       align-items: center;
       transition:  var(--hover-transition);
@@ -36,15 +41,15 @@
       text-decoration: none;
     }
 
-    section ul li a:hover {
+  ul li a:hover {
       gap: .5rem;
       background-color: var(--color-secondary);
       color: var(--color-primary);
       padding: .2rem .4rem;
     }
 
-    section ul li a,
-    section h2 {
+  ul li a,
+  h2 {
       color:var(--color-secondary)
     }
-  </style>
+</style>
