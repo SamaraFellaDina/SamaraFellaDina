@@ -29,11 +29,12 @@
   --transition: 200ms ease-in-out;
 
   /* utils */
-  --padding-regular:1.5rem;
+  --padding-regular:2rem;
+  --padding-medium:4rem;
+  --padding-containter: var(--padding-regular) var(--padding-medium);
   --margin-block: 1.5rem;
   --border-radius:1rem;
   --gap-regular: 1rem;
-  --gap-containter: 2rem 4rem;
 }
 
 * {

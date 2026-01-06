@@ -21,7 +21,7 @@
     background-color: var(--wrapper-background-color);
 
     @media (min-width: 700px) {
-      padding: var(--gap-containter);
+      padding: var(--padding-containter);
     }
   }
 
@@ -34,7 +34,7 @@
     padding: 0;
 
     @media (min-width: 700px) {
-    padding: var(--gap-containter);
+    padding: var(--padding-containter);
     }
   }
     .wrapper-fullwidth .wrapper-content {
