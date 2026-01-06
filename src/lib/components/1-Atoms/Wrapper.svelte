@@ -25,9 +25,9 @@
     }
   }
 
-  .wrapper .wrapper-content {
+  .wrapper-content {
+    width:100%;
     max-width: 900px;
-    width: 100%;
   }
 
   .wrapper-fullwidth {
@@ -35,13 +35,6 @@
 
     @media (min-width: 700px) {
     padding: var(--padding-containter);
-    }
-  }
-    .wrapper-fullwidth .wrapper-content {
-    width: 100%;
-
-    @media (min-width: 700px) {
-    max-width: 900px;
     }
   }
 </style>
