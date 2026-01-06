@@ -1,6 +1,6 @@
 <script>
   import { 
-    Tag, 
+    Tags, 
     Wrapper 
   } from '$lib/index.js'
   import { onMount } from 'svelte';
@@ -30,8 +30,8 @@
 <Wrapper>
   <div class={showCase ? 'hero-showcase' : 'hero'}>
     <h1>{heroTitle}</h1>
-    {#if Tag}
-      <Tag tags={tags}/>
+    {#if Tags}
+      <Tags tags={tags}/>
     {/if}
     {#if thumbnail}
         <img 

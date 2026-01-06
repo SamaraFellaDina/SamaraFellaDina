@@ -1,7 +1,7 @@
 <script>
   import { 
     Wrapper,
-    Tag
+    Tags
     } from '$lib/index.js'
 
     let tags = [
@@ -17,7 +17,7 @@
   <h2>
     Love doing things like:
   </h2>
-  <Tag tags={tags}/>
+  <Tags tags={tags}/>
 </section>
 
 <style>
