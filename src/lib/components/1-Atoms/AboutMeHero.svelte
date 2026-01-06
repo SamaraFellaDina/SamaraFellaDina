@@ -11,9 +11,9 @@
 <Wrapper>
   <HeroTitle heroTitle="Hi! I'm Sammy" />
   <div>
-    <img src={heroPicture} >
+    <img class="hero" src={heroPicture} >
     <ul>
-      <li> <img src={heroPicture} ></li>
+      <li> <img src="https://plus.unsplash.com/premium_photo-1746637466037-001842a48d31?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ></li>
       <li> <img src={heroPicture} ></li>
       <li> <img src={heroPicture} ></li>
     </ul>
@@ -22,33 +22,42 @@
 
 <style>
   div {
-    display: block;
+    display:flex;
+    flex-direction: column;
+    gap:var(--gap-regular);
+
     width:100%;
-    max-height:80dvh;
+    max-height:70dvh;
+
       @media(min-width:700px) {
-      display:flex;
-      gap:var(--gap-regular);
+      flex-direction: row;
     }
+
   }
   div ul {
-    display:none;
+    display: flex;
+    gap:var(--gap-regular);
+    justify-content: space-between;
     list-style:none;
     margin:0;
     padding:0;
     @media(min-width:700px) {
-      display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap:var(--gap-regular);
     }
   }
 
+  div ul li {
+    --ratio:auto;
+    width:var(--ratio);
+    height:var(--ratio);
+  }
   div ul li img {
     height: 100%;
   }
 
-  img {
+  .hero {
     width:100%;
+    max-height:50dvh;
     object-fit:cover;
   }
 </style>
