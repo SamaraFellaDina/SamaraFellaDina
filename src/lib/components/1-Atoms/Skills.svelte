@@ -21,53 +21,6 @@
     </section>
   {/each}
 
-
-<!--   
-  <section>
-
-
-    
-    <h2>Adobe Creative Cloud</h2>
-    <ul>
-      <li>
-        <label for="progress-bar"> Photoshop
-          <progress id="progress-bar" max="100" value="30">30%</progress>
-        </label>
-      </li>
-        <li>
-        <label for="progress-bar"> Illustrator
-          <progress id="progress-bar" max="100" value="70"></progress>
-        </label>
-      </li>
-      <li>
-        <label for="progress-bar"> Indesign
-          <progress id="progress-bar" max="100" value="50"></progress>
-        </label>
-      </li>
-    </ul>
-  </section>
-
-    <section>
-    <h2>Code</h2>
-    <ul>
-      <li>
-        <label for="progress-bar"> Html
-          <progress id="progress-bar" max="100" value="30">30%</progress>
-        </label>
-      </li>
-        <li>
-        <label for="progress-bar"> Css
-          <progress id="progress-bar" max="100" value="70"></progress>
-        </label>
-      </li>
-      <li>
-        <label for="progress-bar"> Sveltekit
-          <progress id="progress-bar" max="100" value="50"></progress>
-        </label>
-      </li>
-    </ul>
-  </section>
-   -->
 </Wrapper>
 
 
