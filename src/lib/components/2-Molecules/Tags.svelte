@@ -5,9 +5,13 @@
 </script>
 
 <ul class:invert={invertColor}>
-  {#each tags as tagItem}
-  <Tag invertColor={invertColor} content={tagItem}/>
-  {/each}
+  {#if tags.length > 0}
+    {#each tags as tagItem (tagItem)}
+      {#if tagItem}
+        <Tag invertColor={invertColor} content={tagItem}/>
+      {/if}
+    {/each}
+  {/if}
 </ul>
 
 <style> 
