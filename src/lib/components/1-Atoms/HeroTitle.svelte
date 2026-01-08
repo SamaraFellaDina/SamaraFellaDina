@@ -1,8 +1,12 @@
 <script>
   export let heroTitle ='input hero title here!';
+  export let aboutMe = false;
 </script>
 
-  <h1>{heroTitle}</h1>
+  <h1 class:about-me={aboutMe}>
+
+    {heroTitle}
+  </h1>
 
 <style>
     h1 {
@@ -15,4 +19,12 @@
     margin-block:0;
     line-height: 4.5rem;
     }
+
+    .about-me {
+    text-align:center;
+
+    @media (min-width:900px) {
+      text-align: left; 
+    }
+  }
 </style>

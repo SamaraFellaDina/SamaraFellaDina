@@ -9,7 +9,7 @@
 </script>
 
 <Wrapper>
-  <HeroTitle heroTitle="Hi! I'm Sammy" />
+  <HeroTitle heroTitle="Hi! I'm Sammy" aboutMe='true'/>
   <AboutMeHeroImage />
 </Wrapper>
 
