@@ -5,6 +5,12 @@ export const load = async () => {
   const query = gql`
 query aboutMe {
   aboutMes {
+    heroImages {
+      id
+      url
+      width
+      height
+    }
     aboutMe
     loveProducts
     loveSubjects
