@@ -10,6 +10,9 @@
       "UI/UX",
       "Graphic Design",
     ]
+
+    export let subjects;
+    export let products; 
 </script>
 
 <Wrapper slides='true'>
@@ -17,13 +20,13 @@
   <h2>
     Love doing things like:
   </h2>
-  <Tags tags={tags}/>
+  <Tags tags={subjects}/>
 </section>
 
 <section>
   <h2>
     Love creating things like:
   </h2>
-  <Tags invertColor='true' tags={tags}/>
+  <Tags invertColor='true' tags={products}/>
 </section>
 </Wrapper>

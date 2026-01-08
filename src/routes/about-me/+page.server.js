@@ -6,6 +6,8 @@ export const load = async () => {
 query aboutMe {
   aboutMes {
     aboutMe
+    loveProducts
+    loveSubjects
     skills {
       sectionHeading
       listOfSkills {
