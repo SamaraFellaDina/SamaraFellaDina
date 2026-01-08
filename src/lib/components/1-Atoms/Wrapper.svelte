@@ -54,7 +54,10 @@
   }
 
   .wrapper-paragraph {
-    padding: var(--padding-containter-large);
+    @media (min-width:500px) {
+      padding: var(--padding-containter-large);
+    }
+
     & .wrapper-content {
       max-width: 700px;
     }
