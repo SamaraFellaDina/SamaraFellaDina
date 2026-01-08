@@ -10,5 +10,7 @@
 <Wrapper>
   {#if markdown = true}
     <MarkDownContent content={content}/>
+    {:else}
+    <slot></slot>
   {/if}
 </Wrapper>

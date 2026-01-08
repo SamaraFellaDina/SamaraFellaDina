@@ -5,6 +5,7 @@ export const load = async () => {
   const query = gql`
 query aboutMe {
   aboutMes {
+    aboutMe
     skills {
       sectionHeading
       listOfSkills {

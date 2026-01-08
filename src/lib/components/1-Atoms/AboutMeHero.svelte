@@ -6,7 +6,7 @@
     AboutMeHeroImage,
     Paragraph
   } from '$lib/index.js'
-
+export let paragraph = 'no paragraph available'
 </script>
 
 <Wrapper>
@@ -18,7 +18,7 @@
 </Wrapper>
 
 <Wrapper paragraph='true'>
-  <Paragraph />
+  <Paragraph content={paragraph}/>
 </Wrapper>
   
 
