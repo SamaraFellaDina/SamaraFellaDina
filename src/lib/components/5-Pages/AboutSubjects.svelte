@@ -19,4 +19,11 @@
   </h2>
   <Tags tags={tags}/>
 </section>
+
+<section>
+  <h2>
+    Love creating things like:
+  </h2>
+  <Tags invertColor='true' tags={tags}/>
+</section>
 </Wrapper>

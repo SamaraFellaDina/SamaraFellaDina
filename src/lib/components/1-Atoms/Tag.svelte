@@ -1,14 +1,16 @@
   <script>
     export let content; 
+    export let invertColor= false;
   </script>
 
 
-  <li>
+  <li class:invert={invertColor}>
     {content}
   </li>
   
 <style>
   li {
+  color:var(--color-primary);
   background-color: var(--color-secondary);
   border-radius: 10em;    
   padding: .5rem 1rem;
@@ -16,5 +18,10 @@
   width: auto;
   height: fit-content;
   line-height: 1.3em;
+}
+
+.invert {
+  color:var(--color-secondary);
+  background-color: var(--color-primary);
 }
 </style>

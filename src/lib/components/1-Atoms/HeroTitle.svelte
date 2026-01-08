@@ -4,7 +4,6 @@
 </script>
 
   <h1 class:about-me={aboutMe}>
-
     {heroTitle}
   </h1>
 

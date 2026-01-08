@@ -44,8 +44,7 @@
   }
 
   .wrapper-slides {
-    height: 100dvh;
-    max-height:100dvh;
+    min-height:100dvh;
 
     & .wrapper-content {
       display: grid;
