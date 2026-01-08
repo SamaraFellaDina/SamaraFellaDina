@@ -12,42 +12,44 @@
   </div>
 
 
-  <style>
-    div {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    gap:var(--gap-regular);
-    width:100%;
+  <style>div {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  max-height:60dvh;
 
-    @media(min-width:900px) {
+  @media(min-width:900px) {
     align-items: unset;
-
-    }
-  }
-
-    .hero {
-    max-height:50dvh;
-    max-width: 50dvh;
-    }
-  div ul {
-    display:none;
-
-    @media(min-width:900px) {
-    display: flex;
     gap:var(--gap-regular);
-    list-style:none;
-    margin:0;
-    padding:0;
-    flex-direction: row;
-    }
   }
+}
 
-  div ul li {
-    max-height:30dvh;
-    max-width: 30dvh;
+.hero {
+  max-height:60dvh;
+  max-width: 60dvh; 
+}
+
+div ul {
+  display:none;
+
+  @media(min-width:900px) {
+    display: flex;
+    gap: var(--gap-regular);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  div ul li img {
-    height: 100%;
-  }
-  </style>
+}
+
+div ul li {
+  aspect-ratio: 1/1;
+  overflow: hidden;   
+}
+
+div ul li img {
+  width: 100%;
+  height: 100%;
+}
+</style>
