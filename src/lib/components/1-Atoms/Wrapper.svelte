@@ -2,12 +2,14 @@
   export let backgroundColor = 'var(--wrapper-background-color)';
   export let fullwidth = false;
   export let slides = false;
+  export let paragraph = false;
 </script>
 
   <div 
     class= "wrapper
         {fullwidth ? ' wrapper-fullwidth' : ''}
-        {slides ? ' wrapper-slides' : ''}"
+        {slides ? ' wrapper-slides' : ''}
+        {paragraph ? ' wrapper-paragraph' : ''}"
     style="background-color: {backgroundColor};"
   >
     <div class="wrapper-content">
@@ -49,6 +51,13 @@
       display: grid;
       align-items: center;
       align-content: center;
+    }
+  }
+
+  .wrapper-paragraph {
+    padding: var(--padding-containter-large);
+    & .wrapper-content {
+      max-width: 700px;
     }
   }
 </style>

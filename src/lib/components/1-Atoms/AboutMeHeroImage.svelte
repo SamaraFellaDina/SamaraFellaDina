@@ -14,7 +14,6 @@
 
   <style>
     div {
-    padding: var(--padding-containter);
     display:flex;
     align-items: center;
     flex-direction: column;
