@@ -4,9 +4,11 @@
   </script>
 
 
+{#if content.length > 0}
   <li class:invert={invertColor}>
     {content}
   </li>
+{/if}
   
 <style>
   li {
