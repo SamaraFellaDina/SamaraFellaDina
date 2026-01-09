@@ -33,13 +33,13 @@
     justify-content: center;
     justify-items: center;
 
-
     @media (min-width:900px) {
       grid-template-columns: 1fr 1fr;
     }
   }
   section {
     padding: var(--padding-small) 0;
+    width: 100%;
 
 
   }
