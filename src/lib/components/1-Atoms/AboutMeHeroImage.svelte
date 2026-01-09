@@ -29,13 +29,15 @@
   </div>
 
 
-  <style>div {
-  display:flex;
+  <style>
+  div {
   justify-content: center;
   width:100%;
   max-height:60dvh;
 
   @media(min-width:900px) {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     align-items: unset;
     gap:var(--gap-regular);
   }
@@ -61,7 +63,8 @@ div ul {
 }
 
 div ul li {
-  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
   overflow: hidden;   
 }
 
