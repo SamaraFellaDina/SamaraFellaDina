@@ -7,7 +7,7 @@
     export let content = 'no content available'
 </script>
 
-<Wrapper>
+<Wrapper paragraph='true'>
   {#if markdown = true}
     <MarkDownContent content={content}/>
     {:else}

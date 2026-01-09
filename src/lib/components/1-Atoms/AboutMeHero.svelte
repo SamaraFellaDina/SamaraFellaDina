@@ -18,8 +18,6 @@ export let heroImages;
   <AboutMeHeroImage heroImages={heroImages} />
 </Wrapper>
 
-<Wrapper paragraph='true'>
   <Paragraph content={paragraph}/>
-</Wrapper>
   
 
