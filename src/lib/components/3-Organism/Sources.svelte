@@ -3,14 +3,14 @@
     Wrapper, 
     Hyperlinks
   } from '$lib/index.js';
-  export let references;
+  export let sources;
 </script>
 
 
 <Wrapper backgroundColor="var(--color-primary)">
     <section>
     <h2>Sources</h2>
-    <Hyperlinks arrow='true' references={references}/>
+    <Hyperlinks arrow='true' sources={sources}/>
   </section>
 </Wrapper>
 

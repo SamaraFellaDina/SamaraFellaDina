@@ -6,12 +6,13 @@
   } from '$lib/index.js'
 
   export let footerData;
+  let email = "/"
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>
 <section>
-  <h2>Contact</h2>
-  <p>lets meet! :)</p>
+  <h2>See you soon!</h2>
+  <a href="mailto:{email}">{email}</a>
 </section>
 
 {#if footerData.socialsList}
@@ -20,7 +21,7 @@
     <Hyperlinks 
     footer="true"
     socials="true"
-    references={footerData.socialsList}
+    sources={footerData.socialsList}
     />
   </section>
 {/if}
@@ -30,7 +31,7 @@
     <h2>Github</h2>
       <Hyperlinks 
     footer="true"
-    references={footerData.githubLinks}
+    sources={footerData.githubLinks}
     />
   </section>
 {/if}
@@ -39,6 +40,6 @@
 
 <style>
   section {
-    color: var(--color-tertriary);
+    color: var(--color-primary);
   }
 </style>

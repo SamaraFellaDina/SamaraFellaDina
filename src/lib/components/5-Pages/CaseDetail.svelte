@@ -26,6 +26,6 @@
   />
 
   {#if caseData.sources.length > 0}
-    <References references={caseData.sources}/>
+    <References sources={caseData.sources}/>
   {/if}
 

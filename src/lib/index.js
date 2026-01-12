@@ -26,7 +26,7 @@ export { default as Summary } from './components/2-Molecules/Summary.svelte';
 // Organism
 export { default as CaseSummary } from './components/3-Organism/CaseSummary.svelte';
 export { default as Hero } from './components/3-Organism/Hero.svelte';
-export { default as References } from './components/3-Organism/References.svelte';
+export { default as References } from './components/3-Organism/Sources.svelte';
 export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.svelte';
 export { default as Cases } from './components/3-Organism/Cases.svelte';
 

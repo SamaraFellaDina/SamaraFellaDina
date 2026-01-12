@@ -1,13 +1,13 @@
 <script>
   import { Icons } from '$lib/index.js';
-  export let references;
+  export let sources;
   export let footer = false;
   export let socials = false;
   export let arrow = false;
 </script>
 
     <ul class:footer={footer}>
-    {#each references as reference}
+    {#each sources as reference}
       <li>
         <a href={reference.hyperlink}>
 
@@ -78,6 +78,7 @@
   .footer li,
   .footer a {
     color:var(--color-primary);
+    font-weight: 500;
   }
 
   .footer li a:hover {
