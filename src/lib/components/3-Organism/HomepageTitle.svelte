@@ -1,40 +1,34 @@
 <script>
-  import { 
-    BackgroundAnimation, 
-    HeaderNavigation 
-  } from "$lib/index.js";
+  import { BackgroundAnimation, HeaderNavigation } from "$lib/index.js";
   import { onMount } from "svelte";
 
   onMount(async () => {
     const { gsap } = await import("gsap");
-    const { SplitText } = await import("gsap/SplitText");
+    const { ScrambleTextPlugin } = await import("gsap/ScrambleTextPlugin");
 
-    gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(ScrambleTextPlugin)
+    gsap.from(".logo", {
+      scrambleText: "Sammmmm.my",
+      duration:2,
+      delay:2,
+      onComplete: () => {
+        gsap.to(".logo", {
+        scrambleText: "sammm.my",
 
-    const split = new SplitText(".logo", {
-      type: "chars"
-    });
-
-    gsap.from(split.chars, {
-      x: 1000,
-      duration: 3,
-      ease: "elastic.out(1,1)",
-      autoAlpha: 0,
-      stagger: {
-        amount: 0.5,
-        from: "random"
-      }
-    });
-  });
+        })
+      }}
+    )}
+  );
 </script>
 
 <BackgroundAnimation>
   <HeaderNavigation variant='title'/>
-  <section>
+  <section >
     <h1 class="logo">
-      <span>Sammm.my</span>
+      sammm.my
     </h1>
   </section>
+
 </BackgroundAnimation>
 
 
