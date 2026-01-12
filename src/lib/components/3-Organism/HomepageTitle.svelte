@@ -18,8 +18,8 @@
     gsap.from(split.chars, {
       x: 1000,
       duration: 3,
-      opacity: 0,
       ease: "elastic.out(1,1)",
+      autoAlpha: 0,
       stagger: {
         amount: 0.5,
         from: "random"
@@ -32,11 +32,8 @@
   <HeaderNavigation variant='title'/>
   <section>
     <h1 class="logo">
-      <span>Samara</span>
-      <span>Fella</span>
-      <span>Dina.</span>
+      <span>Sammm.my</span>
     </h1>
-    <p>hi! Welcome to my portfolio</p>
   </section>
 </BackgroundAnimation>
 
@@ -44,9 +41,9 @@
 <style>
   section {
     z-index: 1;
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     width: 80vw;
     height: 100%;
   }
