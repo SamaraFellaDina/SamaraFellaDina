@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 10rem;
-    padding: 10rem 0;
+    padding: var(--padding-medium) 0;
   }
 
   ul li {
