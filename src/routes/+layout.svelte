@@ -8,15 +8,10 @@
   let footerData = data.footer;
 </script>
 
-<div>
-  {#if page.url.pathname === '/'}
-    <main>{@render children()}</main>
-    {:else}
-      <Header variant='default'/>
+    {#if page.url.pathname === '/'}
       <main>{@render children()}</main>
-      <Footer {footerData}/>
-{/if}
-
-
-</div>
- 
+      {:else}
+        <Header variant='default'/>
+        <main>{@render children()}</main>
+        <Footer {footerData}/>
+  {/if}
