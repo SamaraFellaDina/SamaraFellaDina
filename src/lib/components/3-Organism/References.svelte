@@ -10,7 +10,7 @@
 <Wrapper backgroundColor="var(--color-primary)">
     <section>
     <h2>references</h2>
-    <Hyperlinks references={references}/>
+    <Hyperlinks icon='arrow-right' references={references}/>
   </section>
 </Wrapper>
 

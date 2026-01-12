@@ -1,6 +1,7 @@
 <script>
-    import { Icons} from '$lib/index.js';
+  import { Icons } from '$lib/index.js';
   export let references;
+  export let icon;
 </script>
 
     <ul>
@@ -10,7 +11,7 @@
           
           {reference.titleOfHyperlink}
           <Icons 
-          icon="arrow-right" 
+          icon={icon} 
           width="40"
           height="40"
           />
