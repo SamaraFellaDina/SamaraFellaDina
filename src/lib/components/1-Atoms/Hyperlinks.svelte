@@ -1,20 +1,37 @@
 <script>
   import { Icons } from '$lib/index.js';
   export let references;
-  export let icon;
+  export let footer = false;
+  export let socials = false;
 </script>
 
-    <ul>
+    <ul class:footer={footer}>
     {#each references as reference}
       <li>
         <a href={reference.link}>
+
+        {#if socials}
+          {#if reference.hyperlink.includes('instagram')}
+            <Icons icon='Instagram'/>
+          {:else if reference.hyperlink.includes('tiktok')}
+            <Icons icon='TikTok'/>
+          {:else if reference.hyperlink.includes('youtube')}
+            <Icons icon='Youtube'/>
+          {:else if reference.hyperlink.includes('spotify')}
+            <Icons icon='Spotify'/>
+          {:else if reference.hyperlink.includes('linkedin')}
+            <Icons icon='LinkedIn'/>
+          {:else if reference.hyperlink.includes('github')}
+            <Icons icon='Github'/>
+          {/if}
+        {/if}
           
           {reference.titleOfHyperlink}
-          <Icons 
-          icon={icon} 
-          width="40"
-          height="40"
-          />
+            <Icons 
+            icon="arrow-right" 
+            width="40"
+            height="40"
+            />
 
         </a>
       </li>
@@ -43,14 +60,24 @@
     }
 
   ul li a:hover {
-      gap: .5rem;
+      gap: var(--gap-small);
       background-color: var(--color-secondary);
       color: var(--color-primary);
       padding: .2rem .4rem;
     }
 
-  ul li a,
-  h2 {
+  ul li a {
       color:var(--color-secondary)
     }
+
+
+  .footer li,
+  .footer a {
+    color:var(--color-primary);
+  }
+
+  .footer li a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
 </style>

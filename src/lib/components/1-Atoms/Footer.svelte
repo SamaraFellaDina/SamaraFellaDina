@@ -1,11 +1,11 @@
 <script>
   import { 
     Wrapper,
-    Icons
+    Icons,
+    Hyperlinks
   } from '$lib/index.js'
 
   export let footerData;
-  console.log(footerData)
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>
@@ -16,26 +16,10 @@
 
 <section>
   <h2>Socials</h2>
-  <ul>
-    <li>
-      <a href='/'>
-        <Icons icon='Instagram' />
-        Instagram
-      </a>
-    </li>
-      <li>
-      <a href='/'>
-        <Icons icon='Github' />
-        Github
-      </a>
-        </li>
-      <li>
-      <a href='/'>
-        <Icons icon='LinkedIn' />
-        LinkedIn
-      </a>
-        </li>
-  </ul>
+  <Hyperlinks 
+  footer="true"
+  socials="true"
+  references={footerData.socialsList}/>
 </section>
 
 <section>

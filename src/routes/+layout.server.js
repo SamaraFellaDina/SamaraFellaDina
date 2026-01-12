@@ -6,12 +6,12 @@ export const load = async () => {
   query Footer {
     footers {
       code {
-        titleOfLink
         hyperlink
+        titleOfHyperlink
       }
       socialsList {
         hyperlink
-        titleOfLink
+        titleOfHyperlink
       }
     }
   }
