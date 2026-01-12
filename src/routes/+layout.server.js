@@ -5,7 +5,7 @@ export const load = async () => {
   const query = gql`
   query Footer {
     footers {
-      code {
+      githubLinks {
         hyperlink
         titleOfHyperlink
       }

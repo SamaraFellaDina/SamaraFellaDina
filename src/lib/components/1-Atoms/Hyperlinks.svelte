@@ -3,12 +3,13 @@
   export let references;
   export let footer = false;
   export let socials = false;
+  export let arrow = false;
 </script>
 
     <ul class:footer={footer}>
     {#each references as reference}
       <li>
-        <a href={reference.link}>
+        <a href={reference.hyperlink}>
 
         {#if socials}
           {#if reference.hyperlink.includes('instagram')}
@@ -27,11 +28,14 @@
         {/if}
           
           {reference.titleOfHyperlink}
+          {#if arrow}
             <Icons 
             icon="arrow-right" 
             width="40"
             height="40"
             />
+          {/if}
+
 
         </a>
       </li>

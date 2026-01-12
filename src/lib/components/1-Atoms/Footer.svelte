@@ -14,28 +14,26 @@
   <p>lets meet! :)</p>
 </section>
 
-<section>
-  <h2>Socials</h2>
-  <Hyperlinks 
-  footer="true"
-  socials="true"
-  references={footerData.socialsList}/>
-</section>
+{#if footerData.socialsList}
+  <section>
+    <h2>Socials</h2>
+    <Hyperlinks 
+    footer="true"
+    socials="true"
+    references={footerData.socialsList}
+    />
+  </section>
+{/if}
 
-<section>
-  <h2>Github</h2>
-  <ul>
-    <li>
-      <a href='/'>Bug report</a>
-    </li>
-        <li>
-      <a href='/'>Repository</a>
-    </li>
-        <li>
-      <a href='/'>Help this site improve :D</a>
-    </li>
-  </ul>
-</section>
+{#if footerData.githubLinks}
+  <section>
+    <h2>Github</h2>
+      <Hyperlinks 
+    footer="true"
+    references={footerData.githubLinks}
+    />
+  </section>
+{/if}
 </Wrapper>
 
 
