@@ -1,4 +1,5 @@
 <script>
+    import { page } from '$app/stores';
     import { 
       Header,
       Footer
@@ -10,10 +11,18 @@
 
     /** @type {Props} */
     let { children } = $props();
+
+  const hidePaths = ['/'];
+  const visibleHeaderFooter = !hidePaths.includes($page.url.pathname);
 </script>
 
 <div>
-  <Header variant='default'/>
+  {#if visibleHeaderFooter}
+    <Header variant='default'/>
+  {/if}
   <main>{@render children?.()}</main>
-  <Footer />
+
+  {#if visibleHeaderFooter}
+    <Footer />
+  {/if}
 </div>
