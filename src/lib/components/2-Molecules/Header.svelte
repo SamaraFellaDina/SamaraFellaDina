@@ -5,7 +5,7 @@
 
 <header
   class="{variant}">
-  <a class='logo' href='/'>SamaraFellaDina.</a>
+  <a class="header" href='/'>sammm.my</a>
     <HeaderNavigation variant={variant}/>
 </header>
 
@@ -23,7 +23,7 @@
   padding: 0 0 0 1em;
 
 
-  & .logo {
+  & .header {
     color: var(--color-light);
 
     &::before {

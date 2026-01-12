@@ -6,19 +6,20 @@
     const { gsap } = await import("gsap");
     const { ScrambleTextPlugin } = await import("gsap/ScrambleTextPlugin");
 
-    gsap.registerPlugin(ScrambleTextPlugin)
+    gsap.registerPlugin(ScrambleTextPlugin);
+
     gsap.from(".logo", {
-      scrambleText: "Sammmmm.my",
-      duration:2,
-      delay:2,
+      scrambleText: "Sammmmmmmmmmmmm.mmmmmmmmy",
+      duration: 2,
+      delay: 2,
       onComplete: () => {
         gsap.to(".logo", {
-        scrambleText: "sammm.my",
-
-        })
-      }}
-    )}
-  );
+          scrambleText: "sammm.my",
+          duration: 2
+        });
+      }
+    });
+  });
 </script>
 
 <BackgroundAnimation>
@@ -46,6 +47,7 @@
     font-size: 5rem;
     color: var(--color-dark);
     text-transform: uppercase;
+    word-break: break-word;
 
     display: flex;
     flex-direction: column;
