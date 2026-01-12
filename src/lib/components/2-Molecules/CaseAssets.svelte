@@ -43,12 +43,16 @@
     margin-block: 0;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 5rem;
     padding: var(--padding-medium) 0;
+
+    @media (min-width: 700px) {
+      gap:10rem; 
+    }
   }
 
   ul li {
-    --default-space: 4rem;
+    --default-space: 2rem;
 
     @media (min-width: 700px) {
       --default-space: -4rem;
