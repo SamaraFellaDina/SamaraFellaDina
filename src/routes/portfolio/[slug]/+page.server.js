@@ -11,9 +11,9 @@ export const load = async ({ params }) => {
       caseTitle
       tags
       summary
-      references {
+      sources {
+        hyperlink
         id
-        link
         titleOfHyperlink
       }
       paragraphs {

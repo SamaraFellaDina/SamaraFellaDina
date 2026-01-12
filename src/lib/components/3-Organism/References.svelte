@@ -9,7 +9,7 @@
 
 <Wrapper backgroundColor="var(--color-primary)">
     <section>
-    <h2>references</h2>
+    <h2>Sources</h2>
     <Hyperlinks arrow='true' references={references}/>
   </section>
 </Wrapper>
