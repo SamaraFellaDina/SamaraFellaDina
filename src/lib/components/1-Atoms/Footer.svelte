@@ -3,6 +3,9 @@
     Wrapper,
     Icons
   } from '$lib/index.js'
+
+  export let footerData;
+  console.log(footerData)
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>

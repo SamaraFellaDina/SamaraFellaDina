@@ -5,6 +5,7 @@
       Footer
     } from "$lib/index.js";
 	let { data, children } = $props();
+  let footerData = data.footer;
 
 </script>
 
@@ -13,5 +14,5 @@
   <main>{@render children()}
 </main>
 
-    <Footer />
+    <Footer {footerData}/>
 </div>

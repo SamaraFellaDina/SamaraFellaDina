@@ -20,6 +20,6 @@ export const load = async () => {
   const data = await hygraph.request(query);
 
   return {
-    cases: data.portfolios
+    footer: data.footers[0]
   };
 };
