@@ -4,7 +4,7 @@
       Header,
       Footer
     } from "$lib/index.js";
-    let { children } = $props();
+	let { data, children } = $props();
 
 </script>
 
