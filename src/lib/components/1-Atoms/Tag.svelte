@@ -1,33 +1,29 @@
-<script>
-  export let tags; 
-</script>
+  <script>
+    export let content; 
+    export let invertColor= false;
+  </script>
 
-<ul>
-  {#each tags as tagItem}
-  <li>
-    {tagItem}
+
+{#if content.length > 0}
+  <li class:invert={invertColor}>
+    {content}
   </li>
-  {/each}
-</ul>
-
-<style> 
-  ul {
-    list-style: none;
-    margin-block:0;
-    padding-inline:0;
-    color:var(--color-primary);
-    display:flex;
-    flex-wrap:wrap;
-    gap: var(--gap-regular);
-  }
+{/if}
   
+<style>
   li {
-    background-color: var(--color-secondary);
-    border-radius: 10em;    
-    padding: .5rem 1rem;
-    font-weight: var(--font-weight-medium);
-    width: auto;
-    height: fit-content;
-    line-height: 1.3em;
-  }
+  color:var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 10em;    
+  padding: .5rem 1rem;
+  font-weight: var(--font-weight-medium);
+  width: auto;
+  height: fit-content;
+  line-height: 1.3em;
+}
+
+.invert {
+  color:var(--color-secondary);
+  background-color: var(--color-primary);
+}
 </style>

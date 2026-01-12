@@ -1,10 +1,6 @@
 <script>
-  import { 
-    Hero, 
-    Wrapper 
-    } from '$lib/index.js'
+  import { AboutMe } from '$lib/index.js'
+  export let data;
 </script>
 
-<Wrapper>
-  <Hero heroTitle="About me"/>
-</Wrapper>
+<AboutMe content={data}/>

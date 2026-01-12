@@ -1,10 +1,15 @@
 <script>
   export let backgroundColor = 'var(--color-dark)';
   export let fullwidth = false;
+  export let slides = false;
+  export let paragraph = false;
 </script>
 
   <div 
-    class={fullwidth ? 'wrapper-fullwidth' : 'wrapper'}
+    class= "wrapper
+        {fullwidth ? ' wrapper-fullwidth' : ''}
+        {slides ? ' wrapper-slides' : ''}
+        {paragraph ? ' wrapper-paragraph' : ''}"
     style="background-color: {backgroundColor};"
   >
     <div class="wrapper-content">
@@ -13,36 +18,48 @@
   </div>
 
 <style>
+
   .wrapper {
+    padding: 2rem;
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    background-color: var(--color-dark);
+    background-color: var(--wrapper-background-color);
 
     @media (min-width: 700px) {
-      padding: 2rem 4rem;
+      padding: var(--padding-containter);
     }
   }
 
-  .wrapper .wrapper-content {
+  .wrapper-content {
+    width:100%;
     max-width: 900px;
-    width: 100%;
   }
 
   .wrapper-fullwidth {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-dark);
+    padding: 0;
 
     @media (min-width: 700px) {
-    padding: 2rem 4rem;
+    padding: var(--padding-containter);
     }
   }
-    .wrapper-fullwidth .wrapper-content {
-    width: 100%;
 
-    @media (min-width: 700px) {
-    max-width: 900px;
+  .wrapper-slides {
+    min-height:100dvh;
+
+    & .wrapper-content {
+      display: grid;
+      align-items: center;
+      align-content: center;
+    }
   }
+
+  .wrapper-paragraph {
+    @media (min-width:500px) {
+      padding: var(--padding-containter-large);
+    }
+
+    & .wrapper-content {
+      max-width: 700px;
+    }
   }
 </style>

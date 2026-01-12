@@ -1,16 +1,18 @@
 <script>
   import { 
-    Tag, 
-    Wrapper 
+    Tags, 
+    Wrapper,
+    HeroTitle
   } from '$lib/index.js'
   import { onMount } from 'svelte';
   import gsap from 'gsap'
-  export let heroTitle ='input hero title here!';
+  export let heroTitle;
   export let thumbnail;
   export let thumbnailHeight = 700;
   export let thumbnailWidth = 700;
   export let tags;
   export let showCase = false
+  export let intro;
 
 
   onMount(() => {
@@ -28,10 +30,10 @@
 </script>
 
 <Wrapper>
-  <div class={showCase ? 'hero-showcase' : 'hero'}>
-    <h1>{heroTitle}</h1>
-    {#if Tag}
-      <Tag tags={tags}/>
+  <section class={showCase ? 'hero-showcase' : 'hero'}>
+    <HeroTitle heroTitle={heroTitle} />
+    {#if Tags}
+      <Tags tags={tags}/>
     {/if}
     {#if thumbnail}
         <img 
@@ -41,7 +43,11 @@
         width="{thumbnailWidth}"
         />
     {/if}
-  </div>
+
+    {#if intro}
+    <p>{intro}</p>
+    {/if}
+  </section>
 </Wrapper>
 
 <style>
@@ -56,18 +62,8 @@
     height:fit-content;
     width:100%;
     object-fit:cover;
+    max-height:50dvh
   }
-
-    h1 {
-    color: var(--color-primary);
-    font-style:italic;
-    letter-spacing: .2rem;
-    text-transform:uppercase;
-    font-size: 5rem;
-    font-weight: var(--font-weight-bold);
-    margin-block:0;
-    line-height: 4.5rem;
-    }
 
   .hero-showcase {
   display: flex;

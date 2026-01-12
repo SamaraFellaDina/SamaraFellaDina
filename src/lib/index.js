@@ -7,11 +7,17 @@ export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent
 export { default as Icons } from './components/1-Atoms/Icons.svelte';
 export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
+export { default as HeroTitle } from './components/1-Atoms/HeroTitle.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
 export { default as Footer } from './components/1-Atoms/Footer.svelte';
 export { default as Hyperlinks } from './components/1-Atoms/Hyperlinks.svelte';
+export { default as AboutMeHero } from './components/1-Atoms/AboutMeHero.svelte';
+export { default as AboutMeHeroImage } from './components/1-Atoms/AboutMeHeroImage.svelte';
+export { default as Paragraph } from './components/1-Atoms/Paragraph.svelte';
+export { default as Skills } from './components/1-Atoms/Skills.svelte';
 
 // Molenules
+export { default as Tags } from './components/2-Molecules/Tags.svelte';
 export { default as CaseList } from './components/2-Molecules/CaseList.svelte';
 export { default as Header } from './components/2-Molecules/Header.svelte';
 export { default as CaseAssets } from './components/2-Molecules/CaseAssets.svelte';
@@ -28,3 +34,5 @@ export { default as Cases } from './components/3-Organism/Cases.svelte';
 
 // Pages
 export { default as CaseDetail } from './components/5-Pages/CaseDetail.svelte';
+export { default as AboutMe } from './components/5-Pages/AboutMe.svelte';
+export { default as AboutSubjects } from './components/5-Pages/AboutSubjects.svelte';
