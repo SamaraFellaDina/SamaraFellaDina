@@ -23,8 +23,8 @@ let placeholder = "https://plus.unsplash.com/premium_photo-1746637466037-001842a
   
 <Wrapper>
     <ul>
-      <li> <img src={placeholder}></li>
-      <li> <img src={placeholder}></li>
+      <li> <img alt='placeholder' src={placeholder}></li>
+      <li> <img alt='placeholder' src={placeholder}></li>
     </ul>
 </Wrapper>
 
