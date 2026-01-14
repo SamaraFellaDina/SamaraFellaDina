@@ -6,8 +6,8 @@
   export let link;
 </script>
 
-<li class:footer={footer}>
-    <a href={link.hyperlink}>
+
+    <a class:footer={footer} href={link.hyperlink}>
       {#if socials}
         {#if link.hyperlink.includes('instagram')}
           <Icons icon='Instagram'/>
@@ -32,43 +32,34 @@
             />
           {/if}
         </a>
-      </li>
+
 
     <style>
 
-  li,
   a {
-    color: var(--color-dark);
-  }
-
-  li a {
+      color: var(--color-dark);
       display: flex;
       align-items: center;
       transition:  var(--hover-transition);
       gap: .1rem;
       width: fit-content;
       text-decoration: none;
-    }
+      color:var(--color-secondary)
+  }
 
-  li a:hover {
+  a:hover {
       gap: var(--gap-small);
       background-color: var(--color-secondary);
       color: var(--color-primary);
       padding: .2rem .4rem;
     }
 
-  li a {
-      color:var(--color-secondary)
-    }
-
-
-  .footer,
-  .footer a {
+  .footer {
     color:var(--color-primary);
     font-weight: 500;
   }
 
-  .footer a:hover {
+  .footer:hover {
     background-color: var(--color-primary);
     color: var(--color-secondary);
   }

@@ -9,12 +9,14 @@
 
     <ul>
       {#each sources as reference}
-    <Hyperlink
-      link={reference}
-      footer={footer}
-      socials={socials}
-      arrow={arrow}
-    />
+      <li>
+      <Hyperlink
+        link={reference}
+        footer={footer}
+        socials={socials}
+        arrow={arrow}
+      />
+        </li>
       {/each}
     </ul>
 
