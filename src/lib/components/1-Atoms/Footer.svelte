@@ -10,7 +10,7 @@
   let email = "samarafelladina@gmail.com"
 </script>
 
-<Wrapper backgroundColor='var(--color-secondary)'>
+<Wrapper backgroundColor='var(--color-primary)'>
   <div>
     <section>
   <h2>See you soon!</h2>
@@ -57,7 +57,7 @@
     }
   }
   div section {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     padding:var(--padding-small) 0;
   }
 

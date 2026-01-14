@@ -60,12 +60,12 @@
     }
 
   .footer {
-    color:var(--color-primary);
+    color:var(--color-secondary);
     font-weight: 500;
   }
 
   .footer:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
   }
 </style>
