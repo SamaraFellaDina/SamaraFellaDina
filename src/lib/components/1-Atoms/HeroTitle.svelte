@@ -10,7 +10,6 @@
 <style>
 	h1 {
 		color: var(--color-primary);
-		font-style: italic;
 		letter-spacing: 0.2rem;
 		text-transform: uppercase;
 		font-size: 3rem;
