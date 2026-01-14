@@ -4,6 +4,7 @@
   export let socials = false;
   export let arrow = false;
   export let link;
+  export let title;
 </script>
 
 
@@ -23,7 +24,11 @@
           <Icons icon='Github'/>
         {/if}
       {/if}
+        {#if link.titleOfHyperlink}
           {link.titleOfHyperlink}
+          {:else}
+          {title}
+        {/if}
           {#if arrow}
             <Icons 
             icon="arrow-right" 

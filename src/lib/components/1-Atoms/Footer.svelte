@@ -2,7 +2,8 @@
   import { 
     Wrapper,
     Icons,
-    Hyperlinks
+    Hyperlinks,
+    Hyperlink
   } from '$lib/index.js'
 
   export let footerData;
@@ -12,7 +13,11 @@
 <Wrapper backgroundColor='var(--color-secondary)'>
 <section>
   <h2>See you soon!</h2>
-  <a href="mailto:{email}">{email}</a>
+  <Hyperlink 
+  link="mailto:{email}"
+  footer="true"
+  title={email}
+  />
 </section>
 
 {#if footerData.socialsList}
