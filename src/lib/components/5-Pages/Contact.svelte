@@ -16,6 +16,7 @@
     link=mailto:{email} 
     title="{email}"
     arrow="true"
+    contact="true"
     />
   </div>
 
@@ -30,7 +31,7 @@
 
   section div {
     display: flex;
-    gap: var(--gap-medium);
+    gap: var(--gap-regular);
     flex-direction:column;
     align-items: center;
     justify-content: center;

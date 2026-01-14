@@ -5,10 +5,15 @@
   export let arrow = false;
   export let link;
   export let title;
+  export let contact = false
 </script>
 
-
-    <a class:footer={footer} href={link.hyperlink}>
+    <a class="
+    {footer ? 'footer' : ''}
+    {contact ? 'contact' : ''}
+    "
+    href={link.hyperlink}
+    >
       {#if socials}
         {#if link.hyperlink.includes('instagram')}
           <Icons icon='Instagram'/>
@@ -67,5 +72,13 @@
   .footer:hover {
     background-color: var(--color-secondary);
     color: var(--color-primary);
+  }
+
+  .contact {
+    font-size:var(--text-regular-size-m);
+
+    @media (min-width:500px) {
+      font-size:var(--text-regular-size-l);
+    }
   }
 </style>
