@@ -13,17 +13,17 @@
     font-style:italic;
     letter-spacing: .2rem;
     text-transform:uppercase;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: var(--font-weight-bold);
     margin-block:0;
     line-height: 4.5rem;
+
+      @media (min-width:500px) {
+        font-size: 5rem;
+      }
     }
 
     .about-me {
     text-align:center;
-
-    @media (min-width:900px) {
-      text-align: left; 
-    }
   }
 </style>

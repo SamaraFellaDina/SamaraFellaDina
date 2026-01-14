@@ -35,14 +35,6 @@
     {#if Tags}
       <Tags tags={tags}/>
     {/if}
-    {#if thumbnail}
-        <img 
-        alt="thumbnail" 
-        src="{thumbnail}"
-        height="{thumbnailHeight}"
-        width="{thumbnailWidth}"
-        />
-    {/if}
 
     {#if intro}
     <p>{intro}</p>
@@ -57,12 +49,6 @@
     justify-content:flex-end;
     margin: 2rem 0;
     gap: var(--gap-regular);
-  }
-    img {
-    height:fit-content;
-    width:100%;
-    object-fit:cover;
-    max-height:50dvh
   }
 
   .hero-showcase {
