@@ -20,14 +20,10 @@
 <style>
 
   .wrapper {
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     background-color: var(--wrapper-background-color);
-
-    @media (min-width: 700px) {
-      padding: var(--padding-containter);
-    }
   }
 
   .wrapper-content {

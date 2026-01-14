@@ -16,10 +16,11 @@
     font-size: 3rem;
     font-weight: var(--font-weight-bold);
     margin-block:0;
-    line-height: 4.5rem;
+    line-height: 2.5rem;
 
       @media (min-width:500px) {
         font-size: 5rem;
+        line-height: 4.5rem;
       }
     }
 

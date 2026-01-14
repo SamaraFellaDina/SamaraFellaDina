@@ -2,7 +2,6 @@
   import { 
     Wrapper,
     Hero,
-    HeroTitle,
     AboutMeHeroImage,
     Paragraph
   } from '$lib/index.js'
@@ -12,7 +11,7 @@ export let heroImages;
 </script>
 
 <Wrapper>
-  <HeroTitle heroTitle="Hi! I'm Sammy" aboutMe='true'/>
+  <Hero heroTitle="Hi! I'm Sammy" aboutMe='true'/>
 </Wrapper>
 
 <Wrapper>

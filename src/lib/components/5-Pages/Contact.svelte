@@ -2,14 +2,15 @@
   import { 
     HeroTitle,
     Wrapper,
-    Hyperlink
+    Hyperlink,
+    Hero
   } from '$lib/index.js';
   let email = "samarafelladina@gmail.com"
 </script>
 
+<Hero heroTitle="Speak to you soon!"/>
 <Wrapper>
   <section>
-  <HeroTitle heroTitle="Speak to you soon!" />
   <div>
     <img alt='gif' src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eDhxbDd0eXY5dXkxbTZiYmx3eHhkaGNtdmpiYXBsZXhpZDl5bnZibyZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/7NoNw4pMNTvgc/giphy.gif">
     <Hyperlink 
@@ -34,11 +35,10 @@
     gap: var(--gap-regular);
     flex-direction:column;
     align-items: center;
-    justify-content: center;
     min-height:60dvh;
 
 
-    @media (min-width:700px) {
+    @media (min-width:900px) {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;

@@ -12,7 +12,7 @@
     {footer ? 'footer' : ''}
     {contact ? 'contact' : ''}
     "
-    href={link.hyperlink}
+    href={link.hyperlink || link}
     >
       {#if socials}
         {#if link.hyperlink.includes('instagram')}
