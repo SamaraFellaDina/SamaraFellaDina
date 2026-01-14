@@ -46,5 +46,6 @@
 		margin-top: 10rem;
 		height: 80dvh;
 		overflow: hidden;
+    gap: var(--gap-small);
 	}
 </style>
