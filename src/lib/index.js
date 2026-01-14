@@ -9,13 +9,13 @@ export { default as Wrapper } from './components/1-Atoms/Wrapper.svelte';
 export { default as Tag } from './components/1-Atoms/Tag.svelte';
 export { default as HeroTitle } from './components/1-Atoms/HeroTitle.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
-export { default as Footer } from './components/1-Atoms/Footer.svelte';
-export { default as Hyperlinks } from './components/1-Atoms/Hyperlinks.svelte';
-export { default as Hyperlink } from './components/1-Atoms/Hyperlink.svelte';
-export { default as AboutMeHero } from './components/1-Atoms/AboutMeHero.svelte';
+export { default as Footer } from './components/4-Templates/Footer.svelte';
+export { default as Hyperlinks } from './components/3-Organism/Hyperlinks.svelte';
+export { default as Hyperlink } from './components/2-Molecules/Hyperlink.svelte';
+export { default as AboutMeHero } from './components/4-Templates/AboutMeHero.svelte';
 export { default as AboutMeHeroImage } from './components/1-Atoms/AboutMeHeroImage.svelte';
-export { default as Paragraph } from './components/1-Atoms/Paragraph.svelte';
-export { default as Skills } from './components/1-Atoms/Skills.svelte';
+export { default as Paragraph } from './components/3-Organism/Paragraph.svelte';
+export { default as Skills } from './components/2-Molecules/Skills.svelte';
 
 // Molenules
 export { default as Tags } from './components/2-Molecules/Tags.svelte';
