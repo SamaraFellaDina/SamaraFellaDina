@@ -16,60 +16,28 @@
 
 <div>
   <img 
-    class="hero"
     alt='hero' 
     src={heroImages[currentIndex].url} 
     width={heroImages[currentIndex].width} 
     height={heroImages[currentIndex].height}
   >
-  <ul>
-      <li> <img src="https://plus.unsplash.com/premium_photo-1746637466037-001842a48d31?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ></li>
-      <li> <img src={heroImages} ></li>
-    </ul>
   </div>
 
 
   <style>
   div {
+  display:flex;
   justify-content: center;
   width:100%;
-  max-height:60dvh;
+  
 
-  @media(min-width:900px) {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: unset;
-    gap:var(--gap-regular);
+    @media (min-width:700px) {
+  padding:  0 var(--padding-medium);
+
   }
 }
-
-.hero {
-  max-height:60dvh;
-  max-width: 60dvh; 
+  img {
+  aspect-ratio:1/1;
 }
 
-div ul {
-  display:none;
-
-  @media(min-width:900px) {
-    display: flex;
-    gap: var(--gap-regular);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-div ul li {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;   
-}
-
-div ul li img {
-  width: 100%;
-  height: 100%;
-}
 </style>

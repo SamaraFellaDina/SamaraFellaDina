@@ -8,6 +8,7 @@
   } from '$lib/index.js'
 export let paragraph = 'no paragraph available'
 export let heroImages;
+
 </script>
 
 <Wrapper>
@@ -20,4 +21,3 @@ export let heroImages;
 
   <Paragraph content={paragraph}/>
   
-
