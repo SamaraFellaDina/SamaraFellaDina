@@ -6,7 +6,7 @@
   } from '$lib/index.js'
 
   export let footerData;
-  let email = "/"
+  let email = "samarafelladina@gmail.com"
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>

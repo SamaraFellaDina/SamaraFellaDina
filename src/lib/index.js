@@ -11,6 +11,7 @@ export { default as HeroTitle } from './components/1-Atoms/HeroTitle.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
 export { default as Footer } from './components/1-Atoms/Footer.svelte';
 export { default as Hyperlinks } from './components/1-Atoms/Hyperlinks.svelte';
+export { default as Hyperlink } from './components/1-Atoms/Hyperlink.svelte';
 export { default as AboutMeHero } from './components/1-Atoms/AboutMeHero.svelte';
 export { default as AboutMeHeroImage } from './components/1-Atoms/AboutMeHeroImage.svelte';
 export { default as Paragraph } from './components/1-Atoms/Paragraph.svelte';
