@@ -1,38 +1,13 @@
-# sv
+# Hello! 
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+My name is [Sammm.my](https://www.sammm.my)!  
+This is my portfolio, where I showcase my work — feel free to take a look :)
 
-## Creating a project
+## On my portfolio you’ll find:
+- Frontend projects built with `Svelte`, `Astro`, and `Next.js`
+- Design-driven experiments
+- School and client projects
 
-If you're seeing this, you've probably already done this step. Congrats!
+**Explore my work here: [sammm.my/portfolio](https://www.sammm.my/portfolio)**
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+![](https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eGh2ZndraHI1YjNqcDVmdGx0aDJsazVqamhveWowZHN0ZDNqcDlyYSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/ASd0Ukj0y3qMM/giphy.gif)
