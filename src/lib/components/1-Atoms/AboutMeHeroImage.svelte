@@ -29,6 +29,7 @@
   display:flex;
   justify-content: center;
   width:100%;
+
   
 
     @media (min-width:700px) {
@@ -37,7 +38,10 @@
   }
 }
   img {
+  --max-ratio:500px;
   aspect-ratio:1/1;
+  max-height:var(--max-ratio);
+  max-width:var(--max-ratio);
 }
 
 </style>
