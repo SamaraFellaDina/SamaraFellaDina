@@ -1,6 +1,9 @@
+
 @font-face {
   font-family: "Inter";
-  src: url(static/fonts/Inter-VariableFont_opsz,wght.ttf) format("ttf"),
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
