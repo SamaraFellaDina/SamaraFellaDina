@@ -21,7 +21,7 @@
     width={heroImages[currentIndex].width} 
     height={heroImages[currentIndex].height}
   >
-  </div>
+</div>
 
 
   <style>
