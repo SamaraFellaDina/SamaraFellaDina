@@ -39,6 +39,8 @@
   --border-radius:1rem;
   --gap-small:.5rem;
   --gap-regular: 1rem;
+  --gap-medium: 2rem;
+
 }
 
 * {
