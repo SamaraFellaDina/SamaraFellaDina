@@ -8,7 +8,7 @@
 <Wrapper backgroundColor="var(--color-primary)">
 	<div>
 		<section>
-			<h2>See you soon!</h2>
+			<h2>Talk to you soon!</h2>
 			<Hyperlink link="mailto:{email}" footer="true" title={email} />
 		</section>
 

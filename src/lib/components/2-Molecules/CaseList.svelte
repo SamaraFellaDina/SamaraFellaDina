@@ -28,6 +28,7 @@
 		display: grid;
 		position: relative;
 		gap: var(--gap-regular);
+		padding: var(--padding-medium) 0;
 
 		@media (min-width: 700px) {
 			display: block;

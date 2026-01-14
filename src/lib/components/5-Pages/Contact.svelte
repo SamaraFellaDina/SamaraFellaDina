@@ -3,7 +3,7 @@
 	let email = 'samarafelladina@gmail.com';
 </script>
 
-<Hero heroTitle="Speak to you soon!" />
+<Hero heroTitle="Talk to you soon!" />
 <Wrapper>
 	<section>
 		<div>
