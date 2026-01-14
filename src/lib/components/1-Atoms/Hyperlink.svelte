@@ -42,20 +42,20 @@
     <style>
 
   a {
-      color: var(--color-dark);
+      color: var(--color-light);
       display: flex;
       align-items: center;
       transition:  var(--hover-transition);
       gap: .1rem;
       width: fit-content;
       text-decoration: none;
-      color:var(--color-secondary)
+      color:var(--color-primary)
   }
 
   a:hover {
       gap: var(--gap-small);
-      background-color: var(--color-secondary);
-      color: var(--color-primary);
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
       padding: .2rem .4rem;
     }
 

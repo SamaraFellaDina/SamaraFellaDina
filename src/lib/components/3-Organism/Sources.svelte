@@ -7,7 +7,7 @@
 </script>
 
 
-<Wrapper backgroundColor="var(--color-primary)">
+<Wrapper backgroundColor="var(--color-secondary)">
     <section>
     <h2>Sources</h2>
     <Hyperlinks arrow='true' sources={sources}/>
@@ -25,6 +25,6 @@
     justify-content: center;
     }
     section h2 {
-      color:var(--color-secondary)
+      color:var(--color-primary)
     }
   </style>
