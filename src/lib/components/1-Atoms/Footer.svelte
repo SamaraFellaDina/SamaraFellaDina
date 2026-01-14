@@ -11,7 +11,8 @@
 </script>
 
 <Wrapper backgroundColor='var(--color-secondary)'>
-<section>
+  <div>
+    <section>
   <h2>See you soon!</h2>
   <Hyperlink 
   link="mailto:{email}"
@@ -40,11 +41,27 @@
     />
   </section>
 {/if}
+  </div>
+
 </Wrapper>
 
 
 <style>
-  section {
+  div {
+
+    @media(min-width:700px){
+    display: flex;
+    gap: var(--gap-regular);
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+  }
+  div section {
     color: var(--color-primary);
+    padding:var(--padding-small) 0;
+  }
+
+  div section h2 {
+    margin-block: .5rem;
   }
 </style>
