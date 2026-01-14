@@ -50,10 +50,16 @@
 	ul li a {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
 		height: 100%;
 		position: relative;
 	}
+
+	ul li :global(img),
+ul li :global(video) {
+	max-height:600px;   
+  object-fit: cover; 
+  display: block;
+}
 
 	ul li:hover {
 		@media (min-width: 700px) {
