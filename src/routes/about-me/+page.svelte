@@ -1,6 +1,6 @@
 <script>
-  import { AboutMe } from '$lib/index.js'
-  export let data;
+	import { AboutMe } from '$lib/index.js';
+	export let data;
 </script>
 
-<AboutMe content={data}/>
+<AboutMe content={data} />

@@ -2,32 +2,32 @@ import { gql } from 'graphql-request';
 import { hygraph } from '$lib/hygraph.js';
 
 export const load = async () => {
-  const query = gql`
-query aboutMe {
-  aboutMes {
-    heroImages {
-      id
-      url
-      width
-      height
-    }
-    aboutMe
-    loveProducts
-    loveSubjects
-    skills {
-      sectionHeading
-      listOfSkills {
-        titleOfSkill
-        experience
-      }
-    }
-  }
-}
-  `;
+	const query = gql`
+		query aboutMe {
+			aboutMes {
+				heroImages {
+					id
+					url
+					width
+					height
+				}
+				aboutMe
+				loveProducts
+				loveSubjects
+				skills {
+					sectionHeading
+					listOfSkills {
+						titleOfSkill
+						experience
+					}
+				}
+			}
+		}
+	`;
 
-  const data = await hygraph.request(query);
+	const data = await hygraph.request(query);
 
-  return {
-    aboutMe: data.aboutMes[0]
-  };
+	return {
+		aboutMe: data.aboutMes[0]
+	};
 };

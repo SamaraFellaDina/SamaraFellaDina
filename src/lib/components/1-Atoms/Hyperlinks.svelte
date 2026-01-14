@@ -1,28 +1,23 @@
 <script>
-  import { Icons, Hyperlink } from '$lib/index.js';
-  export let sources;
+	import { Icons, Hyperlink } from '$lib/index.js';
+	export let sources;
 
-  export let footer = false;
-  export let socials = false;
-  export let arrow = false;
+	export let footer = false;
+	export let socials = false;
+	export let arrow = false;
 </script>
 
-    <ul>
-      {#each sources as reference}
-      <li>
-      <Hyperlink
-        link={reference}
-        footer={footer}
-        socials={socials}
-        arrow={arrow}
-      />
-        </li>
-      {/each}
-    </ul>
+<ul>
+	{#each sources as reference}
+		<li>
+			<Hyperlink link={reference} {footer} {socials} {arrow} />
+		</li>
+	{/each}
+</ul>
 
 <style>
-  ul {
-      list-style: none;
-      padding-inline:0
-    }
+	ul {
+		list-style: none;
+		padding-inline: 0;
+	}
 </style>

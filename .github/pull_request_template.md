@@ -1,9 +1,11 @@
 # Description
+
 Please include a summary of the changes and the related issue(s).  
 Please include relevant motivation and context, with a screenshot if necessary.  
-Please include a link to the live site, where the change is implemented.  
+Please include a link to the live site, where the change is implemented.
 
 ## Fixes issue
+
 - issue #
 
 ## Type of change
@@ -34,6 +36,3 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] I have performed a self-review of my code
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation (README and/or Wiki)
-
-
-

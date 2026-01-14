@@ -1,5 +1,5 @@
 <script>
-  import { Contact } from '$lib/index.js'
+	import { Contact } from '$lib/index.js';
 </script>
 
 <Contact />
