@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: "Inter";
-  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format("truetype");
+  font-family: "Rubik";
+  src: url('/fonts/Rubik-VariableFont_wght.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
   --color-link-visited:hsl(83, 89%, 65%);
 
   /* fonts */
-  --font-family-primary: "Inter", sans-serif;
+  --font-family-primary: "Rubik", sans-serif;
   --font-weight-medium:600;
   --font-weight-bold:900;
 

@@ -11,7 +11,6 @@
 	h1 {
 		color: var(--color-primary);
 		letter-spacing: 0.2rem;
-		text-transform: uppercase;
 		font-size: 3rem;
 		font-weight: var(--font-weight-bold);
 		margin-block: 0;
