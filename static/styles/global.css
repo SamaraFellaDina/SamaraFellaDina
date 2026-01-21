@@ -47,8 +47,12 @@
   --padding-large:6rem;
   --padding-containter: var(--padding-regular) var(--padding-medium);
   --padding-containter-large: var(--padding-regular) var(--padding-large);
+
   --margin-block: 1.5rem;
+
   --border-radius:1rem;
+  --border-radius-full:10rem;
+
   --gap-small:.5rem;
   --gap-regular: 1rem;
   --gap-medium: 2rem;

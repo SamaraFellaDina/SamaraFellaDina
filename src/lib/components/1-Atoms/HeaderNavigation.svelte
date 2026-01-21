@@ -1,8 +1,16 @@
 <script>
+	import { Icons } from '$lib/index.js'
 	export let variant;
 
 	let x = Math.random() * 200 - 100;
 	let y = Math.random() * 200 - 100;
+
+	let open = false;
+	let onClick = () => {
+	open = !open
+	}
+
+	let iconSize = 40;
 </script>
 
 <nav
@@ -11,12 +19,14 @@
 		? 'position: absolute; top: 50%; left: 50%; transform: translate(' + x + 'px, ' + y + 'px);'
 		: ''}
 >
-	<ul>
-		<li><a href="/contact">contact</a></li>
-		<li><a href="/portfolio">portfolio</a></li>
-		<li><a href="/about-me">about me</a></li>
+	<ul class:open={open}>
+		<li><a href="/contact">contact <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		<li><a href="/portfolio">portfolio <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		<li><a href="/about-me">about me <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
 	</ul>
-	<button>Menu</button>
+	<button on:click={onClick}>
+			{open ? 'close' : 'menu'}
+	</button>
 </nav>
 
 <style>
@@ -49,6 +59,8 @@
 
 		nav button {
 		display:none;
+		position: relative;
+		z-index: 10;
 	}
 
 
@@ -56,33 +68,71 @@
 		height: 100%;
 	}
 
+		.default .open {
+		transform: translate(0, 0);
+		overflow:hidden;
+	}
+
 		.default ul {
+		z-index: 2;
 			display: flex;
 			flex-direction:column;
 			height: 100%;
-
+			position:fixed;
+			bottom:0;
+			left:0;
+			background:var(--color-primary);
+			width:100%;
+			transform: translate(0, 100%);
+			justify-content: center;
 			@media (min-width:700px) {
 				flex-direction:row;
 			}
 		}
 
+		.default ul li {
+    height: 6rem;
+		}
 		.default ul li a {
-			--padding-inline: 1rem;
+			--padding-inline: 2rem;
+			font-size:var(--text-regular-size-l);
+			color: var(--color-secondary);
+			text-decoration:none;
 			height: 100%;
+			width:100%;
 			align-items: center;
 			padding-inline: var(--padding-inline);
+
+			@media (min-width:700px) {
+				--padding-inline: 1rem;
+				color: var(--color-dark);
+			}
 		}
 
 		.default ul li:last-child a {
-			padding-inline-end: calc(var(--padding-inline) * 2);
+			@media (min-width:700px) {
+				padding-inline-end: calc(var(--padding-inline) * 2);
+			}
 		}
 
 		.default button {
-			display:block;
-			position:fixed;
-			bottom:10%;
-			left:50%;
-			aspect-ratio: 1/1;
+			--min-size:4rem;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			bottom: 10%;
+			left: 50%;
+			aspect-ratio: 1 / 1;
+			border-radius: var(--border-radius-full);
+			min-height: 4rem;
+			min-width: 4rem;
+			justify-content: center;
+
+			&:hover {
+				background-color:var(--color-tertriary);
+				color:var(--color-secondary);
+				transform:scale(1.2);
+			}
 
 			@media (min-width:700px) {
 				display:none;
