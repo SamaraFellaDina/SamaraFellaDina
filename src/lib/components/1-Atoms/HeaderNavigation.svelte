@@ -31,125 +31,127 @@
 
 <style>
 	nav {
-		z-index: 2;
-	}
+	z-index: 2;
+	height: 100%;
+}
 
-	nav ul {
-		list-style: none;
-		z-index: 2;
-		margin-block: 0;
-		padding-inline: 0;
-	}
+nav ul {
+	list-style: none;
+	margin-block: 0;
+	padding-inline: 0;
+	z-index: 2;
 
-	nav ul li {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+	background: var(--color-primary);
+	transform: translateY(100%);
+	justify-content: center;
+	transition: var(--hover-transition);
+	overflow: hidden;
+
+	@media (min-width:700px) {
+		flex-direction: row;
+		transform: none;
+		position: static;
+	}
+}
+
+nav ul.open {
+	transform: translateY(0);
+}
+
+
+nav ul li {
+	height: 6rem;
+
+	@media (min-width:700px) {
 		height: 100%;
 	}
+}
 
-	nav ul li a {
+nav ul li a {
+	--padding-inline: 2rem;
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	font-size: var(--text-regular-size-l);
+	text-decoration: none;
+	color: var(--color-secondary);
+	background-color: var(--color-primary);
+
+	padding-inline: var(--padding-inline);
+	transition: var(--hover-transition);
+
+	@media (min-width: 700px) {
+		--padding-inline: 1rem;
 		color: var(--color-dark);
-		background-color: var(--color-primary);
-		display: flex;
-		width: fit-content;
-		transition:var(--hover-transition);
-
-		&:hover {
-			background-color: var(--color-secondary);
-			color: var(--color-tertriary);
-		}
+		font-size: var(--text-regular-size);
 	}
+}
 
-		nav button {
-		display:none;
-		position: relative;
-		z-index: 10;
-		color:var(--color-dark);
-		background:var(--color-primary);
-		border:none;
-		backdrop-filter: invert(1);
-		-webkit-backdrop-filter: invert(1); 
-		background: rgba(255,255,255,0.2);
+
+nav ul li a:hover {
+	background-color: var(--color-secondary);
+	color: var(--color-tertriary);
+
+	@media (min-width:700px) {
+		text-decoration: underline;
 	}
+}
 
-	.default {
-		height: 100%;
+nav ul li:last-child a {
+	@media (min-width: 700px) {
+		padding-inline-end: calc(var(--padding-inline) * 2);
 	}
+}
 
-		.default .open {
-		transform: translate(0, 0);
-		overflow:hidden;
+nav button {
+	--min-size: 5rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	aspect-ratio: 1 / 1;
+	min-width: var(--min-size);
+	min-height: var(--min-size);
+
+	border-radius: var(--border-radius-full);
+	border: none;
+
+	color: var(--color-dark);
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: invert(1);
+	-webkit-backdrop-filter: invert(1);
+
+	z-index: 10;
+	transition: var(--hover-transition);
+
+	@media (min-width: 700px) {
+		display: none;
 	}
+}
 
-		.default ul {
-		z-index: 2;
-			display: flex;
-			flex-direction:column;
-			height: 100%;
-			position:fixed;
-			bottom:0;
-			left:0;
-			background:var(--color-primary);
-			width:100%;
-			transform: translate(0, 100%);
-			justify-content: center;
-			transition:var(--hover-transition);
-			@media (min-width:700px) {
-				flex-direction:row;
-			}
-		}
+nav button:hover {
+	background-color: var(--color-tertriary);
+	color: var(--color-secondary);
+	transform: translateX(-50%) scale(1.2);
+}
 
-		.default ul li {
-    height: 6rem;
-		}
-		.default ul li a {
-			--padding-inline: 2rem;
-			font-size:var(--text-regular-size-l);
-			color: var(--color-secondary);
-			text-decoration:none;
-			height: 100%;
-			width:100%;
-			align-items: center;
-			padding-inline: var(--padding-inline);
 
-			@media (min-width:700px) {
-				--padding-inline: 1rem;
-				color: var(--color-dark);
-			}
-		}
-
-		.default ul li:last-child a {
-			@media (min-width:700px) {
-				padding-inline-end: calc(var(--padding-inline) * 2);
-			}
-		}
-
-.default button {
-		--min-size: 5rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: fixed;
-		bottom: 10%;
-		left: 50%;
-		transform: translateX(-50%);
-		aspect-ratio: 1 / 1;
-		min-width: var(--min-size);
-		min-height: var(--min-size);
-		border-radius: var(--border-radius-full);
-		z-index: 10;
-		transition:var(--hover-transition);
-
-			@media (min-width:700px) {
-				display:none;
-			}
-		}
-
-					.default button:hover {
-				background-color:var(--color-tertriary);
-				color:var(--color-secondary);
-				transform: translateX(-50%) scale(1.2);
-			}
-
-	.title a {
-		font-size: 1.5rem;
-	}
 </style>
