@@ -146,7 +146,7 @@ nav button {
 	justify-content: center;
 
 	position: fixed;
-	bottom: 10%;
+	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 
