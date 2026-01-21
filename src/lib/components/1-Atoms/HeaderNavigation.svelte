@@ -1,6 +1,8 @@
 <script>
+	import { page } from '$app/stores';
 	import { Icons } from '$lib/index.js'
-	export let variant;
+
+	$: homePage = $page.url.pathname === '/';
 
 	let x = Math.random() * 200 - 100;
 	let y = Math.random() * 200 - 100;
@@ -11,18 +13,32 @@
 	}
 
 	let iconSize = 40;
+	let navigation = [
+		{ label: 'contact', href: '/contact' },
+		{ label: 'portfolio', href: '/portfolio' },
+		{ label: 'about me', href: '/about-me' }
+	];
+
 </script>
 
+
 <nav
-	class={variant}
-	style={variant === 'title'
-		? 'position: absolute; top: 50%; left: 50%; transform: translate(' + x + 'px, ' + y + 'px);'
+	class:homepage={homePage}
+	style={homePage
+		? `transform: translate(${x}px, ${y}px);`
 		: ''}
 >
 	<ul class:open={open}>
-		<li><a href="/contact" data-sveltekit-reload >contact <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
-		<li><a href="/portfolio" data-sveltekit-reload >portfolio <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
-		<li><a href="/about-me" data-sveltekit-reload >about me <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		{#each navigation as item}
+			<li>
+				<a data-sveltekit-reload href={item.href}>
+					{item.label}
+					<span class="icon">
+						<Icons icon="arrow-right" width={iconSize} height={iconSize}/>
+					</span>
+				</a>
+			</li>
+		{/each}
 	</ul>
 	<button on:click={onClick}>
 			{open ? 'close' : 'menu'}
@@ -73,6 +89,12 @@ nav ul li {
 
 	@media (min-width:700px) {
 		height: 100%;
+	}
+}
+
+.icon {
+	@media (min-width:700px){
+		display:none;
 	}
 }
 
@@ -153,5 +175,41 @@ nav button:hover {
 	transform: translateX(-50%) scale(1.2);
 }
 
+.homepage {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	width: unset; 
+	height: unset;
+}
 
+.homepage ul {
+	flex-direction:column;
+	background:unset;
+	position: relative;
+	transform: unset;
+}
+
+.homepage ul li {
+	font-size:var(--text-regular-size-l);
+	height:unset;
+}
+
+.homepage ul li a {
+	width: fit-content;
+	padding: 0;
+	color: var(--color-dark)
+}
+
+.homepage ul li a:last-child {
+		padding-inline-end:0;
+}
+
+.homepage .icon {
+	display:none;
+}
+
+.homepage button {
+	display: none;
+}
 </style>
