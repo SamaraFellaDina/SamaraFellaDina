@@ -106,6 +106,7 @@ ul li :global(video) {
 	ul li a section p {
 		font-size:var(--text-regular-size-s);
 		margin-block: 0;
+		color:var(--color-light);
 	}
 	ul li a section h2 {
 		font-size: var(--text-regular-size-l);
