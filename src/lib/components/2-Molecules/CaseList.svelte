@@ -8,13 +8,14 @@
 <Wrapper>
 	<ul>
 		{#each listOfCases as caseItem}
+		{console.log(caseItem)}
 			<li>
 				<a href="/portfolio/{caseItem.slug}">
 					<ContentGenerator asset={caseItem.thumbnail} />
 					<section>
 						<h2>{caseItem.caseTitle}</h2>
-						<p>Amsterdam, Netherlands</p>
-						<p>14-10-2002</p>
+						<p>{caseItem.location}</p>
+						<p>{caseItem.year}</p>
 					</section>
 				</a>
 			</li>
