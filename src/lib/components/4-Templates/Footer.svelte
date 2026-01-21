@@ -30,7 +30,7 @@
 
 <style>
 	div {
-		@media (min-width: 700px) {
+		@media (min-width: 900px) {
 			display: flex;
 			gap: var(--gap-regular);
 			justify-content: space-between;
