@@ -8,7 +8,6 @@
 <Wrapper>
 	<ul>
 		{#each listOfCases as caseItem}
-		{console.log(caseItem)}
 			<li>
 				<a href="/portfolio/{caseItem.slug}">
 					<ContentGenerator asset={caseItem.thumbnail} />
