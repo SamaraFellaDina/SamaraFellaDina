@@ -3,7 +3,6 @@
 	export let footer = false;
 	export let socials = false;
 	export let arrow = false;
-	export let workingProjects = false;
 	export let link;
 	export let title;
 	export let contact = false;
@@ -13,7 +12,6 @@
 	class="
     {footer ? 'footer' : ''}
     {contact ? 'contact' : ''}
-		{workingProjects ? 'working-projects' : ''}
     "
 	href={link.hyperlink || link}
 >
@@ -77,9 +75,5 @@
 		@media (min-width: 500px) {
 			font-size: var(--text-regular-size-l);
 		}
-	}
-
-	.working-projects {
-		font-size: var(--text-regular-size-l);
 	}
 </style>

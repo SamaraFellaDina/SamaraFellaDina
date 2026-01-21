@@ -8,9 +8,8 @@
 <CaseList cases={caseData.cases} />
 
 <Hyperlinks sources={caseData.cases[0].workingProjects} 
-heading='Current Projects'
+heading='Current working projects'
 backgroundColor="var(--color-secondary)"
-workingProjects
 arrow
 />
 
