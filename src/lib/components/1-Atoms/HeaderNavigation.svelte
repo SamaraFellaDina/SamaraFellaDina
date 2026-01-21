@@ -139,6 +139,7 @@ nav ul li:last-child a {
 
 nav button {
 	--min-size: 5rem;
+	--invert: blur(2px) invert(1);
 
 	display: flex;
 	align-items: center;
@@ -158,8 +159,8 @@ nav button {
 
 	color: var(--color-dark);
 	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: invert(1);
-	-webkit-backdrop-filter: invert(1);
+	backdrop-filter: var(--invert);
+	-webkit-backdrop-filter: var(--invert);
 
 	z-index: 10;
 	transition: var(--hover-transition);
