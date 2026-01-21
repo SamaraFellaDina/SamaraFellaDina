@@ -2,14 +2,14 @@
 @font-face {
   font-family: "Rubik";
   src: url('/fonts/Rubik-VariableFont_wght.ttf') format("truetype");
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Zalando Sans";
   src: url('/fonts/ZalandoSansExpanded-VariableFont_wght.ttf') format("truetype");
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 
@@ -26,6 +26,7 @@
   /* fonts */
   --font-family-primary: "Rubik", sans-serif;
   --font-family-heading: "Zalando Sans", sans-serif;
+  --font-weight-normal:400;
   --font-weight-medium:600;
   --font-weight-bold:900;
 
@@ -106,6 +107,7 @@ main {
   h6 {
     margin-block-start: 3rem;
     font-family:var(--font-family-heading);
+    font-weight:var(--font-weight-bold)
   }
 
 ul {
@@ -117,7 +119,8 @@ a,
 li,
 button {
   font-size: var(--text-regular-size-s);
-    line-height: var(--text-regular-line-height-s);
+  line-height: var(--text-regular-line-height-s);
+  font-weight:var(--font-weight-normal);
 
     @media (min-width: 700px) {
     font-size: var(--text-regular-size-m);
@@ -133,7 +136,6 @@ p {
 a {
   text-decoration: none;
   color :var(--color-primary);
-  font-weight: var(--font-weight-medium);
   position: relative;
 
   &:visited {

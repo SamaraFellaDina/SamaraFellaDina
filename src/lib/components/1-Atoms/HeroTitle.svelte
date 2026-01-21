@@ -12,7 +12,7 @@
 		color: var(--color-primary);
 		letter-spacing: 0.2rem;
 		font-size: 3rem;
-		font-weight: var(--font-weight-bold);
+		font-weight: var(--font-weight-medium);
 		margin-block: 0;
 		line-height: 2.5rem;
 

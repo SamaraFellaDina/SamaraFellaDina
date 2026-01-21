@@ -111,7 +111,7 @@ ul li :global(video) {
 	ul li a section h2 {
 		font-size: var(--text-regular-size-l);
 		line-height: 1.5rem;
-		font-weight: 700;
+		font-weight: var(--font-weight-medium);
 		margin-block: 0 1rem;
 	}
 </style>
