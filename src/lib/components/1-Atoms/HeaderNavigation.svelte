@@ -3,22 +3,27 @@
 
 	let x = Math.random() * 200 - 100;
 	let y = Math.random() * 200 - 100;
+
+	export let open = false;
+	export let onClick = () => {
+		open = !open
+	}
 </script>
 
 <nav
 	class={variant}
-	style={variant === 'title'
-		? 'position: absolute; top: 50%; left: 50%; transform: translate(' + x + 'px, ' + y + 'px);'
-		: ''}
+	style={variant === 'title'}
 >
-<button>
+<button on:click={onClick}>
 	Menu
 </button>
-	<ul>
+
+	<ul class:open={open}>
 		<li><a href="/contact">contact</a></li>
 		<li><a href="/portfolio">portfolio</a></li>
 		<li><a href="/about-me">about me</a></li>
 	</ul>
+
 </nav>
 
 <style>
@@ -71,7 +76,7 @@
 		display: flex;
 		height: 100%;
 		width:100%;
-		position: absolute;
+		position: fixed;
 		flex-direction:column;
 		top: 0;
 		left: 0;
@@ -104,6 +109,10 @@
 		@media (min-width:500px) {
 			padding-inline-end: calc(var(--padding-inline) * 2);
 		}
+	}
+
+	.default .open {
+		transform: translate(0, 0);
 	}
 
 	.title a {
