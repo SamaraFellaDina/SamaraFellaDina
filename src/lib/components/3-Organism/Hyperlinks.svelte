@@ -5,12 +5,13 @@
 	export let footer = false;
 	export let socials = false;
 	export let arrow = false;
+	export let workingProjects = false;
 </script>
 
 <ul>
 	{#each sources as reference}
 		<li>
-			<Hyperlink link={reference} {footer} {socials} {arrow} />
+			<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
 		</li>
 	{/each}
 </ul>
