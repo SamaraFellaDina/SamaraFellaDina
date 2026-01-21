@@ -110,7 +110,8 @@ ul {
 
 p,
 a,
-li {
+li,
+button {
   font-size: var(--text-regular-size-s);
     line-height: var(--text-regular-line-height-s);
 
