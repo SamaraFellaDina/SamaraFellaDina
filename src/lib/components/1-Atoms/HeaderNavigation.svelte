@@ -16,6 +16,7 @@
 		<li><a href="/portfolio">portfolio</a></li>
 		<li><a href="/about-me">about me</a></li>
 	</ul>
+	<button>Menu</button>
 </nav>
 
 <style>
@@ -46,25 +47,47 @@
 		}
 	}
 
+		nav button {
+		display:none;
+	}
+
+
 	.default {
 		height: 100%;
+	}
 
-		& ul {
+		.default ul {
 			display: flex;
+			flex-direction:column;
 			height: 100%;
+
+			@media (min-width:700px) {
+				flex-direction:row;
+			}
 		}
 
-		& ul li a {
+		.default ul li a {
 			--padding-inline: 1rem;
 			height: 100%;
 			align-items: center;
 			padding-inline: var(--padding-inline);
 		}
 
-		& ul li:last-child a {
+		.default ul li:last-child a {
 			padding-inline-end: calc(var(--padding-inline) * 2);
 		}
-	}
+
+		.default button {
+			display:block;
+			position:fixed;
+			bottom:10%;
+			left:50%;
+			aspect-ratio: 1/1;
+
+			@media (min-width:700px) {
+				display:none;
+			}
+		}
 
 	.title a {
 		font-size: 1.5rem;
