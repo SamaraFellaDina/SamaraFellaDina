@@ -7,8 +7,10 @@
 <Hero heroTitle="Portfolio" />
 <CaseList cases={caseData.cases} />
 
-<Wrapper>
-	<h2>Current Projects</h2>
-	<Hyperlinks sources={caseData.cases[0].workingProjects} workingProjects arrow />
-</Wrapper>
+<Hyperlinks sources={caseData.cases[0].workingProjects} 
+heading='Current Projects'
+backgroundColor="var(--color-secondary)"
+workingProjects
+arrow
+/>
 
