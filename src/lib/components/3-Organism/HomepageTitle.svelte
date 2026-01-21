@@ -47,7 +47,7 @@
 
 		display: flex;
 		flex-direction: column;
-		font-family:var(--font-family-primary);
+		font-weight:var(--font-weight-bold);
 
 		@media (min-width: 500px) {
 			font-size: 5rem;
