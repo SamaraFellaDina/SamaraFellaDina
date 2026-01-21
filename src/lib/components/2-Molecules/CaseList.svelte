@@ -13,6 +13,8 @@
 					<ContentGenerator asset={caseItem.thumbnail} />
 					<section>
 						<h2>{caseItem.caseTitle}</h2>
+						<p>Amsterdam, Netherlands</p>
+						<p>14-10-2002</p>
 					</section>
 				</a>
 			</li>
@@ -56,7 +58,7 @@
 
 	ul li :global(img),
 ul li :global(video) {
-	max-height:600px;   
+	max-height:500px;   
   object-fit: cover; 
   display: block;
 }
@@ -82,9 +84,10 @@ ul li :global(video) {
 			opacity: 0;
 			padding: 2rem;
 			transition: var(--hover-transition);
-
 			display: flex;
-			align-items: flex-end;
+			flex-direction:column;
+			align-items: flex-start;
+			gap:var(--gap-small);
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -94,10 +97,20 @@ ul li :global(video) {
 		}
 	}
 
+	ul li a section h2,
+	ul li a section p {
+
+		line-height:normal;
+	}
+
+	ul li a section p {
+		font-size:var(--text-regular-size-s);
+		margin-block: 0;
+	}
 	ul li a section h2 {
-		font-size: 1.5rem;
+		font-size: var(--text-regular-size-l);
 		line-height: 1.5rem;
 		font-weight: 700;
-		margin-block: 0;
+		margin-block: 0 1rem;
 	}
 </style>
