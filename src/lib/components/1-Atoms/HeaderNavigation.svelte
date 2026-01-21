@@ -20,9 +20,9 @@
 		: ''}
 >
 	<ul class:open={open}>
-		<li><a href="/contact">contact <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
-		<li><a href="/portfolio">portfolio <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
-		<li><a href="/about-me">about me <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		<li><a href="/contact" data-sveltekit-reload >contact <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		<li><a href="/portfolio" data-sveltekit-reload >portfolio <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
+		<li><a href="/about-me" data-sveltekit-reload >about me <Icons icon="arrow-right" width={iconSize} height={iconSize}/></a></li>
 	</ul>
 	<button on:click={onClick}>
 			{open ? 'close' : 'menu'}
