@@ -48,20 +48,43 @@
 
 	.default {
 		height: 100%;
+	}
 
-		& ul {
-			display: flex;
-			height: 100%;
+		.default ul {
+		display: flex;
+		height: 100%;
+		width:100%;
+		position: absolute;
+		flex-direction:column;
+		top: 0;
+		left: 0;
+		transform: translate(-100%, 0);
+
+		@media (min-width:500px) {
+			transform:none;
+			position:relative;
+			flex-direction:row;
+			top: none;
+			left: none;
 		}
+	}
 
-		& ul li a {
-			--padding-inline: 1rem;
-			height: 100%;
-			align-items: center;
-			padding-inline: var(--padding-inline);
+	.default ul li {
+		@media (min-width:500px) {
+			width:100%;
 		}
+	}
 
-		& ul li:last-child a {
+	.default ul li a {
+		--padding-inline: 1rem;
+		height: 100%;
+		width:100%;
+		align-items: center;
+		padding-inline: var(--padding-inline);
+	}
+
+	.default ul li:last-child a {
+		@media (min-width:500px) {
 			padding-inline-end: calc(var(--padding-inline) * 2);
 		}
 	}
