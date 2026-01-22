@@ -7,7 +7,7 @@
 <CaseList cases={caseData.cases} />
 
 <Hyperlinks sources={caseData.cases[0].workingProjects} 
-heading='Current working projects'
+heading='Ongoing Projects'
 backgroundColor="var(--color-secondary)"
 arrow
 />
