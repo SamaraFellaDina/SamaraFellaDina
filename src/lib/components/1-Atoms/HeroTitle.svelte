@@ -11,13 +11,13 @@
 	h1 {
 		color: var(--color-primary);
 		letter-spacing: 0.2rem;
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: var(--font-weight-medium);
 		margin-block: 0;
 		line-height: 2.5rem;
-
-		@media (min-width: 500px) {
-			font-size: 5rem;
+		word-break: break-word;
+		@media (min-width: 700px) {
+			font-size: 4rem;
 			line-height: 4.5rem;
 		}
 	}
