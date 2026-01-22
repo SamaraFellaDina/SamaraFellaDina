@@ -1,15 +1,14 @@
 <script>
 	import { HeaderNavigation } from '$lib/index.js';
-	export let variant = 'default';
 </script>
 
-<header class={variant}>
+<header>
 	<a class="header" href="/">sammm.my</a>
-	<HeaderNavigation {variant} />
+	<HeaderNavigation />
 </header>
 
 <style>
-	.default {
+	header {
 		width: 100%;
 		height: 50px;
 		background-color: var(--color-dark);
@@ -20,7 +19,7 @@
 		align-items: center;
 		padding: 0 0 0 1em;
 
-		& .header {
+		& a {
 			color: var(--color-light);
 
 			&::before {

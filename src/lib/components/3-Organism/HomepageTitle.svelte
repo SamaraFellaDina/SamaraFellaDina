@@ -40,20 +40,21 @@
 	}
 
 	h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		color: var(--color-dark);
 		text-transform: uppercase;
 		word-break: break-word;
 
 		display: flex;
 		flex-direction: column;
+		font-weight:var(--font-weight-medium);
 
 		@media (min-width: 500px) {
 			font-size: 5rem;
 		}
 
-		@media (min-width: 1024px) {
-			font-size: 10rem;
+		@media (min-width: 900px) {
+			font-size: 6rem;
 		}
 	}
 </style>

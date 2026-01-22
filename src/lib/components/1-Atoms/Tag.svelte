@@ -15,7 +15,7 @@
 		background-color: var(--color-secondary);
 		border-radius: 10em;
 		padding: 0.5rem 1rem;
-		font-weight: var(--font-weight-medium);
+		font-weight: var(--font-weight-normal);
 		width: auto;
 		height: fit-content;
 		line-height: 1.3em;
