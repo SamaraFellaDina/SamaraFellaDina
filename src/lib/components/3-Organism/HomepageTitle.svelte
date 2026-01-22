@@ -40,7 +40,7 @@
 	}
 
 	h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		color: var(--color-dark);
 		text-transform: uppercase;
 		word-break: break-word;
@@ -53,8 +53,8 @@
 			font-size: 5rem;
 		}
 
-		@media (min-width: 1024px) {
-			font-size: 10rem;
+		@media (min-width: 900px) {
+			font-size: 6rem;
 		}
 	}
 </style>
