@@ -28,7 +28,7 @@
 
 	details summary {
 		--font-size: 1.5rem;
-		font-weight: bold;
+		font-weight: var(--font-weight-medium);
 		font-size: 1.2rem;
 		margin-bottom: 0.5rem;
 		list-style: none;

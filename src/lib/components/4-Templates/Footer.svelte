@@ -9,7 +9,7 @@
 	<div>
 		<section>
 			<h2>Talk to you soon!</h2>
-			<Hyperlink link="mailto:{email}" footer="true" title={email} />
+			<Hyperlink link="mailto:{email}" footer="true" title={email} arrow="true"/>
 		</section>
 
 		{#if footerData.socialsList}
@@ -30,7 +30,7 @@
 
 <style>
 	div {
-		@media (min-width: 700px) {
+		@media (min-width: 900px) {
 			display: flex;
 			gap: var(--gap-regular);
 			justify-content: space-between;
