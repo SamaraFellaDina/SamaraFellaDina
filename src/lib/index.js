@@ -17,7 +17,6 @@ export { default as Header } from './components/2-Molecules/Header.svelte';
 export { default as CaseAssets } from './components/2-Molecules/CaseAssets.svelte';
 export { default as Summary } from './components/2-Molecules/Summary.svelte';
 export { default as Hyperlink } from './components/2-Molecules/Hyperlink.svelte';
-export { default as Skills } from './components/2-Molecules/Skills.svelte';
 
 // Organism
 export { default as CaseList } from './components/3-Organism/CaseList.svelte';
