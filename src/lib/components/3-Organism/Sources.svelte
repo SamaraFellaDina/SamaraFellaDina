@@ -15,7 +15,7 @@
 		color: var(--color-dark);
 		display: flex;
 		height: 100%;
-		min-height: 40dvh;
+		min-height: 300px;
 		flex-direction: column;
 		justify-content: center;
 	}
