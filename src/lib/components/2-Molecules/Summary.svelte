@@ -31,12 +31,34 @@
 		font-weight: var(--font-weight-medium);
 		font-size: 1.2rem;
 		margin-bottom: 0.5rem;
+		font-family:var(--font-family-heading);
+		color:var(--color-primary);
 		list-style: none;
 		transition: var(--transition);
 		font-size: var(--font-size);
+		display: flex;
+    justify-content: space-between;
+		cursor:pointer;
 	}
+
+	details summary:hover {
+		padding:2rem 0;
+		font-size: 2rem;
+	}
+
 	[open] summary {
 		padding: 1em 0em;
 		font-size: calc(var(--font-size) + 0.5rem);
 	}
+	summary::after {
+		content: '+';
+	}
+
+	[open] summary::after {
+		content: '-';
+	}
+	
+	summary::-webkit-details-marker {
+	display: none;
+}
 </style>
