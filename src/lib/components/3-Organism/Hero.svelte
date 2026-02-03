@@ -1,5 +1,5 @@
 <script>
-	import { Tags, Wrapper, HeroTitle } from '$lib/index.js';
+	import { Tags, Wrapper, HeroTitle, Paragraph } from '$lib/index.js';
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 	export let heroTitle;
@@ -7,6 +7,7 @@
 	export let showCase = false;
 	export let intro;
 	export let aboutMe;
+	export let fullWidth = false
 
 	onMount(() => {
 		if (showCase === true) {
@@ -28,7 +29,7 @@
 		{/if}
 
 		{#if intro}
-			<p>{intro}</p>
+			<Paragraph {fullWidth} content={intro} />
 		{/if}
 	</section>
 </Wrapper>
