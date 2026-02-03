@@ -34,11 +34,11 @@
 		font-family:var(--font-family-heading);
 		color:var(--color-primary);
 		list-style: none;
-		transition: var(--transition);
 		font-size: var(--font-size);
 		display: flex;
     justify-content: space-between;
 		cursor:pointer;
+		transition: var(--hover-transition);
 	}
 
 	details summary:hover {
