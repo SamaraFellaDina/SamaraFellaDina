@@ -2,19 +2,19 @@
   import { Wrapper, Tag, Paragraph } from '$lib/index.js'
   export let Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
   export let careerContent;
-  console.log(careerContent)
 </script>
 
 <Wrapper>
   <ul>
     {#each careerContent as careerItem}
     <li>
-      <img src={careerItem.subjectImage || Image} alt="career">
+      <div>
+          <img src={careerItem.subjectImage || Image} alt="career">
+      </div>
         <section>
           <Tag content={careerItem.dateOfStep}/>
           <h2>{careerItem.titleOfStep}</h2>
           <Paragraph fullWidth=true content={careerItem.content}/>
-
         </section>
     </li>
     {/each}
@@ -36,14 +36,24 @@
   ul li {
     display: grid;
     gap: var(--gap-medium);
+    height:auto;
 
     @media (min-width:700px) {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  ul li img {
-    aspect-ratio: 1/1.3;
+  ul li div {
+    height: auto;
+  }
+  ul li div img {
+  aspect-ratio: 1/1.3;
+
+    @media (min-width:700px) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    }
   }
 
   ul li section h2 {
