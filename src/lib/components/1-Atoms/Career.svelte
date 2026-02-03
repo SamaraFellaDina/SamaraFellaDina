@@ -12,7 +12,7 @@
           <img src={careerItem.subjectImage?.url || Image} alt="career">
       </div>
         <section>
-          <Tag content={careerItem.dateOfStep}/>
+          <Tag content={careerItem.dateOfStep || "Put date here"}/>
           <h2>{careerItem.titleOfStep}</h2>
           <Paragraph fullWidth=true content={careerItem.content}/>
         </section>
@@ -48,9 +48,10 @@
     height: auto;
   }
   ul li div img {
-  aspect-ratio: 1/1.3;
+  aspect-ratio: 1/1;
 
     @media (min-width:700px) {
+    aspect-ratio: 1/1.3;
     position: -webkit-sticky;
     position: sticky;
     top: calc(50vh - 30%);
