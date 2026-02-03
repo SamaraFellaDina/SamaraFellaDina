@@ -1,51 +1,52 @@
 <script>
-  import { Wrapper, Tag } from '$lib/index.js'
-  let placeholderImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+  import { Wrapper, Tag, Paragraph } from '$lib/index.js'
+  export let Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+  export let careerContent;
+  console.log(careerContent)
 </script>
 
 <Wrapper>
   <ul>
+    {#each careerContent as careerItem}
     <li>
-      <img src={placeholderImage} alt="career">
-      <div>
-        <Tag content="September, 2023"/>
+      <img src={careerItem.subjectImage || Image} alt="career">
         <section>
-          <h2>Starting in Frontend Development</h2>
-          <p>
-            Started my degree in Frontend Design and Development
-            in Amsterdam (University of Applied Sciences.) I was a little scared, because I always wanted to learn code, but didn't know where to begin. It was overwhelming at first.
-          </p>
-        </section>
-      </div>
-    </li>
+          <Tag content={careerItem.dateOfStep}/>
+          <h2>{careerItem.titleOfStep}</h2>
+          <Paragraph fullWidth=true content={careerItem.content}/>
 
-        <li>
-      <img src={placeholderImage} alt="career">
-      <div>
-        <Tag content="September, 2023"/>
-        <section>
-          <h2>Starting in Frontend Development</h2>
-          <p>
-            Started my degree in Frontend Design and Development
-            in Amsterdam (University of Applied Sciences.) I was a little scared, because I always wanted to learn code, but didn't know where to begin. It was overwhelming at first.
-          </p>
         </section>
-      </div>
     </li>
+    {/each}
   </ul>
 </Wrapper>
 
 
 
 <style>
+  ul {
+    padding-inline: 0;
+		list-style: none;
+		margin-block: 0;
+    padding-block-end:5rem;
+
+    display:grid;
+    gap: var(--gap-medium);
+  }
   ul li {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap-regular);
+    gap: var(--gap-medium);
+
+    @media (min-width:700px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   ul li img {
-    aspect-ratio: 1/2;
-    height: 50dvh;
+    aspect-ratio: 1/1.3;
+  }
+
+  ul li section h2 {
+    margin-block-start: 1rem;
   }
 </style>

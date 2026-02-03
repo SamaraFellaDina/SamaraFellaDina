@@ -16,7 +16,7 @@
 		border-radius: 10em;
 		padding: 0.5rem 1rem;
 		font-weight: var(--font-weight-normal);
-		width: auto;
+		width: fit-content;
 		height: fit-content;
 		line-height: 1.3em;
 	}
