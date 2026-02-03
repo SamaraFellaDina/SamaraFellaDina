@@ -8,13 +8,11 @@
 
 
 {#if fullWidth}
-	<Wrapper fullWidth="true">
 	{#if (markdown = true)}
 		<MarkDownContent {content} />
 	{:else}
 		<slot></slot>
 	{/if}
-</Wrapper>
 
 {:else}
 <Wrapper paragraph="true">
