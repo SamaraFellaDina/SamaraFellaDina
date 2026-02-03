@@ -9,6 +9,7 @@ export { default as Tag } from './components/1-Atoms/Tag.svelte';
 export { default as HeroTitle } from './components/1-Atoms/HeroTitle.svelte';
 export { default as ContentGenerator } from './components/1-Atoms/ContentGenerator.svelte';
 export { default as AboutMeHeroImage } from './components/1-Atoms/AboutMeHeroImage.svelte';
+export { default as Career } from './components/1-Atoms/Career.svelte';
 
 // Molenules
 export { default as HeaderNavigation } from './components/2-Molecules/HeaderNavigation.svelte';
