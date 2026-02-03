@@ -9,7 +9,7 @@
     {#each careerContent as careerItem}
     <li>
       <div>
-          <img src={careerItem.subjectImage || Image} alt="career">
+          <img src={careerItem.subjectImage?.url || Image} alt="career">
       </div>
         <section>
           <Tag content={careerItem.dateOfStep}/>
@@ -28,6 +28,7 @@
     padding-inline: 0;
 		list-style: none;
 		margin-block: 0;
+    
     padding-block-end:5rem;
 
     display:grid;
@@ -52,7 +53,7 @@
     @media (min-width:700px) {
     position: -webkit-sticky;
     position: sticky;
-    top: 2rem;
+    top: calc(50vh - 30%);
     }
   }
 
