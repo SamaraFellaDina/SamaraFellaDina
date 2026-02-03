@@ -14,12 +14,6 @@ export const load = async () => {
 				aboutMe
 				loveProducts
 				loveSubjects
-				skills {
-					sectionHeading
-					listOfSkills {
-						titleOfSkill
-						experience
-					}
 				}
 			}
 		}

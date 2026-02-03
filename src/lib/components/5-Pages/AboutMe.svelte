@@ -1,5 +1,5 @@
 <script>
-	import { AboutMeHero, AboutSubjects, Skills } from '$lib/index.js';
+	import { AboutMeHero, AboutSubjects } from '$lib/index.js';
 	export let content;
 </script>
 
