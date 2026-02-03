@@ -32,7 +32,7 @@
     padding-block-end:5rem;
 
     display:grid;
-    gap: var(--gap-medium);
+    gap: 15rem;
   }
   ul li {
     display: grid;
