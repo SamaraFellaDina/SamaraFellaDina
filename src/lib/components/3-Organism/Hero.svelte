@@ -7,7 +7,7 @@
 	export let showCase = false;
 	export let intro;
 	export let aboutMe;
-	export let fullWidth = false
+	export let fullWidth = false;
 
 	onMount(() => {
 		if (showCase === true) {
@@ -47,6 +47,6 @@
 		margin-top: 10rem;
 		height: 80dvh;
 		overflow: hidden;
-    gap: var(--gap-small);
+		gap: var(--gap-small);
 	}
 </style>

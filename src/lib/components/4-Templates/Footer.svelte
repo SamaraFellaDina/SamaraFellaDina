@@ -9,7 +9,7 @@
 	<div>
 		<section>
 			<h2>Talk to you soon!</h2>
-			<Hyperlink link="mailto:{email}" footer="true" title={email} arrow="true"/>
+			<Hyperlink link="mailto:{email}" footer="true" title={email} arrow="true" />
 		</section>
 
 		{#if footerData.socialsList}

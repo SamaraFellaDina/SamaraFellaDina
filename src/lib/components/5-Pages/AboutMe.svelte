@@ -5,4 +5,4 @@
 
 <AboutMeHero paragraph={content.aboutMe.aboutMe} heroImages={content.aboutMe.heroImages} />
 <AboutSubjects subjects={content.aboutMe.loveSubjects} products={content.aboutMe.loveProducts} />
-<Career careerContent={content.aboutMe.stepsOfCareer}/>
+<Career careerContent={content.aboutMe.stepsOfCareer} />

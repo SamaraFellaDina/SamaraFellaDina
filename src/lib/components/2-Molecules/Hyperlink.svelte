@@ -57,7 +57,7 @@
 		background-color: var(--color-primary);
 		color: var(--color-secondary);
 		padding: 0.2rem 0.4rem;
-		font-weight:var(--font-weight-medium);
+		font-weight: var(--font-weight-medium);
 	}
 
 	.footer {

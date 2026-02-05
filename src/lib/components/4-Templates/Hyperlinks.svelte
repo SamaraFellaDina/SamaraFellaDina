@@ -7,32 +7,31 @@
 	export let arrow = false;
 	export let workingProjects = false;
 	export let heading;
-	export let backgroundColor = "none"
+	export let backgroundColor = 'none';
 </script>
 
 {#if heading}
-<Wrapper backgroundColor={backgroundColor} >
-	<section class:working-projects={workingProjects}>
-		<h2>{heading}</h2>
+	<Wrapper {backgroundColor}>
+		<section class:working-projects={workingProjects}>
+			<h2>{heading}</h2>
 
-		<ul>
+			<ul>
+				{#each sources as reference}
+					<li>
+						<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
+					</li>
+				{/each}
+			</ul>
+		</section>
+	</Wrapper>
+{:else}
+	<ul class:working-projects={workingProjects} style="background-color: {backgroundColor};">
 		{#each sources as reference}
 			<li>
 				<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
 			</li>
 		{/each}
 	</ul>
-	</section>
-</Wrapper>
-
-{:else}
-	<ul class:working-projects={workingProjects} style="background-color: {backgroundColor};">
-	{#each sources as reference}
-		<li>
-			<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
-		</li>
-	{/each}
-</ul>
 {/if}
 
 <style>
