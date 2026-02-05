@@ -29,7 +29,7 @@
 	<ul class:working-projects={workingProjects} style="background-color: {backgroundColor};">
 		{#each sources as reference}
 			<li>
-				<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
+				<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} {external}/>
 			</li>
 		{/each}
 	</ul>

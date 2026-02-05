@@ -23,10 +23,9 @@
 <style>
 	div {
 		@media (min-width: 900px) {
-			display: flex;
-			gap: var(--gap-regular);
-			justify-content: space-between;
-			align-items: flex-start;
+        display: grid;
+        gap: var(--gap-regular);
+        grid-template-columns: auto auto auto;
 		}
 	}
 	div section {

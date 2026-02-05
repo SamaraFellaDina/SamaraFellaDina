@@ -10,7 +10,8 @@
 </script>
 
 <a
-	class="
+	target={external ? '_blank' : undefined}
+	rel={external ? 'noopener noreferrer' : undefined}	class="
     {footer ? 'footer' : ''}
     {contact ? 'contact' : ''}
     "
