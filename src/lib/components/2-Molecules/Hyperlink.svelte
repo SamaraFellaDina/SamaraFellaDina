@@ -6,6 +6,7 @@
 	export let link;
 	export let title;
 	export let contact = false;
+	export let external = false;
 </script>
 
 <a
@@ -28,6 +29,10 @@
 			<Icons icon="LinkedIn" />
 		{:else if link.hyperlink.includes('github')}
 			<Icons icon="Github" />
+					{:else if link.hyperlink.includes('mailto:')}
+			<Icons icon="mail" />
+		{:else}
+			<Icons icon="external-link" />
 		{/if}
 	{/if}
 	{#if link.titleOfHyperlink}

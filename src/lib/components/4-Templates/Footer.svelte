@@ -2,7 +2,6 @@
 	import { Wrapper, Icons, Hyperlinks, Hyperlink } from '$lib/index.js';
 
 	export let footerData;
-	console.log(footerData.footerLinks);
 </script>
 
 <Wrapper backgroundColor="var(--color-primary)">
@@ -10,7 +9,12 @@
 		{#each footerData.footerLinks as footerItem}
 			<section>
 				<h2>{footerItem.headingOfSection}</h2>
-				<Hyperlinks footer="true" sources={footerItem.listOfHyperlinks} />
+				<Hyperlinks
+					external="true"
+					footer="true"
+					socials="true"
+					sources={footerItem.listOfHyperlinks}
+				/>
 			</section>
 		{/each}
 	</div>

@@ -8,6 +8,7 @@
 	export let workingProjects = false;
 	export let heading;
 	export let backgroundColor = 'none';
+	export let external = false;
 </script>
 
 {#if heading}
@@ -18,7 +19,7 @@
 			<ul>
 				{#each sources as reference}
 					<li>
-						<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} />
+						<Hyperlink link={reference} {workingProjects} {footer} {socials} {arrow} {external} />
 					</li>
 				{/each}
 			</ul>
