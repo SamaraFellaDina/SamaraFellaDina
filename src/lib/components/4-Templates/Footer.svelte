@@ -3,6 +3,7 @@
 
 	export let footerData;
 	let email = 'samarafelladina@gmail.com';
+	console.log(footerData.footerLinks);
 </script>
 
 <Wrapper backgroundColor="var(--color-primary)">
@@ -26,6 +27,13 @@
 			</section>
 		{/if}
 	</div>
+
+	{#each footerData.footerLinks as footerItem}
+		<section>
+			<h2>{footerItem.headingOfSection}</h2>
+			<Hyperlinks footer="true" sources={footerItem.listOfHyperlinks} />
+		</section>
+	{/each}
 </Wrapper>
 
 <style>
