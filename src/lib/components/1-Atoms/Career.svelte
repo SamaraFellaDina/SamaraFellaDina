@@ -36,11 +36,11 @@
   }
   ul li {
     display: grid;
-    gap: var(--gap-medium);
     height:auto;
 
     @media (min-width:700px) {
       grid-template-columns: 1fr 1fr;
+      gap: var(--gap-medium);
     }
   }
 
