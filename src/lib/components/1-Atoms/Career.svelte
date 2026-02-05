@@ -1,6 +1,6 @@
 <script>
   import { Wrapper, Tag, Paragraph } from '$lib/index.js'
-  export let Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1280px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+  export let Image = "https://eu-west-2.graphassets.com/cmd7kpx9c0ne40dlah8rbbmbf/cml9lo9et2kln07lf61ucako4"
   export let careerContent;
 </script>
 
