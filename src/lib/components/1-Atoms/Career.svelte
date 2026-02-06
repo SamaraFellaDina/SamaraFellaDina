@@ -65,7 +65,7 @@
     }
   }
 
-  ul li section h2 {
+  ul li section h3 {
     margin-block-start: 1rem;
   }
 </style>
