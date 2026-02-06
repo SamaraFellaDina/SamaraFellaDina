@@ -36,8 +36,6 @@
 		list-style: none;
 		margin-block: 0;
 
-		padding-block-end: 5rem;
-
 		display: grid;
 		gap: 15rem;
 	}
