@@ -20,6 +20,9 @@
 			</li>
 		{/each}
 	</ul>
+	<div>
+		<p>You've reached the end 🎉</p>
+	</div>
 </Wrapper>
 
 <style>
@@ -59,5 +62,13 @@
 
 	ul li section h2 {
 		margin-block-start: 1rem;
+	}
+
+	div p {
+		text-align: center;
+		font-size:var(--text-regular-size-l);
+		font-family:var(--font-family-heading);
+		color:var(--color-tertriary);
+		padding: var(--padding-medium) 0;
 	}
 </style>
