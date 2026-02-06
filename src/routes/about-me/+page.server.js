@@ -3,37 +3,37 @@ import { hygraph } from '$lib/hygraph.js';
 
 export const load = async () => {
 	const query = gql`
-	query aboutMe {
-  aboutMes {
-    heroImages {
-      id
-      url
-      width
-      height
-    }
-    aboutMe
-    loveProducts
-    loveSubjects
-    skills {
-      sectionHeading
-      listOfSkills {
-        titleOfSkill
-        experience
-      }
-    }
-    stepsOfCareer {
-      titleOfStep
-      dateOfStep
-      content
-      subjectImage {
-        id
-        url
-        width
-        height
-      }
-    }
-  }
-}
+		query aboutMe {
+			aboutMes {
+				heroImages {
+					id
+					url
+					width
+					height
+				}
+				aboutMe
+				loveProducts
+				loveSubjects
+				skills {
+					sectionHeading
+					listOfSkills {
+						titleOfSkill
+						experience
+					}
+				}
+				stepsOfCareer {
+					titleOfStep
+					dateOfStep
+					content
+					subjectImage {
+						id
+						url
+						width
+						height
+					}
+				}
+			}
+		}
 	`;
 
 	const data = await hygraph.request(query);

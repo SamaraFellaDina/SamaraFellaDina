@@ -57,11 +57,11 @@
 	}
 
 	ul li :global(img),
-ul li :global(video) {
-	max-height:500px;   
-  object-fit: cover; 
-  display: block;
-}
+	ul li :global(video) {
+		max-height: 500px;
+		object-fit: cover;
+		display: block;
+	}
 
 	ul li:hover {
 		@media (min-width: 700px) {
@@ -85,9 +85,9 @@ ul li :global(video) {
 			padding: 2rem;
 			transition: var(--hover-transition);
 			display: flex;
-			flex-direction:column;
+			flex-direction: column;
 			align-items: flex-start;
-			gap:var(--gap-small);
+			gap: var(--gap-small);
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -99,14 +99,13 @@ ul li :global(video) {
 
 	ul li a section h2,
 	ul li a section p {
-
-		line-height:normal;
+		line-height: normal;
 	}
 
 	ul li a section p {
-		font-size:var(--text-regular-size-s);
+		font-size: var(--text-regular-size-s);
 		margin-block: 0;
-		color:var(--color-light);
+		color: var(--color-light);
 	}
 	ul li a section h2 {
 		font-size: var(--text-regular-size-l);

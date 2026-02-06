@@ -31,18 +31,18 @@
 		font-weight: var(--font-weight-medium);
 		font-size: 1.2rem;
 		margin-bottom: 0.5rem;
-		font-family:var(--font-family-heading);
-		color:var(--color-primary);
+		font-family: var(--font-family-heading);
+		color: var(--color-primary);
 		list-style: none;
 		font-size: var(--font-size);
 		display: flex;
-    justify-content: space-between;
-		cursor:pointer;
+		justify-content: space-between;
+		cursor: pointer;
 		transition: var(--hover-transition);
 	}
 
 	details summary:hover {
-		padding:2rem 0;
+		padding: 2rem 0;
 		font-size: 2rem;
 	}
 
@@ -57,8 +57,8 @@
 	[open] summary::after {
 		content: '-';
 	}
-	
+
 	summary::-webkit-details-marker {
-	display: none;
-}
+		display: none;
+	}
 </style>
