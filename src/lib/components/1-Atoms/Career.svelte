@@ -5,6 +5,7 @@
 </script>
 
 <Wrapper>
+	<h2>My Career path</h2>
   <ul>
     {#each careerContent as careerItem}
     <li>
@@ -13,7 +14,7 @@
       </div>
         <section>
           <Tag content={careerItem.dateOfStep || "Put date here"}/>
-          <h2>{careerItem.titleOfStep}</h2>
+          <h3>{careerItem.titleOfStep}</h3>
           <Paragraph fullWidth=true content={careerItem.content}/>
         </section>
     </li>
@@ -24,6 +25,12 @@
 
 
 <style>
+	h2 {
+		text-align: center;
+    margin-block: 7rem;
+		font-size: 3rem;
+	}
+	
   ul {
     padding-inline: 0;
 		list-style: none;
