@@ -17,7 +17,9 @@
           <Tag content={careerItem.dateOfStep || "Put date here"}/>
           <h3>{careerItem.titleOfStep}</h3>
           <Paragraph fullWidth=true content={careerItem.content}/>
+					{#if careerItem.tools.length > 0}
 					<Tools content={careerItem.tools}/>
+					{/if}
         </section>
     </li>
     {/each}

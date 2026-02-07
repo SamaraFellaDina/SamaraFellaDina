@@ -17,10 +17,10 @@
 <style>
   ul {
     list-style: none;
-		margin-block: 0;
-		padding-inline: 0;
-
+    margin-block: 0;
+    padding-inline: 0;
     display: flex;
-    gap:var(--gap-regular);
+    gap: var(--gap-regular);
+    flex-wrap: wrap;
   }
 </style>
