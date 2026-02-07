@@ -1,8 +1,9 @@
 <script>
-	import { Wrapper, Tag, Paragraph } from '$lib/index.js';
+	import { Wrapper, Tag, Paragraph, Tools } from '$lib/index.js';
 	export let Image =
 		'https://eu-west-2.graphassets.com/cmd7kpx9c0ne40dlah8rbbmbf/cml9lo9et2kln07lf61ucako4';
 	export let careerContent;
+	console.log(careerContent)
 </script>
 
 <Wrapper>
@@ -17,6 +18,7 @@
           <Tag content={careerItem.dateOfStep || "Put date here"}/>
           <h3>{careerItem.titleOfStep}</h3>
           <Paragraph fullWidth=true content={careerItem.content}/>
+					<Tools content={careerContent[0].tools}/>
         </section>
     </li>
     {/each}
