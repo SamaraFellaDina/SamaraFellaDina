@@ -3,12 +3,13 @@
   export let content;
   console.log(content)
 </script>
+
 <section>
   <h4>Tools</h4>
   <ul>
       {#each content as toolItem}
       <li>
-        {toolItem}
+        <Icons icon={toolItem} />
       </li>
       {/each}
     </ul>
@@ -23,4 +24,10 @@
     gap: var(--gap-regular);
     flex-wrap: wrap;
   }
+
+  ul li {
+    display: flex;
+    align-content: center;
+    gap: var(--gap-small);
+}
 </style>
