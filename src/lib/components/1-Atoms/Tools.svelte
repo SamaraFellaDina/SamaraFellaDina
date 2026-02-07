@@ -1,13 +1,13 @@
 <script>
   import { Icons } from '$lib/index.js'
   export let content;
+  console.log(content)
 </script>
 <section>
   <h4>Tools</h4>
   <ul>
       {#each content as toolItem}
       <li>
-        <Icons icon={toolItem}/>
         {toolItem}
       </li>
       {/each}
