@@ -29,7 +29,7 @@
 		{:else if link.hyperlink.includes('linkedin')}
 			<Icons icon="LinkedIn" />
 		{:else if link.hyperlink.includes('github')}
-			<Icons icon="Github" />
+			<Icons icon="GitHub" />
 					{:else if link.hyperlink.includes('mailto:')}
 			<Icons icon="mail" />
 		{:else}
