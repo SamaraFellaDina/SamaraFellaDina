@@ -18,8 +18,8 @@
 <style>
 
   section {
-    background: var(--color-primary);
-    color: var(--color-secondary);
+    background: var(--color-secondary);
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     border-radius: var(--border-radius);
