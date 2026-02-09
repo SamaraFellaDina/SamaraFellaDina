@@ -35,9 +35,4 @@
 	</ul>
 {/if}
 
-<style>
-	ul {
-		list-style: none;
-		padding-inline: 0;
-	}
-</style>
+

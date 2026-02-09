@@ -58,6 +58,9 @@
   --gap-regular: 1rem;
   --gap-medium: 2rem;
 
+  /* height & width */
+  --height-full-screen:100dvh;
+  --width-full-screen:100dvw;
 }
 
 * {
@@ -73,7 +76,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  min-height: 100dvh;
+  min-height: var(--height-full-screen);
   width: 100dvw;
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -81,7 +84,7 @@ html {
 }
 
 main {
-  min-height:100dvh
+  min-height:var(--height-full-screen)
 }
 
   img, 
@@ -111,6 +114,9 @@ main {
 
 ul {
   padding-inline-start: 2rem;
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
 }
 
 p,

@@ -18,7 +18,7 @@
 
 <style>
 	section {
-		min-height: 100dvh;
+		min-height: var(--height-full-screen);
 	}
 
 	section div {
