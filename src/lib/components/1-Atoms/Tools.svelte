@@ -1,7 +1,6 @@
 <script>
   import { Icons } from '$lib/index.js'
   export let content;
-  console.log(content)
 </script>
 
 <section>
@@ -41,8 +40,11 @@
     width: 100%;
     height: 100%;
     padding: var(--padding-small);
-    justify-content: flex-end;
     border-radius: var(--border-radius);
+
+    @media (min-width:700px) {
+      justify-content: flex-end;
+    }
   }
 
   section ul li {
