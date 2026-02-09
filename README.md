@@ -1,9 +1,10 @@
-# Hello! 
+# Hello!
 
 My name is [Sammm.my](https://www.sammm.my)!  
 This is my portfolio, where I showcase my work — feel free to take a look :)
 
 ## On my portfolio you’ll find:
+
 - Frontend projects built with `Svelte`, `Astro`, and `Next.js`
 - Design-driven experiments
 - School and client projects

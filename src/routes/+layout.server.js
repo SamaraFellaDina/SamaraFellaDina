@@ -13,6 +13,13 @@ export const load = async () => {
 					hyperlink
 					titleOfHyperlink
 				}
+				footerLinks {
+					headingOfSection
+					listOfHyperlinks {
+						hyperlink
+						titleOfHyperlink
+					}
+				}
 			}
 		}
 	`;

@@ -6,10 +6,12 @@
 	export let link;
 	export let title;
 	export let contact = false;
+	export let external = false;
 </script>
 
 <a
-	class="
+	target={external ? '_blank' : undefined}
+	rel={external ? 'noopener noreferrer' : undefined}	class="
     {footer ? 'footer' : ''}
     {contact ? 'contact' : ''}
     "
@@ -28,6 +30,10 @@
 			<Icons icon="LinkedIn" />
 		{:else if link.hyperlink.includes('github')}
 			<Icons icon="Github" />
+					{:else if link.hyperlink.includes('mailto:')}
+			<Icons icon="mail" />
+		{:else}
+			<Icons icon="external-link" />
 		{/if}
 	{/if}
 	{#if link.titleOfHyperlink}
@@ -57,7 +63,7 @@
 		background-color: var(--color-primary);
 		color: var(--color-secondary);
 		padding: 0.2rem 0.4rem;
-		font-weight:var(--font-weight-medium);
+		font-weight: var(--font-weight-medium);
 	}
 
 	.footer {

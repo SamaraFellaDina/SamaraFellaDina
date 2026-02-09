@@ -2,39 +2,30 @@
 	import { Wrapper, Icons, Hyperlinks, Hyperlink } from '$lib/index.js';
 
 	export let footerData;
-	let email = 'samarafelladina@gmail.com';
 </script>
 
 <Wrapper backgroundColor="var(--color-primary)">
 	<div>
-		<section>
-			<h2>Talk to you soon!</h2>
-			<Hyperlink link="mailto:{email}" footer="true" title={email} arrow="true"/>
-		</section>
-
-		{#if footerData.socialsList}
+		{#each footerData.footerLinks as footerItem}
 			<section>
-				<h2>Socials</h2>
-				<Hyperlinks footer="true" socials="true" sources={footerData.socialsList} />
+				<h2>{footerItem.headingOfSection}</h2>
+				<Hyperlinks
+					external="true"
+					footer="true"
+					socials="true"
+					sources={footerItem.listOfHyperlinks}
+				/>
 			</section>
-		{/if}
-
-		{#if footerData.githubLinks}
-			<section>
-				<h2>Github</h2>
-				<Hyperlinks footer="true" sources={footerData.githubLinks} />
-			</section>
-		{/if}
+		{/each}
 	</div>
 </Wrapper>
 
 <style>
 	div {
 		@media (min-width: 900px) {
-			display: flex;
-			gap: var(--gap-regular);
-			justify-content: space-between;
-			align-items: flex-start;
+        display: grid;
+        gap: var(--gap-regular);
+        grid-template-columns: auto auto auto;
 		}
 	}
 	div section {
