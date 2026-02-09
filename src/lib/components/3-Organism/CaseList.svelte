@@ -2,7 +2,6 @@
 	import { Wrapper, ContentGenerator } from '$lib/index.js';
 	export let cases = [];
 	const listOfCases = cases?.[0]?.listOfCases ?? [];
-	const fallbackImage = '/images/fallback.jpg';
 </script>
 
 <Wrapper>

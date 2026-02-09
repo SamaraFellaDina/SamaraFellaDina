@@ -1,7 +1,6 @@
 <script>
 	import { Wrapper, Tag, Paragraph } from '$lib/index.js';
-	export let Image =
-		'https://eu-west-2.graphassets.com/cmd7kpx9c0ne40dlah8rbbmbf/cml9lo9et2kln07lf61ucako4';
+	const fallbackImage = '/images/fallback.jpg';
 	export let careerContent;
 </script>
 
@@ -11,7 +10,7 @@
     {#each careerContent as careerItem}
     <li>
       <div>
-          <img src={careerItem.subjectImage?.url || Image} alt="career">
+          <img src={careerItem.subjectImage?.url || fallbackImage} alt="career">
       </div>
         <section>
           <Tag content={careerItem.dateOfStep || "Put date here"}/>
