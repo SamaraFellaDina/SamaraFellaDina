@@ -13,6 +13,13 @@
 
 <style>
 	:global(.markdown) {
+
+		& ul {
+			list-style: disc;
+			margin-block: revert;
+			padding-inline: revert;
+		}
+
 		& img {
 			width: 100%;
 			height: auto;

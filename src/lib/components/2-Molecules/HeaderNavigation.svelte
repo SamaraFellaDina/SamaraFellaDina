@@ -45,9 +45,6 @@
 	}
 
 	nav ul {
-		list-style: none;
-		margin-block: 0;
-		padding-inline: 0;
 		z-index: 2;
 
 		display: flex;

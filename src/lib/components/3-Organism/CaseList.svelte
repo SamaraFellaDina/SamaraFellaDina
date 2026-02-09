@@ -23,9 +23,6 @@
 
 <style>
 	ul {
-		list-style: none;
-		margin-block: 0;
-		padding-inline: 0;
 		display: grid;
 		position: relative;
 		gap: var(--gap-regular);
