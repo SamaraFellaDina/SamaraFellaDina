@@ -21,6 +21,17 @@ export const load = async () => {
 						experience
 					}
 				}
+				stepsOfCareer {
+					titleOfStep
+					dateOfStep
+					content
+					subjectImage {
+						id
+						url
+						width
+						height
+					}
+				}
 			}
 		}
 	`;

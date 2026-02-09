@@ -31,7 +31,6 @@
 		gap: 5rem;
 		padding: var(--padding-medium) 0;
 
-
 		@media (min-width: 700px) {
 			gap: 10rem;
 			align-items: center;
@@ -45,14 +44,14 @@
 			--default-space: -4rem;
 		}
 	}
-ul li :global(img),
-ul li :global(video) {
-  max-height: 90dvh;
-  width: auto;       
-  max-width: 100%;   
-  object-fit: contain; 
-  display: block;
-}
+	ul li :global(img),
+	ul li :global(video) {
+		max-height: 90dvh;
+		width: auto;
+		max-width: 100%;
+		object-fit: contain;
+		display: block;
+	}
 	ul li:nth-child(odd) {
 		padding-right: var(--default-space);
 

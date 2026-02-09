@@ -6,9 +6,9 @@
 <Hero heroTitle="Portfolio" />
 <CaseList cases={caseData.cases} />
 
-<Hyperlinks sources={caseData.cases[0].workingProjects} 
-heading='Ongoing Projects'
-backgroundColor="var(--color-secondary)"
-arrow
+<Hyperlinks
+	sources={caseData.cases[0].workingProjects}
+	heading="Ongoing Projects"
+	backgroundColor="var(--color-secondary)"
+	arrow
 />
-
