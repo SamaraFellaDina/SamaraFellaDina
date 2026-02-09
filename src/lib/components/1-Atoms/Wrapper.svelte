@@ -39,7 +39,7 @@
 	}
 
 	.wrapper-slides {
-		min-height: 100dvh;
+		min-height: var(--height-full-screen);
 
 		& .wrapper-content {
 			display: grid;
