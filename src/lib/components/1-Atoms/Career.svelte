@@ -31,10 +31,6 @@
 	}
 	
   ul {
-    padding-inline: 0;
-		list-style: none;
-		margin-block: 0;
-
 		display: grid;
 		gap: 15rem;
 	}

@@ -111,6 +111,9 @@ main {
 
 ul {
   padding-inline-start: 2rem;
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
 }
 
 p,

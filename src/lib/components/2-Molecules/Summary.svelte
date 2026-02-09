@@ -33,7 +33,6 @@
 		margin-bottom: 0.5rem;
 		font-family: var(--font-family-heading);
 		color: var(--color-primary);
-		list-style: none;
 		font-size: var(--font-size);
 		display: flex;
 		justify-content: space-between;

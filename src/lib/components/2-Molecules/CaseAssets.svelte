@@ -23,9 +23,6 @@
 
 <style>
 	ul {
-		padding-inline: 0;
-		list-style: none;
-		margin-block: 0;
 		display: flex;
 		flex-direction: column;
 		gap: 5rem;
