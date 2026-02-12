@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/state';
 	import { Header, Footer } from '$lib/index.js';
-	
+
 	export let data;
 	export let children;
 
@@ -37,10 +37,3 @@
 				</div>
 		</div>
 {/if}
-
-<style>
-	.smooth-content {
-			overflow: hidden;
-
-	}
-</style>
