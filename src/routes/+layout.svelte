@@ -12,10 +12,9 @@
 	onMount(async () => {
 
 		const { gsap } = await import('gsap');
-		const { ScrollTrigger } = await import('gsap/ScrollTrigger');
 		const { ScrollSmoother } = await import('gsap/ScrollSmoother');
 
-		gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+		gsap.registerPlugin(ScrollSmoother);
 
 		let smoother = ScrollSmoother.create({
 			wrapper: '.smooth-wrapper',
@@ -29,11 +28,11 @@
 {:else}
 		<div class='smooth-wrapper'>
 			<div class='smooth-content'>
-	<Header variant="default" />
-		<main>
-				{@render children()}
-	</main>
-	<Footer {footerData} />
-				</div>
+				<Header variant="default" />
+					<main>
+							{@render children()}
+				</main>
+				<Footer {footerData} />
+			</div>
 		</div>
 {/if}
