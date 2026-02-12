@@ -30,8 +30,8 @@
 			<div class='smooth-content'>
 				<Header variant="default" />
 					<main>
-							{@render children()}
-				</main>
+						{@render children()}
+					</main>
 				<Footer {footerData} />
 			</div>
 		</div>

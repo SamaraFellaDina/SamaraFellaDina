@@ -7,7 +7,7 @@
 	export let products;
 </script>
 
-<Wrapper slides="true">
+<Wrapper>
 	<section>
 		<h2>Love doing things like:</h2>
 		<Tags tags={subjects} />
@@ -18,3 +18,12 @@
 		<Tags invertColor="true" tags={products} />
 	</section>
 </Wrapper>
+
+<style>
+	section {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+	}
+</style>
