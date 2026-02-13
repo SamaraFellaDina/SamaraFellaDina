@@ -73,6 +73,11 @@
   color:var(--color-link-active);
 }
 
+::selection {
+  background: var(--color-tertriary);
+  color:var(--color-secondary);
+}
+
 body,
 html {
   margin: 0;
