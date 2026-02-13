@@ -3,6 +3,7 @@ export { default as AfterEffects } from './AfterEffects.svelte';
 export { default as ArrowLeft } from './ArrowLeft.svelte';
 export { default as ArrowRight } from './ArrowRight.svelte';
 export { default as Astro } from './Astro.svelte';
+export { default as AdobeXD } from './AdobeXD.svelte';
 export { default as CSS } from './CSS.svelte';
 export { default as ExternalLink } from './ExternalLink.svelte';
 export { default as Figma } from './Figma.svelte';
