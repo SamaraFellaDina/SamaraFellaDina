@@ -8,6 +8,7 @@ export { default as CSS } from './CSS.svelte';
 export { default as ExternalLink } from './ExternalLink.svelte';
 export { default as Figma } from './Figma.svelte';
 export { default as GitHub } from './GitHub.svelte';
+export { default as Git } from './Git.svelte';
 export { default as GSAP } from './GSAP.svelte';
 export { default as HTML } from './HTML.svelte';
 export { default as Illustrator } from './Illustrator.svelte';
