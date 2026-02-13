@@ -6,6 +6,7 @@
   export let width = 24;
   export let height = 24;
   export let color = 'currentColor';
+  export let fallbackText = false;
   export let fallbackTag = false;
 
 function normalize(str) {
@@ -21,6 +22,8 @@ function normalize(str) {
 
 {#if IconComponent}
   <svelte:component this={IconComponent} {width} {height} {color} />
+{:else if fallbackText}
+  <span>{icon}</span>
   {:else if fallbackTag}
   <Tag content={icon}/>
 {:else}

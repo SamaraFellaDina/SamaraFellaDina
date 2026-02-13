@@ -23,7 +23,7 @@
 			{#each tools as tool}
 			{#if tools.length > 0}
 			<li class='float'>
-			<Icons width='80' height='80' icon={tool} fallbackTag="true"/>
+			<Icons width='60' height='60' icon={tool} fallbackTag="true"/>
 			</li>
 		{/if}
 		{/each}
