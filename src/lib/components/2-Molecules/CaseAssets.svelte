@@ -6,7 +6,7 @@
 <Wrapper fullwidth={true}>
 	<ul>
 		{#each assets as asset}
-			<li>
+			<li class='scroll-grow'>
 				{#if asset.mimeType.startsWith('image/')}
 					<img src={asset.url} alt={asset.fileName} width={asset.width} height={asset.height} />
 				{/if}

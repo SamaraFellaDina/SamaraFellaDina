@@ -9,7 +9,7 @@
   <ul>
     {#each careerContent as careerItem}
     <li>
-      <div>
+      <div class='scroll-grow'>
           <img src={careerItem.subjectImage?.url || fallbackImage} alt="career">
       </div>
         <section>

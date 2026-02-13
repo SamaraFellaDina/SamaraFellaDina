@@ -40,6 +40,7 @@
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
+  --scroll-animation:2s ease-in-out forwards;
 
   /* utils */
   --padding-small:1rem;
@@ -151,4 +152,19 @@ a {
     color: var(--color-tertriary);
     text-decoration:underline;
   }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.scroll-grow {
+    animation:grow var(--scroll-animation);
+		animation-timeline: view();
+		animation-range: 0dvh 50dvh;
 }

@@ -8,7 +8,7 @@
 <Wrapper>
 	<ul>
 		{#each listOfCases as caseItem}
-			<li>
+			<li class='scroll-grow'>
 				<a href="/portfolio/{caseItem.slug}">
 					<ContentGenerator asset={caseItem.thumbnail} />
 					<section>
@@ -23,17 +23,6 @@
 </Wrapper>
 
 <style>
-
-@keyframes grow {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-
 	ul {
 		display: grid;
 		position: relative;
@@ -50,7 +39,6 @@
 		width: 100%;
 		height: 100%;
 		transition: var(--hover-transition);
-		animation:grow 1s ease forwards;
 
 		@media (min-width: 700px) {
 			break-inside: avoid;
