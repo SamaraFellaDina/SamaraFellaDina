@@ -15,6 +15,11 @@
 		<h2>I love to create products like..</h2>
 		<Tags animated="true" invertColor="true" tags={products} />
 	</section>
+
+		<section>
+		<h2>Tools I am familiar with...</h2>
+		<!-- put icons of tools over here -->
+	</section>
 </Wrapper>
 
 <style>
