@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte'
 	import { Wrapper, ContentGenerator } from '$lib/index.js';
 	export let cases = [];
 	const listOfCases = cases?.[0]?.listOfCases ?? [];
@@ -22,6 +23,17 @@
 </Wrapper>
 
 <style>
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
 	ul {
 		display: grid;
 		position: relative;
@@ -38,6 +50,7 @@
 		width: 100%;
 		height: 100%;
 		transition: var(--hover-transition);
+		animation:grow 1s ease forwards;
 
 		@media (min-width: 700px) {
 			break-inside: avoid;
