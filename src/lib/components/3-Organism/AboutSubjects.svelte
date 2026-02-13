@@ -7,12 +7,12 @@
 
 <Wrapper>
 	<section>
-		<h2>Love doing things like:</h2>
+		<h2>I spend my days doing things like..</h2>
 		<Tags animated="true" tags={subjects} />
 	</section>
 
 	<section>
-		<h2>Love creating things like:</h2>
+		<h2>I love to create products like..</h2>
 		<Tags animated="true" invertColor="true" tags={products} />
 	</section>
 </Wrapper>
@@ -21,7 +21,7 @@
 	section {
     min-height: 100dvh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
 	}
 </style>
