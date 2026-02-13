@@ -20,18 +20,14 @@
 	{#if socials}
 		{#if link.hyperlink.includes('instagram')}
 			<Icons icon="Instagram" />
-		{:else if link.hyperlink.includes('tiktok')}
-			<Icons icon="TikTok" />
 		{:else if link.hyperlink.includes('youtube')}
 			<Icons icon="Youtube" />
-		{:else if link.hyperlink.includes('spotify')}
-			<Icons icon="Spotify" />
 		{:else if link.hyperlink.includes('linkedin')}
 			<Icons icon="LinkedIn" />
 		{:else if link.hyperlink.includes('github')}
 			<Icons icon="GitHub" />
 					{:else if link.hyperlink.includes('mailto:')}
-			<Icons icon="mail" />
+			<Icons icon="Mail" />
 		{:else}
 			<Icons icon="external-link" />
 		{/if}
@@ -42,7 +38,7 @@
 		{title}
 	{/if}
 	{#if arrow}
-		<Icons icon="arrow-right" width="40" height="40" />
+		<Icons icon="ArrowRight" width="40" height="40" />
 	{/if}
 </a>
 

@@ -1,7 +1,6 @@
 <script>
 	import { Icons, Hyperlink, Wrapper } from '$lib/index.js';
 	export let sources;
-
 	export let footer = false;
 	export let socials = false;
 	export let arrow = false;
