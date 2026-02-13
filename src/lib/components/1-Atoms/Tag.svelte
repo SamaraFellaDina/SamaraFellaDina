@@ -32,8 +32,6 @@
 	}
 
 	.float {
-		animation: 
-			float 5s ease-in-out infinite;
 		@media (min-width:700px) {
 			font-size:1.5rem;
 		}
@@ -50,11 +48,4 @@
 .float:nth-of-type(3n+3) {
   animation-delay: -3s;
 }
-
-	/* Floating animation */
-	@keyframes float {
-		0% { transform: translateY(0) translateX(5px); }
-		50% { transform: translateY(-10px) translateX(-2px); }
-		100% { transform: translateY(0) translateX(5px); }
-	}
 </style>

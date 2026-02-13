@@ -154,6 +154,16 @@ a {
   }
 }
 
+	@keyframes float {
+		0% { transform: translateY(0) translateX(5px); }
+		50% { transform: translateY(-10px) translateX(-2px); }
+		100% { transform: translateY(0) translateX(5px); }
+	}
+
+  .float {
+    animation: float 5s ease-in-out infinite;
+  }
+
 @keyframes grow {
   from {
     transform: scale(0.5);
