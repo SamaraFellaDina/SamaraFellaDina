@@ -1,3 +1,9 @@
+<script>
+  export let width = '30';
+  export let height = '30';
+  export let color = 'currentColor';
+</script>
+
 <svg
 		{width}
 		{height}

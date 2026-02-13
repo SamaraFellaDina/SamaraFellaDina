@@ -1,12 +1,8 @@
 <script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [name]
-	 * @property {string} [width]
-	 * @property {string} [height]
-	 * @property {string} [color]
-	 */
+  import GitHub from './icons/GitHubIcon.svelte';
+  import ArrowLeftIcon from './icons/ArrowLeft.svelte';
+  import CloseIcon from './icons/Close.svelte';
 
-	/** @type {Props} */
-	let { icon = 'undefined', width = '30', height = '30', color = 'currentColor' } = $props();
+  let { icon, width = '30', height = '30', color = 'currentColor' } = $props();
+
 </script>
