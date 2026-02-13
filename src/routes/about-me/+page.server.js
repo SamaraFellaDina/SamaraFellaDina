@@ -14,6 +14,7 @@ export const load = async () => {
     aboutMe
     loveProducts
     loveSubjects
+    tools
     stepsOfCareer {
       titleOfStep
       dateOfStep

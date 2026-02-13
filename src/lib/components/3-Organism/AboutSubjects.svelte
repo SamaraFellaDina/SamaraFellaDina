@@ -1,8 +1,9 @@
 <script>
-	import { Wrapper, Tags } from '$lib/index.js';
+	import { Wrapper, Tags, Icons, List } from '$lib/index.js';
 
 	export let subjects;
 	export let products;
+	export let tools;
 </script>
 
 <Wrapper>
@@ -18,7 +19,18 @@
 
 		<section>
 		<h2>Tools I am familiar with...</h2>
-		<!-- put icons of tools over here -->
+		<List>
+			{#each tools as tool}
+			{#if tools.length > 0}
+			<li class='float'>
+
+			<Icons width='80' height='80' icon={tool}/>
+
+			</li>
+		{/if}
+		{/each}
+		</List>
+
 	</section>
 </Wrapper>
 

@@ -9,7 +9,6 @@
 	{animated ? 'float' : ''}
 	{invertColor ? 'inverted-color' : ''}
 	">
-
 		{content}
 	</li>
 {/if}
@@ -36,16 +35,4 @@
 			font-size:1.5rem;
 		}
 	}
-
-.float:nth-of-type(3n+1) {
-  animation-delay: -1s;
-}
-
-.float:nth-of-type(3n+2) {
-  animation-delay: -2s;
-}
-
-.float:nth-of-type(3n+3) {
-  animation-delay: -3s;
-}
 </style>
