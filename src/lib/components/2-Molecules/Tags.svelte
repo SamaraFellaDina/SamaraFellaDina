@@ -4,7 +4,7 @@
 	export let invertColor = false;
 </script>
 
-<ul class:invert={invertColor}>
+<ul>
 	{#each tags as tagItem (tagItem)}
 		{#if tagItem}
 			<Tag {invertColor} content={tagItem} />
