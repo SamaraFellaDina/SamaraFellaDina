@@ -19,7 +19,7 @@ export { default as Mail } from './Mail.svelte';
 export { default as Markdown } from './Markdown.svelte';
 export { default as Miro } from './Miro.svelte';
 export { default as Netlify } from './Netlify.svelte';
-export { default as NextJs } from './NextJs.svelte';
+export { default as NextJS } from './NextJs.svelte';
 export { default as NodeJS } from './NodeJS.svelte';
 export { default as NPM } from './NPM.svelte';
 export { default as Photoshop } from './Photoshop.svelte';

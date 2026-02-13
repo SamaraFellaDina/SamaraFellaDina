@@ -2,7 +2,7 @@
 	<script>
   export let width = '30';
   export let height = '30';
-  export let color = 'var(--color-light)';
+  export let color = 'currentColor';
 </script>
 
 <svg

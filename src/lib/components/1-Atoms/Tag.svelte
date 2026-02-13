@@ -23,16 +23,14 @@
 		width: fit-content;
 		height: fit-content;
 		line-height: 1.3em;
+
+				@media (min-width:700px) {
+			font-size:1.5rem;
+		}
 	}
 
 	.inverted-color {
 		background-color: var(--color-primary);
 		color: var(--color-secondary);
-	}
-
-	.float {
-		@media (min-width:700px) {
-			font-size:1.5rem;
-		}
 	}
 </style>
