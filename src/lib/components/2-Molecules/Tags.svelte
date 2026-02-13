@@ -1,13 +1,14 @@
 <script>
 	import { Tag } from '$lib/index.js';
 	export let tags;
-	export let invertColor = false;
+	export let invertColor;
+	export let animated;
 </script>
 
 <ul>
 	{#each tags as tagItem (tagItem)}
 		{#if tagItem}
-			<Tag {invertColor} content={tagItem} />
+			<Tag {animated} {invertColor} content={tagItem} />
 		{/if}
 	{/each}
 </ul>

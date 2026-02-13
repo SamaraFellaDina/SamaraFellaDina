@@ -8,18 +8,18 @@
 <Wrapper>
 	<section>
 		<h2>Love doing things like:</h2>
-		<Tags tags={subjects} />
+		<Tags animated="true" tags={subjects} />
 	</section>
 
 	<section>
 		<h2>Love creating things like:</h2>
-		<Tags invertColor="true" tags={products} />
+		<Tags animated="true" invertColor="true" tags={products} />
 	</section>
 </Wrapper>
 
 <style>
 	section {
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
