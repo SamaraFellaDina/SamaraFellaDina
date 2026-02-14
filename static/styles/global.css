@@ -40,6 +40,10 @@
   /* transition */
   --hover-transition: 300ms 50ms ease-in-out;
   --transition: 200ms ease-in-out;
+  --scroll-animation:2s ease-in-out forwards;
+
+  /* border */
+  --border-style-regular: 1px solid var(--color-primary);
 
   /* utils */
   --padding-small:1rem;
@@ -72,6 +76,11 @@
   color:var(--color-link-active);
 }
 
+::selection {
+  background: var(--color-tertriary);
+  color:var(--color-secondary);
+}
+
 body,
 html {
   margin: 0;
@@ -94,6 +103,7 @@ main {
     object-fit: cover;
     border-radius: var(--border-radius);
   }
+
   img,
   img:focus,
   video,
@@ -151,4 +161,93 @@ a {
     color: var(--color-tertriary);
     text-decoration:underline;
   }
+}
+
+details {
+		border: var(--border-style-regular);
+		border-left: none;
+		border-right: none;
+		padding: var(--padding-regular);
+
+		&:last-child {
+			--border-bottom: var(--border-style-regular);
+		}
+
+		&:not([open]) {
+			cursor: pointer;
+		}
+	}
+
+	details summary {
+		--font-size: 1.5rem;
+		font-weight: var(--font-weight-medium);
+		font-size: var(--font-size);
+		margin-bottom: 0.5rem;
+		font-family: var(--font-family-heading);
+		color: var(--color-primary);
+		font-size: var(--font-size);
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		transition: var(--hover-transition);
+	}
+
+	details summary:hover {
+		padding: 2rem 0;
+		font-size: 2rem;
+	}
+
+	[open] summary {
+		padding: 1em 0em;
+		font-size: calc(var(--font-size) + 0.5rem);
+	}
+	summary::after {
+		content: '+';
+	}
+
+	[open] summary::after {
+		content: '-';
+	}
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+
+	@keyframes float {
+		0% { transform: translateY(0) translateX(5px); }
+		50% { transform: translateY(-10px) translateX(-2px); }
+		100% { transform: translateY(0) translateX(5px); }
+	}
+
+  .float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  .float:nth-of-type(3n+1) {
+  animation-delay: -1s;
+}
+
+.float:nth-of-type(3n+2) {
+  animation-delay: -2s;
+}
+
+.float:nth-of-type(3n+3) {
+  animation-delay: -3s;
+}
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+    opacity:0;
+  }
+  to {
+    transform: scale(1);
+    opacity:1;
+  }
+}
+
+.scroll-grow {
+    animation:grow var(--scroll-animation);
+		animation-timeline: view();
+		animation-range: 0dvh 50dvh;
 }

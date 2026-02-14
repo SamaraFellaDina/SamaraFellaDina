@@ -1,10 +1,14 @@
 <script>
 	export let content;
+	export let animated = false;
 	export let invertColor = false;
 </script>
 
 {#if content.length > 0}
-	<li class:invert={invertColor}>
+	<li class="
+	{animated ? 'float' : ''}
+	{invertColor ? 'inverted-color' : ''}
+	">
 		{content}
 	</li>
 {/if}
@@ -19,10 +23,14 @@
 		width: fit-content;
 		height: fit-content;
 		line-height: 1.3em;
+
+				@media (min-width:700px) {
+			font-size:1.5rem;
+		}
 	}
 
-	.invert {
-		color: var(--color-secondary);
+	.inverted-color {
 		background-color: var(--color-primary);
+		color: var(--color-secondary);
 	}
 </style>

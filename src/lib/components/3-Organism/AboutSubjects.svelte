@@ -1,20 +1,42 @@
 <script>
-	import { Wrapper, Tags } from '$lib/index.js';
-
-	let tags = ['Motion Design', 'Frontend Development', 'UI/UX', 'Graphic Design'];
+	import { Wrapper, Tags, Icons, List } from '$lib/index.js';
 
 	export let subjects;
 	export let products;
+	export let tools;
 </script>
 
-<Wrapper slides="true">
+<Wrapper>
 	<section>
-		<h2>Love doing things like:</h2>
-		<Tags tags={subjects} />
+		<h2>I spend my days doing things like..</h2>
+		<Tags animated="true" tags={subjects} />
 	</section>
 
 	<section>
-		<h2>Love creating things like:</h2>
-		<Tags invertColor="true" tags={products} />
+		<h2>I love to create products like..</h2>
+		<Tags animated="true" invertColor="true" tags={products} />
+	</section>
+
+		<section>
+		<h2>Tools I am familiar with...</h2>
+		<List>
+			{#each tools as tool}
+			{#if tools.length > 0}
+			<li class='float'>
+			<Icons width='60' height='60' icon={tool} fallbackTag="true"/>
+			</li>
+		{/if}
+		{/each}
+		</List>
+
 	</section>
 </Wrapper>
+
+<style>
+	section {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+</style>

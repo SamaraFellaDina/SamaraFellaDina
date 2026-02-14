@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte'
 	import { Wrapper, ContentGenerator } from '$lib/index.js';
 	export let cases = [];
 	const listOfCases = cases?.[0]?.listOfCases ?? [];
@@ -7,7 +8,7 @@
 <Wrapper>
 	<ul>
 		{#each listOfCases as caseItem}
-			<li>
+			<li class='scroll-grow'>
 				<a href="/portfolio/{caseItem.slug}">
 					<ContentGenerator asset={caseItem.thumbnail} />
 					<section>

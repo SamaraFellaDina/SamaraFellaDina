@@ -1,5 +1,5 @@
 <script>
-	import { Wrapper, Tag, Paragraph } from '$lib/index.js';
+	import { Wrapper, Tag, Paragraph, Tools } from '$lib/index.js';
 	const fallbackImage = '/images/fallback.jpg';
 	export let careerContent;
 </script>
@@ -9,13 +9,16 @@
   <ul>
     {#each careerContent as careerItem}
     <li>
-      <div>
+      <div class='scroll-grow'>
           <img src={careerItem.subjectImage?.url || fallbackImage} alt="career">
       </div>
         <section>
           <Tag content={careerItem.dateOfStep || "Put date here"}/>
           <h3>{careerItem.titleOfStep}</h3>
           <Paragraph fullWidth=true content={careerItem.content}/>
+					{#if careerItem.tools.length > 0}
+					<Tools content={careerItem.tools}/>
+					{/if}
         </section>
     </li>
     {/each}

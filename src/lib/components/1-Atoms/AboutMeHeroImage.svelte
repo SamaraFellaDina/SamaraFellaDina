@@ -14,7 +14,7 @@
 	onDestroy(() => clearInterval(interval));
 </script>
 
-<div>
+<div class="float">
 	<img
 		alt="hero"
 		src={heroImages[currentIndex].url}

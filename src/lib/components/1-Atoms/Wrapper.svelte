@@ -1,14 +1,12 @@
 <script>
 	export let backgroundColor = 'var(--color-dark)';
 	export let fullwidth = false;
-	export let slides = false;
 	export let paragraph = false;
 </script>
 
 <div
 	class="wrapper
         {fullwidth ? ' wrapper-fullwidth' : ''}
-        {slides ? ' wrapper-slides' : ''}
         {paragraph ? ' wrapper-paragraph' : ''}"
 	style="background-color: {backgroundColor};"
 >
@@ -35,16 +33,6 @@
 
 		@media (min-width: 700px) {
 			padding: var(--padding-containter);
-		}
-	}
-
-	.wrapper-slides {
-		min-height: var(--height-full-screen);
-
-		& .wrapper-content {
-			display: grid;
-			align-items: center;
-			align-content: center;
 		}
 	}
 

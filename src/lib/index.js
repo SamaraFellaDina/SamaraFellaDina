@@ -1,6 +1,8 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 // Atoms
+export { default as Tools } from './components/1-Atoms/Tools.svelte';
+export { default as List } from './components/1-Atoms/List.svelte';
 export { default as BackgroundAnimation } from './components/1-Atoms/BackgroundAnimation.svelte';
 export { default as MarkDownContent } from './components/1-Atoms/MarkDownContent.svelte';
 export { default as Icons } from './components/1-Atoms/Icons.svelte';

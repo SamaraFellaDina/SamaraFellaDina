@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { Icons } from '$lib/index.js';
 
 	$: homePage = $page.url.pathname === '/';
 
@@ -11,8 +10,6 @@
 	let onClick = () => {
 		open = !open;
 	};
-
-	let iconSize = 40;
 	let navigation = [
 		{ label: 'contact', href: '/contact' },
 		{ label: 'portfolio', href: '/portfolio' },
@@ -26,9 +23,6 @@
 			<li>
 				<a data-sveltekit-reload href={item.href}>
 					{item.label}
-					<span class="icon">
-						<Icons icon="arrow-right" width={iconSize} height={iconSize} />
-					</span>
 				</a>
 			</li>
 		{/each}
@@ -78,12 +72,6 @@
 
 		@media (min-width: 700px) {
 			height: 100%;
-		}
-	}
-
-	.icon {
-		@media (min-width: 700px) {
-			display: none;
 		}
 	}
 
@@ -192,10 +180,6 @@
 
 	.homepage ul li a:last-child {
 		padding-inline-end: 0;
-	}
-
-	.homepage .icon {
-		display: none;
 	}
 
 	.homepage button {
