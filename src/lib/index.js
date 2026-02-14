@@ -26,7 +26,6 @@ export { default as CaseSummary } from './components/3-Organism/CaseSummary.svel
 export { default as References } from './components/3-Organism/Sources.svelte';
 export { default as HomepageTitle } from './components/3-Organism/HomepageTitle.svelte';
 export { default as Paragraph } from './components/3-Organism/Paragraph.svelte';
-export { default as AboutSubjects } from './components/3-Organism/AboutSubjects.svelte';
 
 // Templates
 export { default as Cases } from './components/4-Templates/Cases.svelte';
@@ -35,6 +34,8 @@ export { default as Footer } from './components/4-Templates/Footer.svelte';
 export { default as AboutMeHero } from './components/4-Templates/AboutMeHero.svelte';
 export { default as Career } from './components/4-Templates/Career.svelte';
 export { default as Hero } from './components/4-Templates/Hero.svelte';
+export { default as AboutSubjects } from './components/4-Templates/AboutSubjects.svelte';
+
 
 
 // Pages

@@ -1,4 +1,3 @@
-<!-- BackgroundAnimation.svelte -->
 <div>
 	<slot></slot>
 </div>

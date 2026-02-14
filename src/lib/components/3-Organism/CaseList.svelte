@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte'
 	import { Wrapper, ContentGenerator } from '$lib/index.js';
 	export let cases = [];
 	const listOfCases = cases?.[0]?.listOfCases ?? [];

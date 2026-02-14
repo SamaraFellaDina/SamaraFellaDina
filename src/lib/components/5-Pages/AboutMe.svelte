@@ -1,8 +1,9 @@
 <script>
 	import { AboutMeHero, AboutSubjects, Career } from '$lib/index.js';
 	export let content;
+	let aboutMeData = content.aboutMe;
 </script>
 
-<AboutMeHero paragraph={content.aboutMe.aboutMe} heroImages={content.aboutMe.heroImages} />
-<AboutSubjects subjects={content.aboutMe.loveSubjects} products={content.aboutMe.loveProducts} tools={content.aboutMe.tools}/>
-<Career careerContent={content.aboutMe.stepsOfCareer} />
+<AboutMeHero paragraph={aboutMeData.aboutMe} heroImages={aboutMeData.heroImages} />
+<AboutSubjects subjects={aboutMeData.loveSubjects} products={aboutMeData.loveProducts} tools={aboutMeData.tools}/>
+<Career careerContent={aboutMeData.stepsOfCareer} />
