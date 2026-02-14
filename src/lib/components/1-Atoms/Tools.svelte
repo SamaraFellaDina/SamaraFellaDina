@@ -8,7 +8,7 @@
   <ul>
       {#each content as toolItem}
       <li>
-        <Icons height="40" width="40" icon={toolItem} color="var(--color-dark)" fallbackText="true"/>
+        <Icons height="40" width="40" icon={toolItem} color="var(--color-light)" fallbackText="true"/>
       </li>
       {/each}
     </ul>
@@ -17,10 +17,7 @@
 <style>
 
   section {
-    background: var(--color-primary);
-    color: var(--color-secondary);
-    display: flex;
-    align-items: center;
+    color: var(--color-light);
     border-radius: var(--border-radius);
   }
 
@@ -29,7 +26,6 @@
     padding: 0 var(--padding-small);
   }
   section ul {
-    color:var(--color-dark);
     display: flex;
     gap: var(--gap-small);
     flex-wrap: wrap;
@@ -37,10 +33,6 @@
     height: 100%;
     padding: var(--padding-small);
     border-radius: var(--border-radius);
-
-    @media (min-width:700px) {
-      justify-content: flex-end;
-    }
   }
 
   section ul li {
