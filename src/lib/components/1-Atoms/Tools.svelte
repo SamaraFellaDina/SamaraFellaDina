@@ -17,8 +17,8 @@
 <style>
 
   section {
-    background: var(--color-secondary);
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-secondary);
     display: flex;
     align-items: center;
     border-radius: var(--border-radius);
@@ -33,7 +33,6 @@
     display: flex;
     gap: var(--gap-small);
     flex-wrap: wrap;
-    background:var(--color-light);
     width: 100%;
     height: 100%;
     padding: var(--padding-small);
