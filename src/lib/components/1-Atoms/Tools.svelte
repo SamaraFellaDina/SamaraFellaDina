@@ -8,7 +8,7 @@
   <ul>
       {#each content as toolItem}
       <li>
-        <Icons height="40" width="40" icon={toolItem} color="var(--color-light)" fallbackText="true"/>
+        <Icons height="40" width="40" icon={toolItem} color="var(--color-light)" fallbackTag="true"/>
       </li>
       {/each}
     </ul>
