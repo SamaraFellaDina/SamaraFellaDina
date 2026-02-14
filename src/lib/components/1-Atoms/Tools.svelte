@@ -18,7 +18,11 @@
 
   section {
     color: var(--color-light);
-    border-radius: var(--border-radius);
+    border: var(--border-style-regular);
+		border-left: none;
+		border-right: none;
+    margin: var(--padding-regular) 0;
+    padding: var(--padding-small) 0;
   }
 
   section h4 {
