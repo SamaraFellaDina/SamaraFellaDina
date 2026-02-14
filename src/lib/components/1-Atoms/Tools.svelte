@@ -29,9 +29,6 @@
     padding: 0 var(--padding-small);
   }
   section ul {
-    list-style: none;
-    margin-block: 0;
-    padding-inline: 0;
     color:var(--color-dark);
     display: flex;
     gap: var(--gap-small);
