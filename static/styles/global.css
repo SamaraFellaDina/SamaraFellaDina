@@ -86,7 +86,7 @@ html {
   margin: 0;
   padding: 0;
   min-height: var(--height-full-screen);
-  width: 100dvw;
+  width: 100%;
   background-color: var(--color-dark);
   color: var(--color-light);
   display: block;
