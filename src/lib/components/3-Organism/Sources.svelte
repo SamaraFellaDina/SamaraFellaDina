@@ -6,7 +6,7 @@
 <Wrapper backgroundColor="var(--color-secondary)">
 	<section>
 		<h2>Sources</h2>
-		<Hyperlinks arrow="true" {sources} />
+		<Hyperlinks external="true" arrow="true" {sources} />
 	</section>
 </Wrapper>
 

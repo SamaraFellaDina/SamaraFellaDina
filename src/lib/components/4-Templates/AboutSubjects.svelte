@@ -20,12 +20,12 @@
 		<section>
 		<h2>Tools I am familiar with...</h2>
 		<List>
-			{#each tools as tool}
+		{#each tools as tool}
 			{#if tools.length > 0}
-			<li class='float'>
-			<Icons width='60' height='60' icon={tool} fallbackTag="true"/>
-			</li>
-		{/if}
+				<li class='float'>
+				<Icons width='60' height='60' icon={tool} fallbackTag="true"/>
+				</li>
+			{/if}
 		{/each}
 		</List>
 
@@ -34,7 +34,7 @@
 
 <style>
 	section {
-    min-height: 100dvh;
+    min-height: 50dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
