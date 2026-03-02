@@ -3,7 +3,7 @@
 	export let caseData;
 </script>
 
-<Hero heroTitle="Portfolio" />
+<Hero heroTitle="Work" />
 <CaseList cases={caseData.cases} />
 
 <Hyperlinks

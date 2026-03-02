@@ -12,7 +12,7 @@
 	};
 	let navigation = [
 		{ label: 'contact', href: '/contact' },
-		{ label: 'portfolio', href: '/portfolio' },
+		{ label: 'work', href: '/work' },
 		{ label: 'about me', href: '/about-me' }
 	];
 </script>
