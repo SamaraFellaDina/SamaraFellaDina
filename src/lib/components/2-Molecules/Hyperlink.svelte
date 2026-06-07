@@ -26,8 +26,6 @@
 			<Icons icon="LinkedIn" />
 		{:else if link.hyperlink.includes('github')}
 			<Icons icon="GitHub" />
-					{:else if link.hyperlink.includes('mailto:')}
-			<Icons icon="Mail" />
 		{:else}
 			<Icons icon="external-link" />
 		{/if}
