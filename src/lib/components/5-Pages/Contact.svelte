@@ -1,6 +1,6 @@
 <script>
 	import { HeroTitle, Wrapper, Hyperlink, Hero } from '$lib/index.js';
-	let email = 'samarafelladina@gmail.com';
+	let email = 'hello@sammm.my';
 </script>
 
 <Hero heroTitle="Talk to you soon!" />
