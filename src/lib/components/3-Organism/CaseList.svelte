@@ -8,7 +8,7 @@
 	<ul>
 		{#each listOfCases as caseItem}
 			<li class='scroll-grow'>
-				<a href="/portfolio/{caseItem.slug}">
+				<a href="/work/{caseItem.slug}">
 					<ContentGenerator asset={caseItem.thumbnail} />
 					<section>
 						<h2>{caseItem.caseTitle}</h2>

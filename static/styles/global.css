@@ -15,7 +15,7 @@
 
 :root {
   /* color */
-  --color-primary: hsl(125, 100%, 50%);
+  --color-primary: #00ff15;
   --color-secondary: hsl(231, 100%, 50%);
   --color-tertriary: hsl(62, 100%, 50%);
   --color-light: hsl(0, 9%, 93%);
