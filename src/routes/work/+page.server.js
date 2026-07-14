@@ -5,7 +5,11 @@ export const load = async () => {
 	const query = gql`
 		query Portfolio {
 			portfolios {
-				listOfCases(orderBy: year_DESC, where: { archive: false, archive_not: true }) {
+				listOfCases(
+				orderBy: year_DESC, 
+				where: { archive: false, archive_not: true },
+				first: 20
+					) {
 					id
 					caseTitle
 					slug
